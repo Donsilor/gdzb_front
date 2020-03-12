@@ -26,7 +26,7 @@ img{width: 100%;}
     border-right: 1px solid #fff;
 }
 /*产品轮播*/
-.product{overflow: hidden;}
+.product{margin-bottom:80px;overflow: hidden;}
 
 
 .product>.swiper-container>.swiper-wrapper>.li{width: 15% !important;text-align: center;color: #b8a159;font-size: 16px;}
@@ -41,7 +41,7 @@ img{width: 100%;}
 /* 标题 */
 .two{
     background: #000000;
-    padding: 100px 100px;
+    padding: 60px 100px;
 }
 .three{
     padding-botton: 100px;
@@ -107,7 +107,7 @@ img{width: 100%;}
 }
 .img-list>ul>li>img{
     display: block;
-    border: solid 1px #313131;
+    /* border: solid 1px #313131; */
     /* width: 406px;
 	height: 382px;
     border: 1px solid #fff; */
