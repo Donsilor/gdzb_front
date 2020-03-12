@@ -1,0 +1,220 @@
+.filter-menu{
+    width: 85%;
+    margin: 0 auto;
+    line-height: 48px;
+    padding: 50px 0;
+    /* margin: 50px 0; */
+    /* padding: 50px 0; */
+    /* background: #fff; */
+    /* padding: 10px 20px 10px 30px; */
+    font-size: 14px;
+    border-bottom: solid 1px #a0a0a0;
+}
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.filter_box .nav_wrap{
+    display: flex;
+}
+.filter_box .one_div{
+    width: 10%;
+    text-align: center;
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.filter_box .two_div{
+    width: 1px;
+    background: #fff;
+}
+.filter_box .three_div ul{
+    display: flex;
+}
+.filter_box .three_div ul li{
+    text-align: center;
+    width: 100px;
+}
+.on{
+    width: 78px;
+    height: 20px;
+    padding: 3px 20px;
+    border: solid 1px #f5a135;
+    color: #f5a135;
+}
+.title-active{
+    width: 78px;
+    height: 20px;
+    padding: 3px 20px;
+    border: solid 1px #f5a135;
+    color: #f5a135;
+}
+.active{
+    width: 78px;
+    height: 20px;
+    padding: 3px 20px;
+    border: solid 1px #f5a135;
+    color: #f5a135;
+}
+.pro_list{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+.pro_list .pro_img{
+    width: 273px;
+	height: 273px;
+}
+.pro_list .pro_img img{
+    width: 100%;
+	/* height: 100%; */
+	/* background-color: #f1f3f4; */
+	border: solid 1px #a0a0a0;
+}
+.pro_list .underline{
+    border-bottom: solid 1px #a0a0a0;
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+ .pro_list .list:nth-child(2){
+    margin-right: 6%;
+    margin-left: 6%
+}
+.pro_list .list:nth-child(3){
+    margin-right: 6%;
+} 
+.pro_list p{
+    margin-bottom: 0;
+}
+.totle{
+    text-align: center;
+    padding: 20px 0;
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.8;
+}
+.list-bar{
+    margin: 0 30px;
+}
+.more{
+    margin-top: 5px;
+    cursor: pointer;
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	color: #f5a135;
+	opacity: 0.8;
+}
+.no_pro{
+    padding: 100px;
+    font-size: 25px;
+    color: #f5a135;
+}
+.box div{
+    display: none;
+}
+.box .div_show{
+    display: block;
+}
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 1500px) {
+    .pro_list .pro_img{
+        width: 253px;
+        height: 253px;
+    }
+    .pro_list .list:nth-child(2){
+        margin-right: 5%;
+        margin-left: 5%
+    }
+    .pro_list .list:nth-child(3){
+        margin-right: 5%;
+    } 
+}
+@media screen and (max-width: 1400px) {
+    .pro_list .pro_img{
+        width: 233px;
+        height: 233px;
+    }
+    .pro_list .list:nth-child(2){
+        margin-right: 4%;
+        margin-left: 4%
+    }
+    .pro_list .list:nth-child(3){
+        margin-right: 4%;
+    } 
+}
+@media screen and (max-width: 1336px) {
+    .pro_list .pro_img{
+        width: 223px;
+        height: 223px;
+    }
+    .pro_list .list:nth-child(2){
+        margin-right: 3%;
+        margin-left: 3%
+    }
+    .pro_list .list:nth-child(3){
+        margin-right: 3%;
+    } 
+}
+@media screen and (max-width: 1236px) {
+    .pro_list .pro_img{
+        width: 213px;
+        height: 213px;
+    }
+    .pro_list .list:nth-child(2){
+        margin-right: 3%;
+        margin-left: 3%
+    }
+    .pro_list .list:nth-child(3){
+        margin-right: 3%;
+    } 
+}
+@media screen and (max-width: 1158px) {
+    .pro_list .pro_img{
+        width: 200px;
+        height: 200px;
+    }
+    .pro_list .list:nth-child(2){
+        margin-right: 2%;
+        margin-left: 2%
+    }
+    .pro_list .list:nth-child(3){
+        margin-right: 2%;
+    } 
+}

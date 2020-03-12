@@ -1,0 +1,85 @@
+.purchase_contain{
+
+}
+.purchase_contain>.one{
+    padding:200px 100px 100px;
+    text-align: center;
+}
+.purchase_contain>.one>.title{
+    text-align: center;
+}
+.purchase_contain>.one>.relation_ewm{
+    margin: 100px 0 30px;
+    height: 100%;
+    text-align: center;
+}
+.purchase_contain>.one>.add_weixin{
+
+}
+.purchase_contain .p1{
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 21px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.purchase_contain .p-time{
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 15px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.4;
+}
+.two{
+    padding: 0px 100px 100px;
+}
+.two ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.two ul>li{
+    width: 307px;
+    /* height: 350px; */
+}
+.two ul>li:nth-child(2){
+    margin: 0 5%;
+}
+.two ul>li>img{
+    width: 100%;
+}
+.three{
+    padding: 0px 100px 100px;
+}
+.three .heng-line{
+    height: 1px;
+	background-color: #59493f;
+}
+.four{
+    padding: 0px 100px 100px;
+}
+.four ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.four ul>li{
+    width: 308px;
+    /* height: 350px; */
+}
+.four ul>li:nth-child(2){
+    margin: 0 3%;
+}
+.four ul>li:nth-child(3){
+    margin-right:3%;
+}
+.four ul>li>img{
+    width: 100%;
+}
+/* 媒体查询 */
+@media screen and (max-width: 1499px) {
+    
+}

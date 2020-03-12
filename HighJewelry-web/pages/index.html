@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HighJewelry</title>
+    <!-- <link rel="stylesheet" href="../assets/css2/index.css"> -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/gotop.css">
+    <!-- <script src="../assets/js/jquery-1.10.1.min.js"></script> -->
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="../assets/js/public.js"></script> -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/layui.js"></script>
+    <script src="../assets/js/swiper-3.4.2.min.js"></script>
+    <!-- <script src="../assets/js/index.js"></script> -->
+    <script src="../assets/js/header.js"></script>
+    <!-- <script src="../assets/js/screen.js"></script> -->
+
+</head>
+<body>
+    <!-- 头部 Header -->
+    <div id="header">
+        <div class="head">
+            <div class="logo">
+                <a href="#">
+                    <img src="../assets/images/common/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="title_nav">
+                    <li navid="1">
+                        <a href="index.html" target="_Self">
+                            首页
+                            <!-- <span><small>HOME</small></span> -->
+                        </a>
+                    </li>
+                    <li >|</li>
+                    <li navid="2">
+                        <a href="list.html" target="_Self">
+                            高端珠宝
+                            <!-- <span><small>PRODUCTS</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box" >
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0">翡翠</a></li>
+                                        <li class="xft" ids="9" style="padding-top:55px;"><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89">和田玉</a></li>
+                                        <li class="xft" ids="10" style="padding-top:60px;"><a href="list.html?texture=%E7%8F%8D%E8%B4%B5%E5%AE%9D%E7%9F%B3">珍贵宝石</a></li>							    
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E6%89%8B%E9%95%AF">手镯</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E6%8C%82%E4%BB%B6">挂件</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E6%88%92%E6%8C%87">戒指</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E8%80%B3%E9%A5%B0">耳饰</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E9%A1%B9%E9%93%BE">项链</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E6%89%8B%E6%8A%8A%E4%BB%B6">手把件</a></li>
+                                            <li ><a href="list.html?texture=%E7%BF%A1%E7%BF%A0&type=%E6%91%86%E4%BB%B6">摆件</a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E6%89%8B%E9%95%AF">手镯</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E6%8C%82%E4%BB%B6">挂件</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E6%88%92%E6%8C%87">戒指</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E8%80%B3%E9%A5%B0">耳饰</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E9%A1%B9%E9%93%BE">项链</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E6%89%8B%E6%8A%8A%E4%BB%B6">手把件</a></li>
+                                            <li ><a href="list.html?texture=%E5%92%8C%E7%94%B0%E7%8E%89&type=%E6%91%86%E4%BB%B6">摆件</a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="list.html?texture=%E7%8F%8D%E8%B4%B5%E5%AE%9D%E7%9F%B3&type=%E7%BA%A2%E5%AE%9D%E7%9F%B3">红宝石</a></li>
+                                            <li ><a href="list.html?texture=%E7%8F%8D%E8%B4%B5%E5%AE%9D%E7%9F%B3&type=%E8%93%9D%E5%AE%9D%E7%9F%B3">蓝宝石</a></li>
+                                            <li ><a href="list.html?texture=%E7%8F%8D%E8%B4%B5%E5%AE%9D%E7%9F%B3&type=%E7%A5%96%E6%AF%8D%E7%BB%BF">祖母绿</a></li>
+                                            <li ><a href="list.html?texture=%E7%8F%8D%E8%B4%B5%E5%AE%9D%E7%9F%B3&type=%E9%92%BB%E7%9F%B3">钻石</a></li>									
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="nav_div frou_div">
+                                    <div>
+                                        <img src=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li navid="3">
+                        <a href="" target="_Self">
+                            会员服务
+                            <!-- <span><small>JEWELRY HALL</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >高端珠宝顾问</li>
+                                        <li class="xft" ids="9" style="padding-top:55px;">高端私人定制</li>
+                                        <li class="xft" ids="10" style="padding-top:60px;">高端珠宝俱乐部</li>							    
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <!-- <div id="three" class="nav_div three_div">
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">红宝石</a></li>
+                                            <li ><a href="">蓝宝石</a></li>
+                                            <li ><a href="">祖母绿</a></li>									
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li navid="4">
+                        <a href="" target="_Self">
+                            恒得利珠宝学院
+                            <!-- <span><small>BRAND CULTURE</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >高端珠宝知识</li>
+                                        <li class="xft" ids="9" style="padding-top:55px;">分类</li>
+                                        <!-- <li class="xft" ids="10" style="padding-top:60px;">高端珠宝俱乐部</li>							     -->
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <div class="three_ul">
+                                        <!-- 手镯/挂件/戒指/耳饰/项链/手把件/摆件 -->
+                                        <ul>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <!-- 手镯/挂件/戒指/耳饰/项链/手把件/摆件 -->
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                    <li navid="5">
+                        <a href="" target="_Self">
+                            BDD钻石
+                            <!-- <span><small>BRAND NEWS</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >友情链接</li>
+                                        <!-- <li class="xft" ids="9" style="padding-top:55px;">加入我们</li>							     -->
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <!-- <div class="three_ul">
+                                        <ul>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                        <!---->
+                    <li navid="6">
+                        <a href="" target="_Self">
+                            新闻动态
+                            <!-- <span><small>CONTACT US</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >媒体报导</li>
+                                        <li class="xft" ids="9" style="padding-top:55px;">品牌资讯</li>
+                                        <!-- <li class="xft" ids="10" style="padding-top:60px;">高端珠宝俱乐部</li>							     -->
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <!-- <div class="three_ul">
+                                        <ul>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                        
+                    <li navid="7">
+                        <a href="" target="_Self">
+                            关于我们
+                            <!-- <span><small>JEWELRY EXPERT</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >资质荣誉</li>
+                                        <li class="xft" ids="9" style="padding-top:55px;">广告视频</li>
+                                        <li class="xft" ids="10" style="padding-top:60px;">品牌理念</li>							    
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <!-- <div class="three_ul">
+                                        <ul>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>|</li>
+                       
+                    <li navid="8">
+                        <a href="" target="_Self">
+                            联系我们
+                            <!-- <span><small>JEWELRY EXPERT</small></span> -->
+                        </a>
+                        <!-- 二级菜单 -->
+                        <div class="nav_box">
+                            <div class="nav_wrap">
+                                <div class="nav_div one_div">
+                                    <ul>
+                                        <li class="xft" ids="8" >联系我们</li>
+                                        <li class="xft" ids="9" style="padding-top:55px;">加入我们</li>							    
+                                    </ul>
+                                </div>
+                                <div class="nav_div two_div">
+                                </div>
+                                <div id="three" class="nav_div three_div">
+                                    <!-- <div class="three_ul">
+                                        <ul>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>
+                                            <li ><a href=""></a></li>									
+                                        </ul>
+                                    </div>
+                                    <div class="three_ul">
+                                        <ul>
+                                            <li ><a href="">手镯</a></li>
+                                            <li ><a href="">挂件</a></li>
+                                            <li ><a href="">戒指</a></li>
+                                            <li ><a href="">耳饰</a></li>
+                                            <li ><a href="">项链</a></li>
+                                            <li ><a href="">手把件</a></li>
+                                            <li ><a href="">摆件</a></li>									
+                                        </ul>
+                                    </div> -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <div class="nav_">
+                        
+                    </div>
+                        
+                </ul>
+            </div>
+        </div>
+        <!-- 二级 -->
+        <!-- 1 -->
+        
+        <!-- <div class="nav_box abc2" >
+            <div class="nav_wrap">
+                <div class="nav_div one_div">
+                    <ul>
+                        <li class="xft" ids="8" >翡翠</li>
+                        <li class="xft" ids="9" style="padding-top:55px;">和田玉</li>
+                        <li class="xft" ids="10" style="padding-top:60px;">珍贵宝石</li>							    
+                    </ul>
+                </div>
+                <div class="nav_div two_div">
+                </div>
+                <div id="three" class="nav_div three_div">
+                    <div class="three_ul">
+                        <ul>
+                            <li ><a href="">手镯</a></li>
+                            <li ><a href="">挂件</a></li>
+                            <li ><a href="">戒指</a></li>
+                            <li ><a href="">耳饰</a></li>
+                            <li ><a href="">项链</a></li>
+                            <li ><a href="">手把件</a></li>
+                            <li ><a href="">摆件</a></li>									
+                        </ul>
+                    </div>
+                    <div class="three_ul">
+                        <ul>
+                            <li ><a href="">手镯</a></li>
+                            <li ><a href="">挂件</a></li>
+                            <li ><a href="">戒指</a></li>
+                            <li ><a href="">耳饰</a></li>
+                            <li ><a href="">项链</a></li>
+                            <li ><a href="">手把件</a></li>
+                            <li ><a href="">摆件</a></li>									
+                        </ul>
+                    </div>
+                    <div class="three_ul">
+                        <ul>
+                            <li ><a href="">手镯</a></li>
+                            <li ><a href="">红宝石</a></li>
+                            <li ><a href="">蓝宝石</a></li>
+                            <li ><a href="">祖母绿</a></li>									
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_div frou_div">
+                    <div>
+                        <img src=""/>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="nav_box nav_box1 abc4">
+            <div class="nav_wrap">
+                <ul>
+                    <li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>传奇简介</p>
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>传奇故事</p>
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>传奇历程</p>
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>传奇荣誉</p>
+                        </span>
+                        </a>
+                    </li>								
+                </ul>
+            </div>
+        </div> -->
+       
+        <!-- 3 -->
+        <!-- <div class="nav_box nav_box1 abc6">
+                <div class="nav_wrap">
+                    <ul>
+                        <li>
+                            <a href="">
+                            <span>
+                                <img src=""/>
+                                <p>联系我们</p>
+                            </span>
+                            </a>
+                        </li><li>
+                            <a href="">
+                            <span>
+                                <img src=""/>
+                                <p>加入我们</p>
+                            </span>
+                            </a>
+                        </li>								
+                    </ul>
+                </div>
+        </div> -->
+        <!-- 4 -->
+        <!-- <div class="nav_box nav_box1 abc7">
+            <div class="nav_wrap">
+                <ul>
+                    <li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>珠宝知识</p>
+                        </span>
+                        </a>
+                    </li><li>
+                        <a href="">
+                        <span>
+                            <img src=""/>
+                            <p>保养常识</p>
+                        </span>
+                        </a>
+                    </li>								
+                </ul>
+            </div>
+        </div>					 -->
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="contain">
+        <!-- 轮播图 -->
+        <section class="one">
+            <!--轮播-->
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <!-- <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li> -->
+                    <!-- <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2" ></li> -->
+                    <!-- <li data-target="#carousel-example-generic" data-slide-to="3" ></li>			   -->
+                    <!--  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>-->
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="">
+                            <img src="../assets/images/swipers/banner1.jpg" alt="..."></a>
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <!-- <div class="item ">
+                        <a href="https://vzan.com/live/tvchat-347101920">
+                            <img src="../assets/images/swipers/banner2.jpg" alt="..."></a>
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <a href="https://vzan.com/live/tvchat-347101920">
+                            <img src="../assets/images/swipers/banner2.jpg" alt="..."></a>
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div> -->
+                </div>
+                
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="m50"></div>
+            <div class="clear"></div>
+        </section>
+        <!-- 大标题 -->
+        <section class="two">
+            <div class="title">
+                <div class="tip">
+                    <!-- 钟灵玉秀  雅致美学 -->
+                    <span>钟灵<span class="i">玉秀</span></span>
+                    <span>雅致<span class="i">美学</span></span>
+                </div>
+                <div class="wire"></div>
+                <div class="bar">初心未变  匠心不止</div>
+            </div>
+            <div class="img-list">
+                <ul>
+                    <li>
+                        <!-- <div class="img1"></div> -->
+                        <img src="../assets/images/common/pro1.jpg" alt="">
+                        <div class="dec">
+                            <p class="p-title">【关于翡翠】</p>
+                            <p>
+                                翡翠是以硬玉为主，多种细小矿物组成的矿物集合体。
+                                颜色自然而富于变化，鲜艳悦目，在整个地壳中，翡
+                                翠是分布范围最狭窄、储量最少的稀有岩种之一。收
+                                藏以【种/水/色/工】为标准。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <div class="img2"></div> -->
+                        <img src="../assets/images/common/pro2.jpg" alt="">
+                        <div class="dec">
+                            <p class="p-title">【关于和田玉】</p>
+                            <p>
+                                和田玉被称为【昆仑之玉/塞山之玉/禺氏玉/钟山之玉/
+                                回部玉/昆玉/真玉/等】根据硬度于1863年命名和田玉
+                                为【软玉】,  以和田【子料】为代表闻名于世，主要产
+                                于新疆，俄罗斯青海等地。
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- <div class="img3"></div> -->
+                        <img src="../assets/images/common/pro3.jpg" alt="">
+                        <div class="dec">
+                            <p class="p-title">【关于宝石】</p>
+                            <p>
+                                彩色宝石，也称有色宝石是宝石大家族中除钻石外所
+                                有有颜色宝石的总称。由数十乃至上百种宝石共同构
+                                成的一类宝石。最贵重的【彩色宝石/如红宝石/蓝宝石/
+                                祖母绿/猫眼/钻石】并列为世界五大珍稀宝石。
+                            </p>
+                        </div>
+                    </li>   
+                </ul>   
+            </div>
+        </section>
+        <!-- 小轮播 -->
+        <section class="three">
+            <!--产品轮播-->			
+			<div class="product">
+                <div class="product_top">
+                    <ul>
+                        <li>
+                            <p class="zi">新品<span class="very">推荐</span> </p>
+                            <p class="pinying">xin &nbsp; pin &nbsp;tui&nbsp; jian</p>
+                        </li>
+                        <li>
+                            <p class="pinying">jing&nbsp; tiao&nbsp; xi&nbsp; xuan</p> 
+                            <p class="zi">精挑<span class="very">细选</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-container" style="overflow: hidden;margin-top: 80px;">
+                    <div class="swiper-wrapper" >
+                        <div class="swiper-slide li ">
+                            <span class="swiper_boder"> 
+                                <a href="">
+                                    <img src="../assets/images/swipers/ad1.jpg"/>
+                                </a>
+                            </span>
+                            <span class="fcfbdc">高端绿蛋面翡翠项链</span>
+                            <!-- <span>¥0.00联系客服询价</span> -->
+                        </div>
+                        <div class="swiper-slide li marlet">
+                            <span class="swiper_boder"> 
+                                <a href="">
+                                    <img src="../assets/images/swipers/ad2.jpg"/>
+                                </a>
+                            </span>
+                            <span class="fcfbdc">复古冰种阳绿吊坠</span>
+                            <!-- <span>¥11900.00联系客服询价</span> -->
+                        </div>
+                        <div class="swiper-slide li marlet">
+                            <span class="swiper_boder"> 
+                                <a href="">
+                                    <img src="../assets/images/swipers/ad3.jpg"/>
+                                </a>
+                            </span>
+                            <span class="fcfbdc">翡翠18k镶钻耳饰</span>
+                            <!-- <span>¥0.00联系客服询价</span> -->
+                        </div>
+                        <div class="swiper-slide li marlet">
+                            <span class="swiper_boder"> 
+                                <a href="">
+                                    <img src="../assets/images/swipers/ad4.jpg"/>
+                                </a>
+                            </span>
+                            <span class="fcfbdc">油绿翡翠冰种弥勒佛</span>
+                            <!-- <span>¥0.00联系客服询价</span> -->
+                        </div>
+                        <div class="swiper-slide li marlet">
+                            <span class="swiper_boder"> 
+                                <a href="">
+                                    <img src="../assets/images/swipers/ad5.jpg"/>
+                                </a>
+                            </span>
+                            <span class="fcfbdc">翡翠冰种贵妃镯</span>
+                        </div> 
+                    </div>
+                    
+                    
+                    <div class="m50"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部 Footer -->
+    <div id="footer">
+            <div class="cut-line"></div>
+            <div class="foot">
+                <div class="foot-title">
+                    <p>售后<span class="foot-tip">保障</span></p>
+                    <p>shou hou bao zhang</p>
+                    <p>为您呈现与众不同的贴心服务</p>
+                </div>
+                <div class="foot-list">
+                    <!-- <ul> -->
+                        <div class="list">
+                            <div>
+                                <img style="width: 35px;height: 40px;" src="../assets/images/common/kefu.png" alt="">
+                                <p>1对1专属顾问</p>
+                            </div>
+                            <p class="p-dec">售前售后7/12小时在线服务</p>
+                            <p class="p-dec">专属定制各项服务体验</p> 
+                             
+                        </div>
+                        <div class="list-line"></div>
+                        <div class="list">
+                            <div>
+                                <img style="width: 45px;height: 43px;" src="../assets/images/common/jiandin.png" alt="">
+                                <p>售后鉴定</p>
+                            </div>
+                            <p class="p-dec">商品溯源保真</p>
+                            <p class="p-dec">均有专业权威机构检测鉴定</p> 
+                        </div>
+                        <div class="list-line"></div>
+                        <div class="list">
+                            <div>
+                                <img style="width: 42px;height: 42px;" src="../assets/images/common/zhengpin.png" alt="">
+                                <p>全店保真</p>
+                            </div>
+                            <p class="p-dec">太平洋保险公司专业承保</p> 
+                            <p class="p-dec">终身支持复检</p>
+                        </div>
+                        <div class="list-line"></div>
+                        <div class="list">
+                            <div>
+                                <img style="width: 39px;height: 39px;" src="../assets/images/common/tuihuo.png" alt="">
+                                <p>7天无理由退货</p>
+                            </div>
+                            <p class="p-dec">任何不满意都可</p> 
+                            <p class="p-dec">为您提供售后无忧保真</p>
+                        </div>
+                        <div class="list-line"></div>
+                        <div class="list">
+                            <div>
+                                <img style="width: 60px;height: 36px;" src="../assets/images/common/wuliu.png" alt="">
+                                <p>售后物流</p>
+                            </div>
+                            <p class="p-dec">顺丰等一线物流公司</p> 
+                            <p class="p-dec">保价运输</p>
+                        </div>
+                    <!-- </ul> -->
+                </div>
+                <div class="company">
+                    <div class="foot-logo">
+                        <img src="../assets/images/common/logo.png" alt="">
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-link">
+                        <ul>
+                            <li><a href="#">关于我们</a> </li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="./purchase_process.html">购买流程介绍</a></li>
+                        </ul>
+                    </div>
+                    <div class="foot-link">
+                        <ul>
+                            <li><a href="./brand_culture .html">品牌文化</a></li>
+                            <li><a href="">售后服务</a></li> 
+                        </ul>
+                    </div>
+                    <div class="foot-line"></div>
+                    <div class="foot-address">
+                        <ul>
+                            <li><img style="width: 24px;height: 23px;" src="../assets/images/common/address.png" alt="">   中国广东省深圳市IBC商业珠宝大厦A座1306-1307</li>
+                            <li><img style="width: 22px;height: 20px;" src="../assets/images/common/mobile.png" alt="">+86 18665619485 / +86 0755 - 25160872</li>
+                            <li><img style="width: 23px;height: 17px;" src="../assets/images/common/email.png" alt="">James@kadart.com （https://www.kadart.com）</li>
+                        </ul>
+                    </div>
+                    <div class="ewm">
+                        <img src="../assets/images/common/ewm.jpg" alt="">
+                    </div>
+                    <!-- <div>
+                        <ul>
+                            <li></li>
+                            <div class="flag"></div>
+                            <li class="list1">
+                                <div class="list1-1">
+                                    <p>关于我们</p>
+                                    <p>联系我们</p>
+                                    <p>购买流程介绍</p>
+                                </div>
+                                <div class="list1-2">
+                                    <p>品牌文化</p>
+                                    <p>售后服务</p>
+                                </div>
+                            </li>
+                            <li class="list2">
+                                <ul>
+                                    <li><img style="width: 24px;height: 23px;" src="../assets/images/common/address.png" alt="">   中国广东省深圳市IBC商业珠宝大厦A座1306-1307</li>
+                                    <li><img style="width: 22px;height: 20px;" src="../assets/images/common/mobile.png" alt="">+86 18665619485 / +86 0755 - 25160872</li>
+                                    <li><img style="width: 23px;height: 17px;" src="../assets/images/common/email.png" alt="">James@kadart.com （https://www.kadart.com）</li>
+                                </ul>
+                                <ul>
+                                    <li><img src="../assets/images/common/ewm.jpg" alt=""></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+    </div>  
+    <script type="text/javascript">
+		var mySwiper = new Swiper('.swiper-container',{
+		slidesPerView : 5,
+		slidesPerGroup : 5,
+		pagination : '.swiper-pagination',
+		prevButton:'.swiper-button-prev',
+        nextButton:'.swiper-button-next',
+        paginationClickable :true,
+        autoplayDisableOnInteraction : false,
+        autoplay:4000,
+//      loop : true,
+		})
+       
+    </script>
+        
+</body>
+</html>
