@@ -7,19 +7,19 @@
                     "texture":"",
                     "type":"",
                     "pro_name":"山水意境牌",
-                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg"
+                    "pro_img": "../images/hetianyu/baijian/15.jpg"
                 },
                 {
                     "texture":"",
                     "type":"",
                     "pro_name":"和田玉籽料原石",
-                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg"
+                    "pro_img": "../images/hetianyu/baijian/30.jpg"
                 },
                 {
                     "texture":"",
                     "type":"",
                     "pro_name":"渔樵耕读",
-                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg"
+                    "pro_img": "../images/hetianyu/baijian/31.jpg"
                 }
             ]
         }

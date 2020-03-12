@@ -10,14 +10,18 @@
     font-size: 14px;
     border-bottom: solid 1px #a0a0a0;
 }
-
+.spe{
+    margin-left: 100px;
+}
 :before, :after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-
+.three_div a:hover{
+    color: #fff;
+}
 .filter_box .nav_wrap{
     display: flex;
 }
@@ -42,12 +46,18 @@
     text-align: center;
     width: 100px;
 }
+/* .filter_box .three_div a:hover{
+    color:none !important;
+} */
 .on{
     width: 78px;
     height: 20px;
     padding: 3px 20px;
     border: solid 1px #f5a135;
     color: #f5a135;
+}
+.on:hover{
+    color: #f5a135 !important;
 }
 .title-active{
     width: 78px;

@@ -7,13 +7,13 @@
                     "texture":"",
                     "type":"",
                     "pro_name":"龙马精神",
-                    "pro_img": "../assets/images/hetianyu/guajian/28.jpg"
+                    "pro_img": "../images/hetianyu/guajian/28.jpg"
                 },
                 {
                     "texture":"",
                     "type":"",
                     "pro_name":"花开富贵",
-                    "pro_img": "../assets/images/hetianyu/guajian/29.jpg"
+                    "pro_img": "../images/hetianyu/guajian/29.jpg"
                 }
             ]
         }

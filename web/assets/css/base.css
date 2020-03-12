@@ -2,8 +2,9 @@
 ul{margin: 0;padding: 0;}
 li{list-style: none;cursor: pointer;}
 a{text-decoration: none !important;color: #fff;}
-a:hover{
-    color: #fff;
+a:focus{
+    outline: none;
+    color:none;
 }
 /* span{display: block;} */
 body,html{
