@@ -9,7 +9,7 @@ $(function(){
     var showDistance = 10;
 
     //定义一个变量，方便后面加入在html元素标签中插入这个goToTop按钮的标签
-    var goToTopButton = $('<div id="goToTop"><a href="javascript:;">返回</a></div>');
+    var goToTopButton = $('<div id="goToTop"><a href="javascript:;"></a></div>');
 
     var thisTop = $(window).scrollTop() + topDistance;
 

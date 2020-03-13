@@ -14,12 +14,12 @@ $(function(){
 
         let urlAll = '';
         if(texture == null && type == null){
-            urlAll = '../JsonData/allList.json';
+            urlAll = '../assets/JsonData/allList.json';
             $('#own').addClass('div_show')
         }
         // 所有材质分类
         if(texture == '翡翠'){
-            urlAll = '../JsonData/feicui/feicui.json';
+            urlAll = '../assets/JsonData/feicui/feicui.json';
             $('#first').addClass('div_show')
             $('#own').removeClass('div_show')
             if(type !== null){
@@ -29,7 +29,7 @@ $(function(){
             }
         }
         if(texture == '和田玉'){
-            urlAll = '../JsonData/hetianyu/hetianyu.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu.json';
             $('#second').addClass('div_show')
             $('#own').removeClass('div_show')
             if(type !== null){
@@ -39,7 +39,7 @@ $(function(){
             }
         }
         if(texture == '珍贵宝石'){
-            urlAll = '../JsonData/baoshi/baoshi.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi.json';
             $('#third').addClass('div_show')
             $('#own').removeClass('div_show')
             if(type !== null){
@@ -48,108 +48,108 @@ $(function(){
         }
         // 翡翠
         if(texture == '翡翠' && type == '手镯'){
-            urlAll = '../JsonData/feicui/feicui_shouzhuo.json';
+            urlAll = '../assets/JsonData/feicui/feicui_shouzhuo.json';
         }
         if(texture == '翡翠' && type == '挂件'){
-            urlAll = '../JsonData/feicui/feicui_guajian.json';
+            urlAll = '../assets/JsonData/feicui/feicui_guajian.json';
         }
         if(texture == '翡翠' && type == '戒指'){
-            urlAll = '../JsonData/feicui/feicui_jiezhi.json';
+            urlAll = '../assets/JsonData/feicui/feicui_jiezhi.json';
         }
         if(texture == '翡翠' && type == '耳饰'){
-            urlAll = '../JsonData/feicui/feicui_ershi.json';
+            urlAll = '../assets/JsonData/feicui/feicui_ershi.json';
         }
         if(texture == '翡翠' && type == '项链'){
-            urlAll = '../JsonData/feicui/feicui_xianglian.json';
+            urlAll = '../assets/JsonData/feicui/feicui_xianglian.json';
         }
         if(texture == '翡翠' && type == '手把件'){
-            urlAll = '../JsonData/feicui/feicui_shoubajian.json';
+            urlAll = '../assets/JsonData/feicui/feicui_shoubajian.json';
         }
         if(texture == '翡翠' && type == '摆件'){
-            urlAll = '../JsonData/feicui/feicui_baijian.json';
+            urlAll = '../assets/JsonData/feicui/feicui_baijian.json';
         }
         
         // 和田玉
 
         if(texture == '和田玉' && type == '手镯'){
-            urlAll = '../JsonData/hetianyu/hetianyu_shouzhuo.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_shouzhuo.json';
         }
         if(texture == '和田玉' && type == '挂件'){
-            urlAll = '../JsonData/hetianyu/hetianyu_guajian.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_guajian.json';
         }
         if(texture == '和田玉' && type == '戒指'){
-            urlAll = '../JsonData/hetianyu/hetianyu_jiezhi.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_jiezhi.json';
         }
         if(texture == '和田玉' && type == '耳饰'){
-            urlAll = '../JsonData/hetianyu/hetianyu_ershi.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_ershi.json';
         }
         if(texture == '和田玉' && type == '项链'){
-            urlAll = '../JsonData/hetianyu/hetianyu_xianglian.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_xianglian.json';
         }
         if(texture == '和田玉' && type == '手把件'){
-            urlAll = '../JsonData/hetianyu/hetianyu_shoubajian.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_shoubajian.json';
         }
         if(texture == '和田玉' && type == '摆件'){
-            urlAll = '../JsonData/hetianyu/hetianyu_baijian.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_baijian.json';
         }
 
         // 珍贵宝石
         if(texture == '珍贵宝石' && type == '红宝石'){
-            urlAll = '../JsonData/baoshi/baoshi_hongbaoshi.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi_hongbaoshi.json';
         }
         if(texture == '珍贵宝石' && type == '蓝宝石'){
-            urlAll = '../JsonData/baoshi/baoshi_lanbaoshi.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi_lanbaoshi.json';
         }
         if(texture == '珍贵宝石' && type == '祖母绿'){
-            urlAll = '../JsonData/baoshi/baoshi_zumulv.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi_zumulv.json';
         }
         if(texture == '珍贵宝石' && type == '钻石'){
-            urlAll = '../JsonData/baoshi/baoshi_zuanshi.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi_zuanshi.json';
         }
         
         // 所有材质下的类型分类
         if(texture == '翡翠' && type == null){
-            urlAll = '../JsonData/feicui/feicui.json';
+            urlAll = '../assets/JsonData/feicui/feicui.json';
         }
         if(texture == '和田玉' && type == null){
-            urlAll = '../JsonData/hetianyu/hetianyu.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu.json';
         }
         if(texture == '珍贵宝石' && type == null){
-            urlAll = '../JsonData/baoshi/baoshi.json';
+            urlAll = '../assets/JsonData/baoshi/baoshi.json';
         }
         // 所有类型分类
         if(texture == null && type == '手镯'){
-            urlAll = '../JsonData/all/all_shouzhuo.json';
+            urlAll = '../assets/JsonData/all/all_shouzhuo.json';
         }
         if(texture == null && type == '挂件'){
-            urlAll = '../JsonData/all/all_guajian.json';
+            urlAll = '../assets/JsonData/all/all_guajian.json';
         }
         if(texture == null && type == '戒指'){
-            urlAll = '../JsonData/all/all_jiezhi.json';
+            urlAll = '../assets/JsonData/all/all_jiezhi.json';
         }
         if(texture == null && type == '耳饰'){
-            urlAll = '../JsonData/all/all_ershi.json';
+            urlAll = '../assets/JsonData/all/all_ershi.json';
         }
         if(texture == null && type == '项链'){
-            urlAll = '../JsonData/all/all_xianglian.json';
+            urlAll = '../assets/JsonData/all/all_xianglian.json';
         }
         if(texture == null && type == '手把件'){
-            urlAll = '../JsonData/all/all_shoubajian.json';
+            urlAll = '../assets/JsonData/all/all_shoubajian.json';
         }
         if(texture == null && type == '摆件'){
-            urlAll = '../JsonData/all/all_baijian.json';
+            urlAll = '../assets/JsonData/all/all_baijian.json';
         }
         if(texture == null && type == '红宝石'){
-            urlAll = '../JsonData/all/all_hongbaoshi.json';
+            urlAll = '../assets/JsonData/all/all_hongbaoshi.json';
         }
         if(texture == null && type == '蓝宝石'){
-            urlAll = '../JsonData/all/all_lanbaoshi.json';
+            urlAll = '../assets/JsonData/all/all_lanbaoshi.json';
         }
         if(texture == null && type == '祖母绿'){
-            urlAll = '../JsonData/hetianyu/hetianyu_jiezhi.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_jiezhi.json';
         }
         if(texture == null && type == '钻石'){
-            urlAll = '../JsonData/hetianyu/hetianyu_ershi.json';
+            urlAll = '../assets/JsonData/hetianyu/hetianyu_ershi.json';
         }
         
 
