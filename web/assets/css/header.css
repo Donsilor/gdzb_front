@@ -7,15 +7,14 @@
     background: #000000;
     /* background: linear-gradient(#131313, #181818,#1e1e1e);  */
     position: relative;
-    border-bottom: solid 1px #fffeff;
+    border-bottom: solid 1px #2A2A2A;
 }
 #header>.head{
-    width: 90%;
+    width: 75%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
 }
 #header>.head>.logo{
     width: 96px;
@@ -26,7 +25,7 @@
 
 }
 #header>.head>.menu{
-    width: 85%;
+    width: 80%;
     
 }
 #header>.head>.menu>ul{
@@ -41,12 +40,12 @@
 	font-weight: normal;
 	font-stretch: normal;
 	letter-spacing: 0px;
-	color: #ffffff;
+	color: #535353;
 }
 #header>.head>.menu>ul>li>a{
     color: #ffffff;
 }
-#header>.head>.menu>ul>li>a:hover{border-bottom: 4px solid #d9aa1b;color: #d9aa1b !important;}
+#header>.head>.menu>ul>li>a:hover{border-bottom: 1px solid #d9aa1b;color: #d9aa1b !important;}
 #header>.head>.menu>ul>li>a:hover{color: #d9aa1b !important;}
 /* 二级菜单  #header>.head>.menu>ul>li>*/
 #header .nav_box{
@@ -64,7 +63,9 @@
 #header .nav_box>.nav_wrap{margin: 0 auto;width: 894px;height: auto;margin-left: 19%;position: relative;}
 #header .nav_box>.nav_wrap>.nav_div{float: left;margin-top: 54px;margin-bottom: 10px;}
 #header .nav_box>.nav_wrap>.one_div{width: 19%;border-right: 1px solid #766639;}
-
+#header .nav_box .nav_wrap .nav_div .three_ul a:hover{
+    color: #d9aa1b !important;
+}
 #header .xft a:hover{color: #d9aa1b !important;}
 
 #header .nav_box>.nav_wrap>.one_div>ul>li{

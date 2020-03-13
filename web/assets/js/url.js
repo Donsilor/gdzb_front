@@ -174,7 +174,7 @@ $(function(){
                                 <img src="" alt="">\
                             </div>\
                             <p class="underline"></p>\
-                            <p style="cursor: pointer;" class="more">点击查看</p>\
+                            <p style="cursor: pointer;" class="more">点击查看></p>\
                         </div>\
                     </div>\
                 ';

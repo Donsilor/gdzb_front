@@ -11,7 +11,7 @@
 img{width: 100%;}
 
 /*广告*/
-.advertising{width: 90%;margin: 0 auto;position: relative;border: 1px solid #262626;box-shadow:0 2px 2px black;}
+.advertising{width: 80%;margin: 0 auto;position: relative;border: 1px solid #262626;box-shadow:0 2px 2px black;}
 .advertising>span{position: absolute;right: 185px;bottom: 36px;letter-spacing: 3px;}
 .advertising>.right{position: absolute;right: 180px;bottom: 50px;letter-spacing: 2px;}
 .advertising>.left{position: absolute;left: 182px;bottom: 6px;letter-spacing: 1px;}
@@ -27,13 +27,14 @@ img{width: 100%;}
 }
 /*产品轮播*/
 .product{margin-bottom:80px;overflow: hidden;}
-
-
+.product img{
+    border:1px solid #fffeff;
+}
 .product>.swiper-container>.swiper-wrapper>.li{width: 15% !important;text-align: center;color: #b8a159;font-size: 16px;}
 
 .product>.swiper-container>.swiper-wrapper>.li>.swiper_boder>img{width: 210px;height: 210px}
 /* .product>.swiper-container>.swiper-wrapper>.li>.swiper_boder:hover{border: 2px solid #cdb463;} */
-.product>.swiper-container>.swiper-wrapper>.li>.fcfbdc{color: #fcfbdc;padding-top: 48px;font-size: 18px;}
+.product>.swiper-container>.swiper-wrapper>.li>.fcfbdc{color: #ffffff;padding-top: 30px;font-size: 18px;display: inline-block;}
 .product>.swiper-container>.swiper-wrapper{margin-left: 11.5%;margin-right: 20px;}
 .product>.swiper-container>.swiper-wrapper>.marlet{margin-left: 10px;}
 .m50{margin-top: 50px;}
@@ -41,7 +42,8 @@ img{width: 100%;}
 /* 标题 */
 .two{
     background: #000000;
-    padding: 60px 100px;
+    width: 75%;
+    margin: 0 auto;
 }
 .three{
     padding-botton: 100px;
@@ -51,6 +53,9 @@ img{width: 100%;}
     font-size: 38px;
     text-align: center;
     margin-bottom: 50px;
+}
+.titles img{
+    width: 100%;
 }
 .title>.tip>span{
     color: #ffffff;
@@ -76,7 +81,7 @@ img{width: 100%;}
 }
 .img-list>ul{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 /* .img1{
     width: 100%;
@@ -111,6 +116,13 @@ img{width: 100%;}
     /* width: 406px;
 	height: 382px;
     border: 1px solid #fff; */
+}
+.p-dec{
+	font-size: 17px;
+	font-weight: normal;
+	letter-spacing: -7px;
+	color: #8b8b8b;
+	opacity: 0.7;
 }
 .img-list>ul>li>.dec{
     font-family: FZLTXHJW--GB1-0;

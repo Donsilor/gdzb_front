@@ -1,8 +1,14 @@
 #footer a:hover{
     color:#fff;
 }
+#footer a:focus{
+    color:#fff!important;
+}
+.foot_title img,.foot_list img{
+    width: 100%;
+}
 .foot{
-    padding:80px
+    /* padding:80px */
 }
 .foot-title{
     text-align: center;
@@ -21,7 +27,6 @@
 	color: #ffffff;
 }
 .foot-title>p:nth-child(2){
-    font-family: FZKTJW--GB1-0;
 	font-size: 17px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -30,7 +35,6 @@
 	color: #ffffff;
 }
 .p-dec{
-    font-family: FZLTXHJW--GB1-0;
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -42,7 +46,6 @@
     text-align: center;
 }
 .foot-tip{
-    font-family: FZDBSJW--GB1-0;
 	font-size: 38px;
 	font-weight: normal;
 	letter-spacing: 5px;
@@ -50,7 +53,7 @@
 }
 .cut-line{
     height: 1px;
-    background: #ffffff;
+    background: #2A2A2A;
 }
 .foot-list{
     margin: 50px;
@@ -116,29 +119,29 @@
 .company{
     display: flex;
     justify-content: space-around;
-    margin: 5%;
+    margin:0 10% 80px;
     background-color: #2C1D0A;
-    height: 144px;
+    height: 170px;
     /* opacity: 0.4; */
     
 }
 .foot-line{
     width: 1px;
-    background: #fff;
+    background: #fffeff;
     height: 80px;
-    margin: 30px 0;
+    margin: 45px 0;
+    opacity: 0.28;
 }
 .company li{
     color:#ffffff;
 }
 .foot-logo img{
     width: 108px;
-    height: 102px;
-    margin: 20px 0;
+    margin: 35px 0;
 }
 .company>div>ul{
     height: 144px;
-    padding: 20px 0;
+    padding: 35px 0;
     /* padding: 20px; */
     /* display: flex;
     justify-content: space-around;
@@ -146,9 +149,14 @@
 }
 .foot-link li{
     line-height: 35px;
+    font-size:17px;
 }
 .foot-address li{
     line-height: 35px;
+    font-size:17px;
+}
+.foot-address img{
+    margin-right: 10px;
 }
 .ewm{
     width: 101px;

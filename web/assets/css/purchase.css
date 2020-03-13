@@ -1,8 +1,8 @@
-.purchase_contain{
-
+.purchase_contain img{
+    width: 100%;
 }
 .purchase_contain>.one{
-    padding:200px 100px 100px;
+    /* padding:200px 100px 100px; */
     text-align: center;
 }
 .purchase_contain>.one>.title{
@@ -34,7 +34,7 @@
 	opacity: 0.4;
 }
 .two{
-    padding: 0px 100px 100px;
+    /* padding: 0px 100px 100px; */
 }
 .two ul{
     width: 100%;

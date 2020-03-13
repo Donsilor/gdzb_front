@@ -1,9 +1,9 @@
 
-.culture_contain{
-
+.culture_contain img{
+    width: 100%;
 }
 .culture_contain>.one{
-    padding:200px 150px 100px;
+    /* padding:200px 150px 100px; */
     /* text-align: center; */
 }
 .culture_contain>.one>.title2{
@@ -35,7 +35,7 @@
 	opacity: 0.4;
 }
 .two{
-    padding: 0px 180px 180px;
+    /* padding: 0px 180px 180px; */
 }
 .two ul{
     width: 100%;
