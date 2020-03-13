@@ -7,10 +7,10 @@
     background: #000000;
     /* background: linear-gradient(#131313, #181818,#1e1e1e);  */
     position: relative;
-    border-bottom: solid 1px #2A2A2A;
+    border-bottom: solid 1px #4E4E4E;
 }
 #header>.head{
-    width: 75%;
+    width: 68%;
     height: 100%;
     margin: 0 auto;
     display: flex;

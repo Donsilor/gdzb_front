@@ -8,6 +8,7 @@ a:focus{
 }
 /* span{display: block;} */
 body,html{
+    min-width: 1340px;
     /* background: url(../img/2_bj.jpg);
     font-family: "Source Han Sans","微軟正黑體","微软雅黑"; */
     background: #000000;

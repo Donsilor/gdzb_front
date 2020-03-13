@@ -1,5 +1,5 @@
 .filter-menu{
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     line-height: 48px;
     padding: 50px 0;
@@ -11,7 +11,7 @@
     border-bottom: solid 1px #a0a0a0;
 }
 .spe{
-    margin-left: 95px;
+    margin-left: 100px;
 }
 :before, :after {
     -webkit-box-sizing: border-box;
@@ -76,14 +76,17 @@
     color: #f5a135;
 }
 .pro_list{
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     padding: 50px 0;
     display: flex;
     /* justify-content: space-around; */
 }
 .pro_list .pro_img{
-    width: 273px;
+    /* width: 22.8%; */
+}
+.list{
+    width: 22.8%;
 }
 .pro_list .pro_img img{
     width: 100%;
@@ -92,7 +95,7 @@
 	border: solid 1px #a0a0a0;
 }
 .pro_list .underline{
-    border-bottom: solid 1px #7d7d7d;;
+    border-bottom: solid 1px #383838;
     font-family: FZLTXHJW--GB1-0;
 	font-size: 17px;
 	font-weight: normal;
@@ -103,11 +106,11 @@
     margin-top: 15px;
 }
  .pro_list .list:nth-child(2){
-    margin-right: 3%;
-    margin-left: 3%
+    margin-right: 2.93%;
+    margin-left: 2.93%;
 }
 .pro_list .list:nth-child(3){
-    margin-right: 3%;
+    margin-right: 2.93%;
 } 
 .pro_list p{
     margin-bottom: 0;
@@ -164,7 +167,7 @@ a:active {
     text-decoration: none;
 }
 
-/* 媒体查询 */
+/* 媒体查询
 @media screen and (max-width: 1500px) {
     .pro_list .pro_img{
         width: 235px;
@@ -224,4 +227,4 @@ a:active {
     .pro_list .list:nth-child(3){
         margin-right: 2%;
     } 
-}
+} */

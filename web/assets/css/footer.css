@@ -53,7 +53,7 @@
 }
 .cut-line{
     height: 1px;
-    background: #2A2A2A;
+    background: #4E4E4E;
 }
 .foot-list{
     margin: 50px;
@@ -116,12 +116,16 @@
 .foot-list>ul>li>div:last-child>p{
     margin-top: 10px;
 } */
+.company-box{
+    margin-bottom: 5%;
+}
 .company{
+    width: 1345px;
     display: flex;
     justify-content: space-around;
-    margin:0 10% 80px;
+    margin:0 auto;
     background-color: #2C1D0A;
-    height: 170px;
+    height: 150px;
     /* opacity: 0.4; */
     
 }
@@ -129,7 +133,7 @@
     width: 1px;
     background: #fffeff;
     height: 80px;
-    margin: 45px 0;
+    margin: 35px 0;
     opacity: 0.28;
 }
 .company li{
@@ -137,11 +141,11 @@
 }
 .foot-logo img{
     width: 108px;
-    margin: 35px 0;
+    margin: 23px 0;
 }
 .company>div>ul{
     height: 144px;
-    padding: 35px 0;
+    padding: 23px 0;
     /* padding: 20px; */
     /* display: flex;
     justify-content: space-around;
