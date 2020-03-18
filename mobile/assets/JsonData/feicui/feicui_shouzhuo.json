@@ -1,0 +1,85 @@
+{
+    "code":"success",
+    "data":[
+        {
+            "thumb_src":[
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"糯种阳绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/6.jpg"
+                },
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"翠绿圆条手镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/7.jpg"
+                }
+            ]
+        },
+        {
+            "thumb_src":[
+                
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"冰糯翠绿圆条手镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/8.jpg"
+                },
+                {
+                    "pro_name":"冰种晴绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/9.jpg"
+                }
+            ]
+        },
+        {
+            "thumb_src":[
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"满翠绿圆条手镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/10.jpg"
+                },
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"满翠绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/11.jpg"
+                }
+            ]
+        },
+        {
+            "thumb_src":[
+
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"冰糯翠绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/12.jpg"
+                },
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"冰种晴水圆条手镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/19.jpg"
+                }
+            ]
+        },
+        {
+            "thumb_src":[
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"满翠绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/24.jpg"
+                },
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"冰糯阳绿平安镯",
+                    "pro_img": "../assets/images/feicui/shouzhuo/25.jpg"
+                }
+            ]
+        }
+    ]
+}

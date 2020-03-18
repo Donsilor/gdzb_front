@@ -1,0 +1,29 @@
+$(function(){
+    $('.menuicon').click(function(){
+        $('.menu').addClass('open')
+        $('.menu').removeClass('close')
+        $('.menu-box').css("display","block")
+        $('body').css("height","100%")
+        $('body').css("overflow","hidden")
+        $('html').css("height","100%")
+        $('html').css("overflow","hidden")
+    })
+    $('.menu-top img').click(function(){
+        $('.menu').removeClass('open')
+        $('.menu').addClass('close')
+        $('.menu-box').css("display","none")
+        $('body').css("height","100%")
+        $('body').css("overflow","visible")
+        $('html').css("height","100%")
+        $('html').css("overflow","visible")
+    })
+    $(".list_dt").on("click",function () {
+        $('.list_dd').stop();
+        $(this).siblings("dt").removeAttr("id");
+        if($(this).attr("id")=="open"){
+            $(this).removeAttr("id").siblings("dd").slideUp();
+        }else{
+            $(this).attr("id","open").next().slideDown().siblings("dd").slideUp();
+        }
+    });
+})

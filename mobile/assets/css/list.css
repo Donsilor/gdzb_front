@@ -1,0 +1,210 @@
+.contain-list img{
+    width: 100%;
+}
+.filter-menu{
+    border-top: 1px solid #fff;
+    border-bottom:1px solid #fff;
+    font-size: 14px;
+    border-bottom: solid 1px #a0a0a0;
+    color:#fff;
+    /* padding-left: 5%; */
+}
+
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ul>li>a:hover{
+    color: #f5a135!important;
+}
+/* .filter_box .nav_wrap{
+    display: flex;
+    justify-content: space-between;
+} */
+.filter_box .one_div{
+    width: 10%;
+    text-align: center;
+    font-family: FZLTXHJW--GB1-0;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.filter_box .two_div{
+    /* width: 1px; */
+    background: #fff;
+}
+.filter_box .filter>ul{
+    display: flex;
+    /* justify-content: space-around; */
+}
+.filter_box .filter>ul>li{
+    position: relative;
+}
+.filter_box .filter>ul>li>div{
+    width: 100%;
+    position: absolute;
+    background-color: #2F2F2F;
+    z-index: 999999;
+    opacity: 0.9;
+    display: none;
+    top:65px;
+}
+.filter_box .three_div .filter>ul>li{
+    text-align: center;
+    width: 20%;
+    font-size: 25px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.glyphicon{
+    font-size: 14px;
+    margin-left: 7px;
+}
+.filter_box .three_div .filter>ul>li>div li{
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    line-height: 45px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+}
+.filter_box .three_div .filter>ul>li>div li a:hover{
+    color: #f5a135!important;
+}
+.filter{
+    padding: 30px 10px;
+}
+.filter_box .three_div ul li a{
+    position: relative;
+}
+.filter_icon{
+    position: absolute;
+    right: -18px;
+    top: 13px;
+    display: block;
+    width: 14px;
+    height: 9px;
+    background: url("../images/common/filterdown.png") no-repeat;
+    background-size: cover;
+}
+.on .filter_icon{
+    background: url("../images/common/filterdown.png") no-repeat;
+    background-size: cover;
+    /* transform: rotate(180deg); */
+}
+.filter_box .three_div .filter>ul>li:not(:last-child){
+    border-right:1px solid #fff;
+}
+.filter_box .filter>ul>li>div li{
+    font-size: 16px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.filter_box .filter>ul>li>div li:hover{
+    color: #f5a135!important;
+    /* opacity: 0.4; */
+}
+.on{
+    width: 78px;
+    height: 20px;
+    /* padding: 3px 20px; */
+    /* border: solid 1px #f5a135; */
+    color: #f5a135!important;
+}
+.title-active{
+    width: 78px;
+    height: 20px;
+    padding: 3px 20px;
+    border: solid 1px #f5a135;
+    color: #f5a135;
+}
+.active{
+    color: #f5a135;
+}
+.pro_list{
+    padding: 50px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.list{
+    width: 45%;
+}
+.pro_list .pro_img{
+    
+}
+.pro_list .pro_img img{
+    width: 100%;
+	/* height: 100%; */
+	/* background-color: #f1f3f4; */
+	border: solid 1px #a0a0a0;
+}
+.pro_list .underline{
+    font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.8;
+    border-bottom: solid 1px #7d7d7d;
+}
+ .pro_list .list:nth-child(2){
+    margin-left: 4%;
+}
+.pro_list p{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.totle{
+    text-align: center;
+    padding: 20px 0;
+	font-size: 17px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.8;
+}
+.list-bar{
+    margin: 0 30px;
+}
+.more{
+    cursor: pointer;
+	color: #f5a135;
+    text-align: right;
+    font-size: 19px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	opacity: 0.8;
+}
+.no_pro{
+    padding: 100px;
+    font-size: 25px;
+    color: #f5a135;
+}
+.div_show{
+    display: block!important;
+}
+a:link {
+    text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+    text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+    text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+    text-decoration: none;
+}
+

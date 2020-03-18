@@ -1,0 +1,32 @@
+{
+    "code":"success",
+    "data":[
+        {
+            "thumb_src":[
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"山水意境牌",
+                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg"
+                },
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"和田玉籽料原石",
+                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg"
+                }
+            ]
+        },
+        {
+            "thumb_src":[
+               
+                {
+                    "texture":"",
+                    "type":"",
+                    "pro_name":"渔樵耕读",
+                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg"
+                }
+            ]
+        }
+    ]
+}

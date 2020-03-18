@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0;}
+ul{margin: 0;padding: 0;}
+li{list-style: none;cursor: pointer;}
+a{text-decoration: none !important;color: #fff;}
+a:hover{
+    color: #fff;
+}
+/* span{display: block;} */
+body,html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* background: url(../img/2_bj.jpg);
+    font-family: "Source Han Sans","微軟正黑體","微软雅黑"; */
+    background: #000000;
+}
+.clear{clear: both;}
+.m50{margin-top: 50px;}
+.m20{margin-top: 20px !important;}
+.text_inem{text-indent: 4em;}
+.boder_none{border: none;}
+.flleft{float: left !important;}
+.flright{float: right !important;}
+.maright{margin-right: 0px !important;}
+.shou{cursor: pointer !important;}
+.kefu{background: url(../img/kefu.jpg)no-repeat;position: fixed;
+    top: 21%;left: 33%;z-index: 9999;background: rgba(0,0,0,.3);width: auto;height: auto;}
+.kefu .gbtc{position: absolute;top: 18px;right: 16px;display: block;width: 20px;height: 20px}
+.kefu .shzs{position: absolute;top: 366px;left: 110px;display: block;width: 180px;height: 36px}

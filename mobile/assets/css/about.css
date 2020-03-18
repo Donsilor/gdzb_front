@@ -1,0 +1,16 @@
+.contain-about img{
+    width: 100%;
+}
+.sec2 div{
+    font-size: 30px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 32px;
+	letter-spacing: -1px;
+	color: #ffffff;
+}
+.sec2 img{
+    width: 32px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
