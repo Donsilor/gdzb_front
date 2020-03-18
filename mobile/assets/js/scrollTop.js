@@ -47,5 +47,5 @@ $(function(){
         $('html ,body').animate({scrollTop: 0}, 300);
         return false;
     });
-    window.onload = function(){setTimeout(function(){$(window).scrollTop(0)},10);}
+    // window.onload = function(){setTimeout(function(){$(window).scrollTop(0)},10);}
 });

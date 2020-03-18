@@ -1,4 +1,8 @@
+
 $(function(){
+    var _default = -1;
+    var max_default = 3;
+    var list = []
     init()
     function init() {   
         // 列表数据
@@ -178,17 +182,28 @@ $(function(){
                         </div>\
                     </div>\
                 ';
-                var data=res.data 
+                list = res.data
+                var data=res.data; 
                 
                 $.each(data,function(index,value){
-                        var row = $('<div class="pro_list">');
-                            $.each(value.thumb_src,function(i,v){
-                                let htm = $(html);
-                        htm.find('img').attr('src', v.pro_img);
-                        htm.find('.underline').append( v.pro_name);
-                        row.append(htm);
-                        });
-                        $(".product").append(row);
+                    
+                    // console.log(_default)
+                    // inits()
+                    // function inits(){
+                        // loadMore()
+                        if(index < max_default && index > _default){
+                            var row = $('<div class="pro_list">');
+                                $.each(value.thumb_src,function(i,v){
+                                    let htm = $(html);
+                            htm.find('img').attr('src', v.pro_img);
+                            htm.find('.underline').append( v.pro_name);
+                            row.append(htm);
+                            });
+                            $(".product").append(row);
+                        }
+                        
+                    // }
+                    
                 });
                 // 二维码弹框
                 $('.more').click(function(){
@@ -203,4 +218,24 @@ $(function(){
             }
         });
     }
+    
+    $(".loadmore").click(function(){
+        // console.log("_default",max_default)
+        // console.log("list",_default)
+        // $('.product').html("");
+        if(_default<list.length){
+            max_default = max_default + 3
+            _default = _default + 3;
+        } 
+        if(max_default > list.length){
+            console.log(99999)
+            $('.loadmore').html("<p>已加载全部</p>");
+        }
+        $('.loadmore img').css("display","block")
+        if(list){
+            $('.loadmore img').css("display","none")
+        }
+        init()
+    })
+
 })

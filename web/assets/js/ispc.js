@@ -8,7 +8,7 @@ $(function(){
 	// // 	host = 'http://www.gdzb.bddia.com';
 	// // }
     // console.log("mobile_flag",headerHost+path)
-    // if(!mobile_flag){
+    // if(mobile_flag){
     //     window.location.replace = headerHost + path;  
     // }
 });

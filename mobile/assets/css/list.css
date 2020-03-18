@@ -207,4 +207,20 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-
+.loadmore{
+    height: 97px;
+    background-color: #704104;
+    font-size: 29px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 97px;
+	letter-spacing: -1px;
+    color: #ffffff;
+    text-align: center;
+}
+.loadmore img{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 20px;
+    display: none;
+}

@@ -26,6 +26,8 @@
                     "pro_img": "../assets/images/feicui/shouzhuo/8.jpg"
                 },
                 {
+                    "texture":"",
+                    "type":"",
                     "pro_name":"冰种晴绿平安镯",
                     "pro_img": "../assets/images/feicui/shouzhuo/9.jpg"
                 }

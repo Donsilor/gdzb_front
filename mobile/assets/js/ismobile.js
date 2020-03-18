@@ -8,11 +8,9 @@ $(function(){
 	// 	host = 'http://www.gdzb.bddia.com';
 	// }
     // console.log("mobile_flag",host + path)
-    // if(mobile_flag){
+    // if(!mobile_flag){
     //     window.location.replace = host + path;  
-    // } else {
-    //     window.location.replace = host + path
-    // }
+    // } 
 });
 function isMobile() {
     var userAgentInfo = navigator.userAgent;
@@ -41,12 +39,6 @@ function isMobile() {
 
      return mobile_flag;
 }
-
-// if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {  
-//     window.location.href="你的手机版地址";  
-// }else{  
-//     window.location.href="你的电脑版地址";  
-// }  
 
 
 
