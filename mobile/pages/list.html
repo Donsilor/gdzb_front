@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="../assets/css/jquery.page.css">
     <link rel="stylesheet" href="../assets/css/gotop.css">
     <link rel="stylesheet" href="../assets/css/menu.css">
-    <link rel="stylesheet" href="../assets/css/layui.css">
+    <!-- <link rel="stylesheet" href="../assets/css/layui.css"> -->
     <script src="../assets/js/jquery-1.11.3.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/layui.js"></script>
+    <!-- <script src="../assets/js/layui.js"></script> -->
     <script src="../assets/js/swiper.min.js"></script>
     <script src="../assets/js/jquery.page.js"></script>
     <script src="../assets/js/scrollTop.js"></script>
@@ -356,7 +356,10 @@
             // console.log(j)
             localStorage.setItem('index', j)
         })
-
+        $('.ul>li>a').click(function(){
+            
+        })
+        // 点击筛选菜单切换箭头
         $('.ul>li>a').hover(function(){
 
             if( $(this).find('i').hasClass('glyphicon-chevron-down')){
@@ -368,29 +371,18 @@
             }
             
         })
+        // 点击显示隐藏筛选菜单
         $(function () {
             var $ali=$(".ul li")
             for(var i=0;i<$ali.length;i++){
-            $ali.eq(i).hover(function () {
-                // var j=-1;
-                // var aid = $(this).children('div').attr('id');
-                // console.log(aid)
-                // if(aid == 'own'){
-                //     j = 0;
-                // }else if(aid == 'first'){
-                //     j = 1
-                // }else if(aid == 'second'){
-                //     j = 2
-                // }else if(aid == 'third'){
-                //     j = 3
-                // }
-                console.log($(this).children('a').html())
-                // localStorage.setItem('index', j)
-                
+            $ali.eq(i).hover(function () { 
+                if($('.three_ul>.ul>li>a').eq(index).hasClass('active')){
+                    console.log(11111)
+                    $('.three_ul>.ul>li>a').eq(index).removeClass('active')
+                } 
                 if($(this).find("div").is(':hidden')){
                     $(this).find("div").show()
                     $(this).children('a').addClass('active')
-                    $('.three_ul>.ul>li>a').eq(index).removeClass('active')
                 }else{
                     $(this).find("div").hide()
                     $(this).children('a').removeClass('active')
