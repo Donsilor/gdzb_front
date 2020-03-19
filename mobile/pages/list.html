@@ -206,7 +206,7 @@
                                 <li >
                                     <!-- &and; -->
                                     <!-- rel="" name="texture" class="all on" -->
-                                    <a  href="javascript:void(0);" > 全部 <i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a rel="" name="texture"  href="javascript:void(0);" > 全部 <i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="own">
                                         <ul>
                                             <li ><a rel="" name="type" class="" href="./list.html">全部</a></li>
@@ -217,7 +217,7 @@
                                     </div>
                                 </li>
                                 <li >
-                                    <a rel="翡翠" name="texture"  href="javascript:void(0);" >翡翠<i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a rel="翡翠" name="texture"   href="javascript:void(0);" >翡翠<i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="first">
                                         <ul>
                                             <li ><a rel="" name="type" class=" " href="./list.html?texture=翡翠">全部</a></li>
@@ -232,7 +232,7 @@
                                     </div>
                                 </li>
                                 <li >
-                                    <a rel="和田玉" name="texture" href="javascript:void(0);" >和田玉<i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a rel="和田玉" name="texture" href="#"  >和田玉<i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="second">
                                         <ul>
                                             <li ><a rel="" name="type" class=" " href="./list.html?texture=和田玉">全部</a></li>
@@ -247,7 +247,7 @@
                                     </div>
                                 </li>
                                 <li >
-                                    <a rel="珍贵宝石" name="texture"  href="javascript:void(0);" >宝石<i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a rel="珍贵宝石" name="texture" href="#" >宝石<i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="third">
                                         <ul>
                                             <li ><a rel="" name="type" class="" href="./list.html?texture=珍贵宝石">全部</a></li>
@@ -335,16 +335,30 @@
         </div>
     </div>
     <script type="text/javascript">
-        // $('.three_ul>.ul>li').click(function(){
-            // console.log("asdasd")
-            // $(this).parent().parent().siblings().addClass('active')
-            // aa.css("color",'#f5a135!important')
-        //   var aa =  $('.ul>li>a').html()
-            // console.log("asdasd",aa)
-            // $(this).css("color", "red")
-            // console.log($(this))
-        // })
+        var index = localStorage.getItem('index');
+        console.log("index",index)
+        if(index != -1){
+            $('.three_ul>.ul>li>a').eq(index).addClass('active')
+        }
+        $('.ul>li div li').click(function(){
+            var j=-1;
+            var aid = $(this).parent().parent('div').attr('id');
+            // console.log(aid)
+            if(aid == 'own'){
+                j = 0;
+            }else if(aid == 'first'){
+                j = 1
+            }else if(aid == 'second'){
+                j = 2
+            }else if(aid == 'third'){
+                j = 3
+            }
+            // console.log(j)
+            localStorage.setItem('index', j)
+        })
+
         $('.ul>li>a').hover(function(){
+
             if( $(this).find('i').hasClass('glyphicon-chevron-down')){
                 $(this).find('i').addClass('glyphicon-chevron-up')
                 $(this).find('i').removeClass('glyphicon-chevron-down')
@@ -354,40 +368,33 @@
             }
             
         })
-        // layui.use('flow', function(){
-        //     var flow = layui.flow;
-        //     //当你执行这样一个方法时，即对页面中的全部带有lay-src的img元素开启了懒加载（当然你也可以指定相关img）
-        //     flow.lazyimg(); 
-        // });
-        
-        $(function () {
-            // $(".ul li div").hide()
-            // var $ali=$(".ul li")
-            // for(var i=0;i<$ali.length;i++){
-            // $(".ul li").click(function () {
-            //     $(".ul li div").eq($(this).index()).addClass('div_show')
-            //     $(".ul li div").eq($(this).index()).addClass('active')
-            //     // setTimeout(function(){  
-            //     // }, 1000);
-            //     $(".ul li div").eq($(this).index()).siblings().removeClass('div_show')
-            //     $(".ul li div").eq($(this).index()).siblings().removeClass('active')
-            // })
-            // }
-        })
         $(function () {
             var $ali=$(".ul li")
             for(var i=0;i<$ali.length;i++){
-            $ali.eq(i).click(function () {
-                console.log(i)
-                // localStorage.setItem('index', i)
+            $ali.eq(i).hover(function () {
+                // var j=-1;
+                // var aid = $(this).children('div').attr('id');
+                // console.log(aid)
+                // if(aid == 'own'){
+                //     j = 0;
+                // }else if(aid == 'first'){
+                //     j = 1
+                // }else if(aid == 'second'){
+                //     j = 2
+                // }else if(aid == 'third'){
+                //     j = 3
+                // }
+                console.log($(this).children('a').html())
+                // localStorage.setItem('index', j)
                 
                 if($(this).find("div").is(':hidden')){
-                    // console.log(55555555)
-                    $(this).addClass('active')
                     $(this).find("div").show()
+                    $(this).children('a').addClass('active')
+                    $('.three_ul>.ul>li>a').eq(index).removeClass('active')
                 }else{
                     $(this).find("div").hide()
-                    $(this).removeClass('active')
+                    $(this).children('a').removeClass('active')
+
                 }
             })
             }
@@ -402,8 +409,7 @@
             });
         })
         // window.onload = function(){
-        //     var index = localStorage.getItem('index');
-        //     // console.log(index)
+            
         // }
     </script>
     <!-- <script src="../assets/js/msgBox.js"></script> -->

@@ -16,9 +16,9 @@
     box-sizing: border-box;
 }
 
-.ul>li>a:hover{
-    color: #f5a135!important;
-}
+/* .ul>li>a:hover{
+    color: #fff!important;
+} */
 /* .filter_box .nav_wrap{
     display: flex;
     justify-content: space-between;
