@@ -1,16 +1,17 @@
 $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
-    var pathname =window.location.pathname
-    var path = window.location.search
+    var headerHost =window.location.host
+    var path = window.location.pathname
+    var params = window.location.search
     var host = 'http://wap.hdlbdd.com';
-    if(!(/hdlbdd\.com/).test(host)) {
+    if(!(/hdlbdd\.com/).test(headerHost)) {
 		//测试环境
 		host = 'http://wap.gdzb.bddia.com';
 	}
     console.log("mobile_flag",window.location)
-    console.log("mobile",host + pathname + path)
+    console.log("mobile",host + path + path)
     if(mobile_flag){
-        window.location.href = host + pathname + path;  
+        window.location.replace = host + path + params;  
     }
 });
 function isMobile() {
