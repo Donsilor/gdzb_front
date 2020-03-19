@@ -129,8 +129,11 @@
 .active{
     color: #f5a135;
 }
+.pro_list:first-child{
+    padding-top: 50px;
+}
 .pro_list{
-    padding: 50px 5%;
+    padding: 0 5% 50px 5%;
     display: flex;
     justify-content: space-between;
 }

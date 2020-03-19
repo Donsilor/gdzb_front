@@ -164,12 +164,15 @@ $(function(){
             dataType: "json",
             success: function(res){
                 console.log(res)
-                if(res.data==''){
+                if(res.data ==''){
                     var div='<div class="no_pro">对不起，暂时没有宝贝</div>'
                     $(".product").css('height','300px');
                     $(".product").css('text-align','center');
-                    $(".product").css('text-align','center');
                     $(".product").append(div);
+                    $(".loadmore").css("display","none")
+                    $("#footer").css("display","block")
+                } else {
+                    $("#footer").css("display","none")
                 }
                 var html = '\
                     <div class="list">\
@@ -227,7 +230,7 @@ $(function(){
             max_default = max_default + 3
             _default = _default + 3;
         } 
-        if(max_default > list.length){
+        if(max_default >= list.length){
             console.log(99999)
             $('.loadmore').html("<p>已加载全部</p>");
         }

@@ -3,10 +3,10 @@
 $(function(){
 
     //goToTop距浏览器顶端的距离，这个距离可以根据你的需求修改
-    var topDistance = 750;
+    var topDistance = 700;
 
     //距离浏览器顶端多少距离开始显示goToTop按钮，这个距离也可以修改，但不能超过浏览器默认高度，为了兼容不同分辨率的浏览器，我建议在这里设置值为1；
-    var showDistance = 10;
+    var showDistance = 1;
 
     //定义一个变量，方便后面加入在html元素标签中插入这个goToTop按钮的标签
     var goToTopButton = $('<div id="goToTop"><a href="javascript:;"></a></div>');
