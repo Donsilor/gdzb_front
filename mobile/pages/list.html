@@ -205,7 +205,7 @@
                             <ul class="ul">
                                 <li >
                                     <!-- &and; -->
-                                    <a  href="javascript:void(0);"> 全部 <i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a  href="javascript:void(0);" > 全部 <i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="own">
                                         <ul>
                                             <li ><a rel="" name="type" class="" href="./list.html">全部</a></li>
@@ -334,8 +334,14 @@
         </div>
     </div>
     <script type="text/javascript">
-        
-        $('.ul li a').hover(function(){
+        // $('.ul div li').click(function(){
+            // console.log("asdasd")
+            // $(this).parent().parent().siblings().addClass('active')
+            // aa.css("color",'#f5a135!important')
+        //   var aa =  $('.ul>li>a').html()
+            // console.log("asdasd",aa)
+        // })
+        $('.ul>li>a').hover(function(){
             if( $(this).find('i').hasClass('glyphicon-chevron-down')){
                 $(this).find('i').addClass('glyphicon-chevron-up')
                 $(this).find('i').removeClass('glyphicon-chevron-down')

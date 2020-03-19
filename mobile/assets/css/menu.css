@@ -63,7 +63,7 @@ dl{
     left: 0;
     transition: left .3s ease-in-out;
 }
-.close{
+.closed{
     left: -80%;
     transition: left .3s ease-in-out;
 }

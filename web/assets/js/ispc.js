@@ -2,12 +2,13 @@ $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
     // var headerHost =window.location.pathname
     var path = window.location.search
-    var host = 'http://wap.gdzb.bddia.com';
+    var host = 'http://wap.hdlbdd.com';
     if(!(/hdlbdd\.com/).test(host)) {
 		//测试环境
-		host = 'http://wap.hdlbdd.com/';
+		host = 'http://wap.gdzb.bddia.com';
 	}
-    console.log("mobile_flag",host+path)
+    console.log("mobile_flag",window.location)
+    console.log("mobile",host + path)
     if(mobile_flag){
         window.location.replace = host + path;  
     }
