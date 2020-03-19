@@ -205,6 +205,7 @@
                             <ul class="ul">
                                 <li >
                                     <!-- &and; -->
+                                    <!-- rel="" name="texture" class="all on" -->
                                     <a  href="javascript:void(0);" > 全部 <i class="glyphicon glyphicon-chevron-down"></i></a>
                                     <div id="own">
                                         <ul>
@@ -334,12 +335,14 @@
         </div>
     </div>
     <script type="text/javascript">
-        // $('.ul div li').click(function(){
+        // $('.three_ul>.ul>li').click(function(){
             // console.log("asdasd")
             // $(this).parent().parent().siblings().addClass('active')
             // aa.css("color",'#f5a135!important')
         //   var aa =  $('.ul>li>a').html()
             // console.log("asdasd",aa)
+            // $(this).css("color", "red")
+            // console.log($(this))
         // })
         $('.ul>li>a').hover(function(){
             if( $(this).find('i').hasClass('glyphicon-chevron-down')){
@@ -374,7 +377,9 @@
         $(function () {
             var $ali=$(".ul li")
             for(var i=0;i<$ali.length;i++){
-            $ali.eq(i).hover(function () {
+            $ali.eq(i).click(function () {
+                console.log(i)
+                // localStorage.setItem('index', i)
                 
                 if($(this).find("div").is(':hidden')){
                     // console.log(55555555)
@@ -396,6 +401,10 @@
                 all : ".all" // 默认全部
             });
         })
+        // window.onload = function(){
+        //     var index = localStorage.getItem('index');
+        //     // console.log(index)
+        // }
     </script>
     <!-- <script src="../assets/js/msgBox.js"></script> -->
 </body>

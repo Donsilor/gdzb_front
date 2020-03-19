@@ -1,6 +1,6 @@
 $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
-    // var headerHost =window.location.pathname
+    var pathname =window.location.pathname
     var path = window.location.search
     var host = 'http://wap.hdlbdd.com';
     if(!(/hdlbdd\.com/).test(host)) {
@@ -8,9 +8,9 @@ $(function(){
 		host = 'http://wap.gdzb.bddia.com';
 	}
     console.log("mobile_flag",window.location)
-    console.log("mobile",host + path)
+    console.log("mobile",host + pathname + path)
     if(mobile_flag){
-        window.location.replace = host + path;  
+        window.location.replace = host + pathname + path;  
     }
 });
 function isMobile() {
