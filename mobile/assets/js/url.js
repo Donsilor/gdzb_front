@@ -232,7 +232,7 @@ $(function(){
         } 
         if(max_default >= list.length){
             console.log(99999)
-            $('.loadmore').html("<p>已加载全部</p>");
+            $('.loadmore').html("<p style='margin-bottom:0px;'>已加载全部</p>");
         }
         $('.loadmore img').css("display","block")
         if(list){
