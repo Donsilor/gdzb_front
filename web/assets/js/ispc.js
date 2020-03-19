@@ -10,7 +10,7 @@ $(function(){
     console.log("mobile_flag",window.location)
     console.log("mobile",host + pathname + path)
     if(mobile_flag){
-        window.location.replace = host + pathname + path;  
+        window.location.href = host + pathname + path;  
     }
 });
 function isMobile() {
