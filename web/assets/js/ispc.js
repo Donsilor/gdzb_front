@@ -1,16 +1,16 @@
 $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
     // var headerHost =window.location.pathname
-    // var path = window.location.search
-    // var host = 'http://www.hdlbdd.com/';
-    // // if(!(/hdlbdd\.com/).test(headerHost)) {
-	// // 	//测试环境
-	// // 	host = 'http://www.gdzb.bddia.com';
-	// // }
-    // console.log("mobile_flag",headerHost+path)
-    // if(mobile_flag){
-    //     window.location.replace = headerHost + path;  
-    // }
+    var path = window.location.search
+    var host = 'http://wap.gdzb.bddia.com';
+    if(!(/hdlbdd\.com/).test(headerHost)) {
+		//测试环境
+		host = 'http://wap.hdlbdd.com/';
+	}
+    console.log("mobile_flag",host+path)
+    if(mobile_flag){
+        window.location.replace = host + path;  
+    }
 });
 function isMobile() {
     var userAgentInfo = navigator.userAgent;
