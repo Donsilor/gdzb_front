@@ -3,7 +3,7 @@ $(function(){
     // var headerHost =window.location.pathname
     var path = window.location.search
     var host = 'http://www.gdzb.bddia.com';
-    if(!(/hdlbdd\.com/).test(headerHost)) {
+    if(!(/hdlbdd\.com/).test(host)) {
 		//测试环境
 		host = 'http://www.hdlbdd.com/';
 	}
