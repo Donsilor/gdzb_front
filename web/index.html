@@ -607,8 +607,12 @@
                 </div>
             </div>
     </div>  
+
+    <!-- 返回顶部 -->
     <div id="goToTop"><a href="javascript:;"></a></div>
+
     <script type="text/javascript">
+        // 轮播
 		var mySwiper = new Swiper('.swiper-container',{
 		slidesPerView : 5,
 		slidesPerGroup : 5,
@@ -618,8 +622,9 @@
         paginationClickable :true,
         autoplayDisableOnInteraction : false,
         autoplay:4000,
-//      loop : true,
-		})
+        // loop : true,
+        })
+        // 返回顶部
         $(window).scroll(function(){
             var top = $(window).scrollTop();
             if($(window).scrollTop()>200){

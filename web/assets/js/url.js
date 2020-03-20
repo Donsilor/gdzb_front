@@ -1,7 +1,7 @@
 $(function(){
     init()
     function init() {   
-        // 列表数据
+        
         // 获取当前url参数
         var texture=getUrlParam("texture");
         var type=getUrlParam("type");
@@ -11,7 +11,7 @@ $(function(){
             if (r != null) return decodeURI(r[2]); return null; //返回参数值  
         }   
         console.log(type,texture)
-
+        // 请求的列表json数据
         let urlAll = '';
         if(texture == null && type == null){
             urlAll = '../assets/JsonData/allList.json';
@@ -153,7 +153,7 @@ $(function(){
         }
         
 
-    
+        // json数据请求
         $.ajax({
             type:"get",
             url:urlAll,
@@ -174,7 +174,7 @@ $(function(){
                                 <img src="" alt="">\
                             </div>\
                             <p class="underline"></p>\
-                            <p style="cursor: pointer;" class="more">点击查看></p>\
+                            <p style="cursor: pointer;" class="look">点击查看></p>\
                         </div>\
                     </div>\
                 ';
@@ -203,7 +203,8 @@ $(function(){
                     // }
                 
                 });
-                $('.more').click(function(){
+                // 点击列表查看更多跳转购买流程页面
+                $('.look').click(function(){
                     window.location.href="../pages/purchase_process.html"
                 })
                 // 二维码弹框
