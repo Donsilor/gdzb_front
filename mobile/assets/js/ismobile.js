@@ -1,7 +1,7 @@
 $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
-    var headerHost = window.location.origin;
-    var path = window.location.pathname
+    var headerHost = window.location.host;
+    var path = window.location.origin
     var params = window.location.search;
     var host ='http://www.hdlbdd.com';
     if(!(/hdlbdd\.com/).test(headerHost)) {
