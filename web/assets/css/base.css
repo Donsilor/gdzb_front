@@ -8,10 +8,21 @@ a:focus{
 }
 /* span{display: block;} */
 body,html{
+    width: 100%;
     min-width: 1340px;
     /* background: url(../img/2_bj.jpg);
     font-family: "Source Han Sans","微軟正黑體","微软雅黑"; */
     background: #000000;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
 }
 .clear{clear: both;}
 .m50{margin-top: 50px;}

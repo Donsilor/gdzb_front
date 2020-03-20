@@ -21,7 +21,7 @@
     <script src="../assets/js/swiper-3.4.2.min.js"></script>
     <script src="../assets/js/header.js"></script>
     <script src="../assets/js/jquery.page.js"></script>
-    <script src="../assets/js/scrollTop.js"></script>
+    <!-- <script src="../assets/js/scrollTop.js"></script> -->
     <script src="../assets/js/current.js"></script>
     <script src="../assets/js/url.js"></script>
     <script src="../assets/js/ispc.js"></script>
@@ -484,7 +484,9 @@
                 </div>
             </div>
         </div>
-    </div>  
+    </div> 
+    <!-- 返回顶部 -->
+    <div id="goToTop"><a href="javascript:;"></a></div> 
     <!-- 弹框 -->
     <!-- <div class="cover">
     </div> -->
@@ -505,6 +507,22 @@
         </div>
     </div> -->
     <script type="text/javascript">
+        $(window).scroll(function(){
+            var top = $(window).scrollTop();
+            if($(window).scrollTop()>200){
+                // $("#header").css("position","fixed")
+                $("#header").css("top","0")
+                // $("#header").css("z-index","9999")
+                $("#goToTop").css("display","block")
+            }else{
+                // $("#title").css("position","static")
+                $("#goToTop").css("display","none")
+            }
+        });
+        $('#goToTop a').click(function(){
+            $('html ,body').animate({scrollTop: 0}, 300);
+            return false;
+        });
         // 筛选
         $(function(){
             new SelectTag({

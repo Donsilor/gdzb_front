@@ -21,10 +21,10 @@
     <script src="./assets/js/layui.js"></script>
     <script src="./assets/js/swiper-3.4.2.min.js"></script>
     <script src="./assets/js/header.js"></script>
-    <script src="./assets/js/scrollTop.js"></script>
+    <!-- <script src="./assets/js/scrollTop.js"></script> -->
     <script src="./assets/js/ispc.js"></script>
 </head>
-<body>
+<body class="clearfix">
     <!-- 头部 Header -->
     <div id="header">
             <div class="head">
@@ -607,6 +607,7 @@
                 </div>
             </div>
     </div>  
+    <div id="goToTop"><a href="javascript:;"></a></div>
     <script type="text/javascript">
 		var mySwiper = new Swiper('.swiper-container',{
 		slidesPerView : 5,
@@ -619,7 +620,22 @@
         autoplay:4000,
 //      loop : true,
 		})
-       
+        $(window).scroll(function(){
+            var top = $(window).scrollTop();
+            if($(window).scrollTop()>200){
+                // $("#header").css("position","fixed")
+                $("#header").css("top","0")
+                // $("#header").css("z-index","9999")
+                $("#goToTop").css("display","block")
+            }else{
+                // $("#header").css("position","static")
+                $("#goToTop").css("display","none")
+            }
+        });
+        $('#goToTop a').click(function(){
+            $('html ,body').animate({scrollTop: 0}, 300);
+            return false;
+        });
     </script>
         
 </body>

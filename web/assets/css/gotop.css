@@ -1,13 +1,10 @@
-body{
-    position: relative;
+body,html{
+    /* position: relative; */
 }
 #goToTop {
-    /* position: absolute;
-    z-index: 9000;  */
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    z-index: 666;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
     z-index: 9999;
     width: 42px;
     height: 42px;
