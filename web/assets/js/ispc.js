@@ -11,7 +11,8 @@ $(function(){
     console.log("mobile_flag",window.location)
     console.log("mobile",host + path + path)
     if(mobile_flag){
-        window.location.href = host + path + params;  
+        // window.location.href = host + path + params;  
+        window.location.replace(host + path + params);
     }
 });
 function isMobile() {
