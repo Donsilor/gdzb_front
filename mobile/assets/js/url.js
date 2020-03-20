@@ -224,7 +224,6 @@ $(function(){
     
     $(".loadmore").click(function(){
         // console.log("_default",max_default)
-        // console.log("list",_default)
         // $('.product').html("");
         if(_default<list.length){
             max_default = max_default + 3

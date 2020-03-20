@@ -1,6 +1,6 @@
 $(function(){
     var mobile_flag = isMobile(); // true为PC端，false为手机端
-    var headerHost = window.location.host;
+    var headerHost = window.location.origin;
     var path = window.location.pathname
     var params = window.location.search;
     var host ='http://www.hdlbdd.com';
@@ -11,8 +11,7 @@ $(function(){
     console.log("mobile_flag",window.location)
     console.log("mobile",host + path + params)
     if(!mobile_flag){
-        // window.location.href = host + path + params;  
-        window.location.replace(host + path + params);
+        window.location.href = host + path + params;  
     }
 });
 function isMobile() {
