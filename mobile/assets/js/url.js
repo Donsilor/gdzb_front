@@ -110,6 +110,9 @@ $(function(){
         if(texture == '珍贵宝石' && type == '钻石'){
             urlAll = '../assets/JsonData/baoshi/baoshi_zuanshi.json';
         }
+        if(texture == '珍贵宝石' && type == '猫眼石'){
+            urlAll = '../assets/JsonData/baoshi/baoshi_cat.json';
+        }
         
         // 所有材质下的类型分类
         if(texture == null && type =='翡翠' ){
@@ -150,12 +153,14 @@ $(function(){
             urlAll = '../assets/JsonData/all/all_lanbaoshi.json';
         }
         if(texture == null && type == '祖母绿'){
-            urlAll = '../assets/JsonData/hetianyu/hetianyu_jiezhi.json';
+            urlAll = '../assets/JsonData/all/all_zumulv.json';
         }
         if(texture == null && type == '钻石'){
-            urlAll = '../assets/JsonData/hetianyu/hetianyu_ershi.json';
+            urlAll = '../assets/JsonData/all/all_zuanshi.json';
         }
-        
+        if(texture == null && type == '猫眼石'){
+            urlAll = '../assets/JsonData/all/all_cat.json';
+        }
 
     
         $.ajax({
@@ -180,7 +185,7 @@ $(function(){
                             <div class="pro_img">\
                                 <img src="" alt="">\
                             </div>\
-                            <p class="underline"></p>\
+                            <p class="underline" style="text-overflow: ellipsis;white-space: nowrap;overflow:hidden;" data-toggle="tooltip" title=""></p>\
                             <p style="cursor: pointer;" class="more">点击查看 ></p>\
                         </div>\
                     </div>\
@@ -196,11 +201,11 @@ $(function(){
                         // loadMore()
                         if(index < max_default && index > _default){
                             var row = $('<div class="pro_list">');
-                                $.each(value.thumb_src,function(i,v){
-                                    let htm = $(html);
-                            htm.find('img').attr('src', v.pro_img);
-                            htm.find('.underline').append( v.pro_name);
-                            row.append(htm);
+                            $.each(value.thumb_src,function(i,v){
+                                let htm = $(html);
+                                htm.find('img').attr('src', v.pro_img);
+                                htm.find('.underline').append( v.pro_name);
+                                row.append(htm);
                             });
                             $(".product").append(row);
                         }

@@ -1,4 +1,7 @@
 $(function(){
+    var _default = -1;
+    var max_default = 4;
+    var list = []
     init()
     function init() {   
         
@@ -106,6 +109,9 @@ $(function(){
         if(texture == '珍贵宝石' && type == '钻石'){
             urlAll = '../assets/JsonData/baoshi/baoshi_zuanshi.json';
         }
+        if(texture == '珍贵宝石' && type == '猫眼石'){
+            urlAll = '../assets/JsonData/baoshi/baoshi_cat.json';
+        }
         
         // 所有材质下的类型分类
         if(texture == '翡翠' && type == null){
@@ -146,12 +152,14 @@ $(function(){
             urlAll = '../assets/JsonData/all/all_lanbaoshi.json';
         }
         if(texture == null && type == '祖母绿'){
-            urlAll = '../assets/JsonData/hetianyu/hetianyu_jiezhi.json';
+            urlAll = '../assets/JsonData/all/all_zumulv.json';
         }
         if(texture == null && type == '钻石'){
-            urlAll = '../assets/JsonData/hetianyu/hetianyu_ershi.json';
+            urlAll = '../assets/JsonData/all/all_zuanshi.json';
         }
-        
+        if(texture == null && type == '猫眼石'){
+            urlAll = '../assets/JsonData/all/all_cat.json';
+        }
 
         // json数据请求
         $.ajax({
@@ -159,7 +167,7 @@ $(function(){
             url:urlAll,
             dataType: "json",
             success: function(res){
-                console.log(res)
+                console.log("数据",res.data)
                 if(res.data==''){
                     var div='<div class="no_pro">对不起，暂时没有宝贝</div>'
                     $(".product").css('height','300px');
@@ -173,13 +181,14 @@ $(function(){
                             <div class="pro_img">\
                                 <img src="" alt="">\
                             </div>\
-                            <p class="underline"></p>\
+                            <p class="underline" style="text-overflow: ellipsis;white-space: nowrap;overflow:hidden;" title=""></p>\
                             <p style="cursor: pointer;" class="look">点击查看></p>\
                         </div>\
                     </div>\
                 ';
-
+                // list = res.data
                 var data=res.data
+                
                 // var count = 3;
                 // var end_index = page*count-1;
                 // var start_index = end_index-3;
@@ -192,14 +201,18 @@ $(function(){
                     // $(".product").empty();
                     // console.log(index)
                     // if(index < maxNum && index > minNum){
+                    // if(index < max_default && index > _default){
+                        
                         var row = $('<div class="pro_list">');
                             $.each(value.thumb_src,function(i,v){
                                 let htm = $(html);
                         htm.find('img').attr('src', v.pro_img);
                         htm.find('.underline').append( v.pro_name);
+                        htm.find('.underline').attr('title', v.pro_name);
                         row.append(htm);
                         });
                         $(".product").append(row);
+                    // }
                     // }
                 
                 });
@@ -207,6 +220,13 @@ $(function(){
                 $('.look').click(function(){
                     window.location.href="../pages/purchase_process.html"
                 })
+                // $(".underline").each(function(){
+                //     var maxwidth = 10;
+                //     if($(this).text().length > maxwidth){ 
+                //         $(this).text($(this).text().substring(0,maxwidth));
+                //         $(this).html($(this).html()+'…');
+                //     }
+                // });
                 // 二维码弹框
                 // $('.more').click(function(){
                 //     $('.msgBox').css('display','block')
@@ -220,4 +240,23 @@ $(function(){
             }
         });
     }
+    // 加载更多
+    // $(".loadmore p").click(function(){
+    //     console.log("max_default",max_default)
+    //     console.log("_default",list.length)
+    //     // $('.product').html("");
+    //     if(_default<list.length){
+    //         max_default = max_default + 4
+    //         _default = _default + 4;
+    //     } 
+    //     if(max_default >= list.length){
+    //         console.log(99999)
+    //         $('.loadmore p').html("已加载全部");
+    //     }
+    //     $('.loadmore img').css("display","block")
+    //     if(list){
+    //         $('.loadmore img').css("display","none")
+    //     }
+    //     init()
+    // })
 })
