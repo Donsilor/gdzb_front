@@ -3,6 +3,7 @@ $(function(){
     var _default = -1;
     var max_default = 3;
     var list = []
+    var num = 0
     init()
     function init() {   
         // 列表数据
@@ -192,27 +193,26 @@ $(function(){
                 ';
                 list = res.data
                 var data=res.data; 
-                
+                // console.log("res",data)
+                // console.log("list",list)
+                if(list.length <= 3){
+                    $('.loadmore').css("display","none")
+                }
                 $.each(data,function(index,value){
-                    
-                    // console.log(_default)
-                    // inits()
-                    // function inits(){
-                        // loadMore()
-                        if(index < max_default && index > _default){
-                            var row = $('<div class="pro_list">');
-                            $.each(value.thumb_src,function(i,v){
-                                let htm = $(html);
-                                htm.find('img').attr('src', v.pro_img);
-                                htm.find('.underline').append( v.pro_name);
-                                row.append(htm);
-                            });
-                            $(".product").append(row);
-                        }
+                    if(index < max_default && index > _default){
+                        var row = $('<div class="pro_list">');
+                        $.each(value.thumb_src,function(i,v){
+                            let htm = $(html);
+                            htm.find('img').attr('src', v.pro_img);
+                            htm.find('.underline').append( v.pro_name);
+                            row.append(htm);
+                        });
+                        $(".product").append(row);
                         
-                    // }
-                    
+                        console.log("value",index)
+                    } 
                 });
+                
                 // 二维码弹框
                 $('.more').click(function(){
                     $('.msgBox').css('display','block')
@@ -226,17 +226,20 @@ $(function(){
             }
         });
     }
+   
     
     $(".loadmore").click(function(){
-        // console.log("_default",max_default)
+        console.log("max_default",max_default)
+        console.log("list.length",list.length)
         // $('.product').html("");
         if(_default<list.length){
             max_default = max_default + 3
             _default = _default + 3;
         } 
         if(max_default >= list.length){
-            console.log(99999)
-            $('.loadmore').html("<p style='margin-bottom:0px;'>已加载全部</p>");
+            // console.log(99999)
+            $('.loadmore').css("display","none")
+            // $('.loadmore').html("<p style='margin-bottom:0px;'>已加载全部</p>");
         }
         $('.loadmore img').css("display","block")
         if(list){
@@ -244,5 +247,4 @@ $(function(){
         }
         init()
     })
-
 })
