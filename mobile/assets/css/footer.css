@@ -45,7 +45,7 @@
 .address{
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px 60px 7%;
+    padding: 40px 30px 60px 5%;
 }
 .footline{
     margin: 10px 0;
