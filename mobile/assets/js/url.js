@@ -209,7 +209,7 @@ $(function(){
                         });
                         $(".product").append(row);
                         
-                        console.log("value",index)
+                        // console.log("value",index)
                     } 
                 });
                 
