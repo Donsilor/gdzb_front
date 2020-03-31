@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/*清除元素的内外边距*/
+html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form, font, strong, b, i, dl, dt, dd, ol, ul, li, dl, dd, dt, iframe, label, blockquote, input, button {
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+
+  font-family: "frutiger", Arial, sans-serif;
+ 
+}
+  html,body{
+    /* min-width:1200px;
+    overflow: hidden;
+    overflow-x:scroll; */
+  
+    /* font-family: PingFangSC-Semibold;
+     */
+     font-family: "frutiger", Arial, sans-serif;
+  }
+
+img {
+  vertical-align: middle;
+  border: none; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  outline: none; }
+
+a:hover, a:active, a:focus {
+  text-decoration: none; }
+
+/*版心 提取 */
+.wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+/*去除外面环绕线*/
+input, button, select, textarea {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+s, i, em {
+  /*一般是起装饰作用*/
+  font-style: normal;
+  /*去掉原有的样式*/
+  text-decoration: none;
+  /*去掉下划线或是删除线*/ }
+
+/* 清理浮动 */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  zoom: 1; }
+
+.clear, .line_dashed {
+  clear: both;
+  font-size: 0;
+  height: 0;
+  line-height: 0; }
+
+/*.green {color:#5cac20!important;}*/
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+.relative {
+  position: relative; }
+
+/*去掉原样式中的小黑点*/
+ul, ol {
+  list-style: none; }
+
