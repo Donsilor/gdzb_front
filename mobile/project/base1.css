@@ -20,7 +20,8 @@ html, body, span, div, p, a, table, tbody, td, h1, h2, h3, h4, h5, h6, img, form
 
 img {
   vertical-align: middle;
-  border: none; }
+  border: none; 
+}
 
 a {
   color: #666;
