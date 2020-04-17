@@ -7,7 +7,7 @@ $(function(){
     if(!(/hdlbdd\.com/).test(headerHost)) {
 		//测试环境
 		host = 'http://www.gdzb.bddia.com';
-	}else if(!(/hdl02\.yushan33\.cn/).test(headerHost)) {
+	}else if((/hdl02\.yushan33\.cn/).test(headerHost)) {
 		//测试环境
 		host = 'http://hdl01.yushan33.cn';
 	}
