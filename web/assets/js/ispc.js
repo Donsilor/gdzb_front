@@ -4,12 +4,12 @@ $(function(){
     var path = window.location.pathname
     var params = window.location.search
     var host = 'https://wap.hdlbdd.com';
-    if(!(/hdlbdd\.com/).test(headerHost)) {
-		//测试环境
-		host = 'http://wap.gdzb.bddia.com';
-	}else if((/hdl01\.yushan33\.cn/).test(headerHost)) {
+    if((/hdl01\.yushan33\.cn/).test(headerHost)) {
 		//测试环境
 		host = 'http://hdl02.yushan33.cn';
+	}else if(!(/hdlbdd\.com/).test(headerHost)) {
+		//测试环境
+		host = 'http://wap.gdzb.bddia.com';
 	}
     console.log("mobile_flag",window.location)
     console.log("mobile",host + path + params)
