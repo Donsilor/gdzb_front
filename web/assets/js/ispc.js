@@ -4,15 +4,10 @@ $(function(){
     var path = window.location.pathname
     var params = window.location.search
     var host = 'https://wap.hdlbdd.com';
-    // if(!(/hdlbdd\.com/).test(headerHost)) {
-	// 	//测试环境
-	// 	host = 'http://wap.gdzb.bddia.com';
-	// }
     if((/yushan33\.cn/).test(headerHost)) {
-        // if((/hdl01\.yushan33\.cn/).test(headerHost)){
-        //     host = 'http://hdl02.yushan33.cn';
-        // }
-        mobile_flag = false
+        if((/hdl01\.yushan33\.cn/).test(headerHost)){
+            host = 'http://hdl02.yushan33.cn';
+        }
 	}else if(!(/hdlbdd\.com/).test(headerHost)) {
 		//测试环境
 		host = 'http://wap.gdzb.bddia.com';
