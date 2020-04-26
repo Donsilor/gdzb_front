@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/common/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/gotop.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <!-- <link rel="stylesheet" href="./base1.css"> -->
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>   -->
+    <script src="./js/clipboard.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/layui.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/scrollTop.js"></script>
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/ismobile.js"></script>
+    <script src="./js/index.js"></script>
+    <title>活动页</title>
+    <style>
+        .container{
+            width: 640px;
+            /* padding-top: 90px; */
+            overflow: hidden;
+            margin: 0 auto;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-bottom: 93px;
+        }
+        .container img{
+            width: 100%;
+            display: block;
+        }
+        img{ 
+            vertical-align: top;
+            border: 0;
+        }
+        .img8{
+            position: relative;
+        }
+        .link{
+            width: 60%;
+            height: 50px;
+            line-height: 20px;
+            position: absolute;
+            left: 130px;
+            color:red;
+            top:230px;
+            text-align: center;
+        }
+        .link2{
+            position: absolute;
+            height: 50px;
+            line-height: 20px;
+            left: 130px;
+            color:red;
+            top:285px;
+            width: 60%;
+            text-align: center;
+        }
+        #Popups{
+            position: fixed;
+            right: 14%;
+            top: 31%;
+            z-index: 9999;
+            width: 234px;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        #Popups img{
+            width:100%;
+        }
+        .img25{
+            /* width: 610px; */
+            position: fixed;
+            bottom: 0px;
+        }
+        .copy{
+            position: absolute;
+            /* height: 50px; */
+            /* line-height: 20px; */
+            left: 355px;
+            color:green;
+            bottom:48px;
+            font-size: 22px;
+            text-decoration: underline;
+            /* width: 60%; */
+            text-align: center;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px;
+        }
+        .last p{
+            font-size: 14px;
+            color:#D1D1D1;
+        }
+        .last-logo{
+            width: 100px;
+            margin-right: 100px;
+            margin-bottom: 20px;
+        }
+        #copyText{
+            width: 110px;
+            height: 40px;
+            line-height: 30px;
+            background: green;
+            border:none;
+            outline: none;
+            color:#fff;
+            position: absolute;
+            font-size: 18px;
+            right: 15px;
+            bottom:27px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="main">
+                <img src="../project/images/gem/gem_01.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_02.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_03.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_04.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_05.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_06.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_07.jpg?v=2020-04-26" alt="">
+                <div class="img8">
+                    <img  src="../project/images/gem/gem_08.jpg?v=2020-04-26" alt="">
+                </div>
+                <img src="../project/images/gem/gem_09.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_10.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_11.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_12.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_13.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_14.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_15.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_16.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_17.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_18.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_19.jpg?v=2020-04-26" alt="">
+                <img src="../project/images/gem/gem_20.jpg?v=2020-04-26" alt="">
+                <div class="last">
+                    <div>
+                        <p>版权归：羽扇优选   国内专业的社交电商零售平台 青岛羽扇电子商务有限公司所有 </p>
+                        <p>投诉电话：0532-868883517</p>
+                    </div>
+                    <div class="last-logo"><img src="../project/images/gem/logo.png?v=2020-04-26" alt=""></div>
+                </div>
+                <div class="img25">
+                    <img src="../project/images/gem/gem_21.jpg?v=2020-04-26" alt="">
+                    <span id="target" class="copy">D19925201007</span>
+                    <button ata-clipboard-action="copy" data-clipboard-target="#target" id="copyText">复制微信号</button>
+                </div>
+            </div>
+        </section>
+    </div>  
+</body>
+<script>
+    // 复制微信号
+   $(document).ready(function(){      
+        var clipboard = new Clipboard('#copyText');    
+        clipboard.on('success', function(e) {    
+            alert("微信号复制成功",1500);
+            e.clearSelection();    
+            console.log(e.clearSelection);    
+        });    
+    });    
+</script>
+</html>
