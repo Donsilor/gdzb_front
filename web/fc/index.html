@@ -2,20 +2,21 @@
 <html lang="zh" data-hairline="true" data-theme="light">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="../assets/images/common/bitbug_favicon.ico" type="image/x-icon">
     <script type="text/javascript">
-        window._agl = window._agl || [];
+         window._agl = window._agl || [];
         (function () {
-        _agl.push(
-        ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
-        );
-        (function () {
-        var agl = document.createElement('script');
-        agl.type = 'text/javascript';
-        agl.async = true;
-        agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(agl, s);
-        })();
+            _agl.push(
+                ['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+            );
+            (function () {
+                var agl = document.createElement('script');
+                agl.type = 'text/javascript';
+                agl.async = true;
+                agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(agl, s);
+            })();
         })();
     </script>
     <title data-react-helmet="true">关于翡翠最实用的帖子</title>
@@ -153,7 +154,7 @@
 <div id="root">
     <div class="App">
         <div class="LoadingBar"></div>
-        <main role="main" class="App-main">
+        <main role="main" class="App-main" style="padding-bottom:0;">
             <div class="Post-content" data-zop-usertoken="{&quot;userToken&quot;:&quot;&quot;}" data-zop="{&quot;authorName&quot;:&quot;恒梦瑗&quot;,&quot;itemId&quot;:58602343,&quot;title&quot;:&quot;关于翡翠最实用的帖子&quot;,&quot;type&quot;:&quot;article&quot;}">
                 <article class="Post-Main Post-NormalMain" tabindex="-1">
                     <header class="Post-Header"><h1 class="Post-Title" style="text-align: center;line-height: 0.22">【精】关于翡翠最实用的帖子</h1>
@@ -553,10 +554,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="last">
+                            <div>
+                                <p>版权归：羽扇优选   国内专业的社交电商零售平台 青岛羽扇电子商务有限公司所有 </p>
+                                <p>投诉电话：0532-868883517</p>
+                            </div>
+                            <div class="last-logo"><img src="../project/images/index/logo.png" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
         </main>
         <!-- 版权 -->
         <div class="bq" style="text-align: center;margin-bottom: 100px; font-size:12px; color:#CCC">
@@ -565,6 +572,23 @@
     </div>
 </div>
 <style>
+    .last{
+        display: flex;
+        justify-content: space-between;
+        background: #fff;
+        padding: 20px;
+    }
+    .last p{
+        font-size: 9px;
+        color:#D1D1D1;
+    }
+    .last-logo{
+        width: 50px;
+        margin-right: 200px;
+    }
+    .last-logo img{
+        width: 100%;
+    }
     .footer {
         position: fixed;
         z-index: 999;
@@ -664,7 +688,6 @@
             $('#form').slideDown(200);
 
         });
-
 
 
         $('.weiclose').click(function(){
@@ -871,7 +894,8 @@
 </div>
 <div style="font: 12px/1.7 microsoft yahei;display:none;" id="copysuccess">
     <div style="position:fixed;z-index:900;top:0px;left:0px;width:100%;height:100%;background:rgba(0,0,0,0.5);">
-        <div style="position:fixed;top:30%;left:5%;width:90%;z-index:1100;background:#fff;">
+        <div style="position:fixed;top:30%;left:33%;width:33%;z-index:1100;background:#fff;padding:30px 0;">
+            <span id="close" style="width: 20px;position: absolute;right:20px;top:10px;cursor: pointer;"><img style="width: 100%;" src="images/expand/close.jpg" alt=""></span>
             <div style="border-radius:5px 5px 0px 0px;text-align:center;font-size:16px;background:#fff; color:#333">
                 已成功复制&nbsp;<span class="wx_num"><span class="wx_str" name="notweixin" style="display:inline; font-weight:bold; color:red"><script>document.write(wx)</script></span></span>&nbsp;，去微信添加老师<br>【&nbsp;去微信-<font color="#FF0000" style="display:inline">粘贴微信号搜索添加</font>&nbsp;】
             </div>
@@ -892,6 +916,9 @@
         console.log(e);
         $("#copysuccess").show();
     });
+    $('#close').click(function(){
+        $("#copysuccess").hide();
+    })
     clipboard.on('error', function(e) {
         console.log(e);
         $("#copysuccess").show();
@@ -901,7 +928,7 @@
 var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?1d61eee7ed33f9e389cf710497837c02";
+  hm.src = "https://hm.baidu.com/hm.js?6739142b77b25d6405edee6770e2b9c2";
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();

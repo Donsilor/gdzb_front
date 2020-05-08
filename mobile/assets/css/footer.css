@@ -45,7 +45,12 @@
 .address{
     display: flex;
     justify-content: space-between;
-    padding: 40px 30px 60px 5%;
+    padding: 40px 30px 0px 5%;
+}
+.copyright{
+    text-align: center;
+    color:#9d9898;
+    padding: 40px 20px 20px 20px;
 }
 .footline{
     margin: 10px 0;

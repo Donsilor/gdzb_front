@@ -123,6 +123,7 @@
 } */
 .company-box{
     margin-bottom: 5%;
+    position: relative;
 }
 .company{
     width: 1345px;
@@ -130,9 +131,20 @@
     justify-content: space-around;
     margin:0 auto;
     background-color: #2C1D0A;
-    height: 150px;
+    height: 200px;
     /* opacity: 0.4; */
     
+}
+.copyright{
+    position: absolute;
+    right: 38%;
+    top:160px;
+    color:#9d9898;
+    font-size: 12px;
+}
+.copyright a{
+    color:#9d9898;
+    /* text-decoration: underline!important; */
 }
 .foot-line{
     width: 1px;
