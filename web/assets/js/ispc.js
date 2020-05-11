@@ -10,7 +10,7 @@ $(function(){
         }
 	}else if(!(/hdlbdd\.com/).test(headerHost)) {
 		//测试环境
-		host = 'http://wap.gdzb.bddia.com';
+		host = 'https://wap-gdzb.bddco.cn';
 	}
     console.log("mobile_flag",window.location)
     console.log("mobile",host + path + params)
