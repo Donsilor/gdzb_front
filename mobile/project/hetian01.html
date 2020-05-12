@@ -50,15 +50,17 @@
                 display: none;
             }
             .btn-success {
-                color: #fff;
+                color: #000;
                 text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
-                background-color:#259dab;
+                background-color:yellow;
                 border-color: transparent;
                 display: inline-block;
                 margin-bottom: 0;
                 font-size: 13px;
                 font-weight: 400;
-                line-height: 1.53846154;
+                height: 28px;
+                line-height: 28px;
+                /* line-height: 1.53846154; */
                 text-align: center;
                 white-space: nowrap;
                 vertical-align: middle;
@@ -69,15 +71,16 @@
                 transition: all .4s cubic-bezier(.175, .885, .32, 1);
             }
             .dianjifz {
-                font-size: 20px;
+                font-size: 16px;
+                margin-top: 4px;
                 /* border-radius: 2px; */
                 margin: 0 3px;
                 margin-right: 3px;
                 margin-bottom: 0px;
                 padding: 0 3px;
-                background: #259dab;
-                border: 1px solid #259dab;
-                color: #3361a7;
+                background: yellow;
+                border: 1px solid yellow;
+                color: #000;
                 border-radius: 8px;
             }
             .last{
@@ -141,11 +144,11 @@
                 .qrcode img{width:102px;height:102px;margin-bottom:5px;}
                 .qrcode p{color:#717375;}
                 .bottom {  width: 100%;  color: #FFF;  font-size: 24px; text-align: center;  position: fixed;   bottom: 0; letter-spacing: 1px;}
-                .bottom-inside{ max-width:44.1%; background: #408080; margin:0 auto;}
+                .bottom-inside{ max-width:44.1%; background: #408080; margin:0 auto;height: 100px;}
             }
             @media screen and (max-width: 768px){
-                .bottom {  width: 100%;  color: #FFF; line-height: 3rem;  text-align: center;  position: fixed;   bottom: 0; letter-spacing: 1px;}
-                .bottom-inside{background: #408080; margin:0 auto;}
+                .bottom {  width: 100%;  color: #FFF;  text-align: center;  position: fixed;   bottom: 0; letter-spacing: 1px;}
+                .bottom-inside{background: #408080; margin:0 auto;height: 100px;}
             }
             .pinglun {  width: 100%;  overflow: hidden;  border-left: solid 1px #cfcfcf;border-right: solid 1px #cfcfcf;border-bottom: solid 1px #cfcfcf;margin-top:20px;}
             .zan {background: #eee;color: #999;font-size: 17px;padding:10px 0;border-top: 1px solid #cfcfcf;border-bottom: 1px solid #cfcfcf;padding-left: 15px;letter-spacing: 1px;}
@@ -606,15 +609,17 @@
         <div>
             <div class="bottom">
                 <div class="bottom-inside">
-                    <p>获取更多学习资料及防骗知识，加我微信：</p>
-                    <div style="display: flex;justify-content: space-around;padding: 10px 0;">
-                        <p style="font-size: 24px;height: 40px;padding:0;line-height: 40px;"><b><mark><span class="studio-weixin studio-button wx_str"  data-agl-cvt ="35" onclick="gowx();"><script>document.write(wx);</script></span></mark></b>
-                        <div style="margin-bottom:5px;" class="btn-success dianjifz"> <a data-agl-cvt="35" style="color:#fff;" class="wxcopy" href="javascript:void(0)">点击复制</a>
-                    </div>
+                    <!-- <p>获取更多学习资料及防骗知识，加我微信：</p> -->
+                    <div style="display: flex;justify-content: space-around;padding: 4px 0;">
+                        <p style="font-size: 16px;height: 40px;padding:0;line-height: 40px;"><b>老师微信号：<mark><span class="studio-weixin studio-button wx_str"  data-agl-cvt ="35" onclick="gowx();"><script>document.write(wx);</script></span></mark></b>
+                        <div style="margin-bottom:5px;margin-top: 3px;" class="btn-success dianjifz"> <a data-agl-cvt="35" style="color:#000;line-height: 28px;" class="wxcopy" href="javascript:void(0)">点击复制</a>
+                        </div>
                     <!-- <span>轻点微信号即可复制</span>）</p> -->
+                    </div>
+                    <p style="font-size: 16px;">添加老师微信，纯天然和田玉免费鉴赏</p>
+                    <p style="font-size: 16px;">【假一赔百 无假货之忧】</p>  
                 </div>
             </div>
-        </div>
         <div class="footer">
             <!-- 威海元康电子商务有限公司  &copy;  版权所有 -->
         </div>
