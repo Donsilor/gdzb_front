@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/common/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../assets/css/swiper-3.4.2.min.css"> -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/culture.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/gotop.css">
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <script src="./js/clipboard.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min.js"></script>   -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- <script src="../assets/js/layui.js"></script> -->
+    <!-- <script src="../assets/js/swiper-3.4.2.min.js"></script> -->
+    <script src="../assets/js/header.js"></script>
+    <!-- <script src="../assets/js/scrollTop.js"></script> -->
+    <script src="../assets/js/ispc.js"></script>
+    <link rel="stylesheet" href="./base.css">
+    <!-- <script src="./js/jquery-1.11.3.min.js"></script> -->
+    <script src="./js/index.js"></script>
+	<script type="text/javascript">
+		window._agl = window._agl || [];
+		(function () {
+			_agl.push(
+				['production', '_f7L2XwGXjyszb4d1e2oxPybgD']
+			);
+			(function () {
+				var agl = document.createElement('script');
+				agl.type = 'text/javascript';
+				agl.async = true;
+				agl.src = 'https://fxgate.baidu.com/angelia/fcagl.js?production=_f7L2XwGXjyszb4d1e2oxPybgD';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(agl, s);
+			})();
+		})();
+	</script>
+    <title>宝石专题页</title>
+    <style>
+        html,body{
+            background: green;
+        }
+        .container{
+            width: 640px;
+            /* padding-top: 90px; */
+            overflow: hidden;
+            margin: 0 auto;
+            margin-bottom: 93px;
+        }
+        .container img{
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+        .img8{
+            position: relative;
+        }
+        .link{
+            width: 60%;
+            height: 50px;
+            line-height: 20px;
+            position: absolute;
+            left: 130px;
+            color:red;
+            top:230px;
+            text-align: center;
+        }
+        .link2{
+            position: absolute;
+            height: 50px;
+            line-height: 20px;
+            left: 130px;
+            color:red;
+            top:285px;
+            width: 60%;
+            text-align: center;
+        }
+        #Popups{
+            position: fixed;
+            right: 14%;
+            top: 31%;
+            z-index: 9999;
+            width: 234px;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        #Popups img{
+            width:100%;
+        }
+        .img25{
+            width: 610px;
+            position: fixed;
+            bottom: 0px;
+        }
+        .copy{
+            position: absolute;
+            /* height: 50px; */
+            /* line-height: 20px; */
+            left: 330px;
+            color:green;
+            bottom:44px;
+            font-size: 20px;
+            text-decoration: underline;
+            /* width: 60%; */
+            text-align: center;
+        }
+        .last{
+            display: flex;
+            justify-content: space-between;
+            background: #fff;
+            padding: 20px;
+        }
+        .last p{
+            font-size: 9px;
+            color:#D1D1D1;
+        }
+        .last-logo{
+            width: 50px;
+            margin-right: 100px;
+        }
+        #copyText{
+            width: 110px;
+            height: 30px;
+            line-height: 30px;
+            background: green;
+            border:none;
+            outline: none;
+            color:#fff;
+            position: absolute;
+            font-size: 14px;
+            right: 25px;
+            bottom:15px;
+            border-radius: 3px;
+        }
+		
+		.copy-wx{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			background-color: #fff;
+			padding: 10px 0 20px;
+		}
+		.copy-wx .add{
+			font-size: 20px;
+			text-align: center;
+			color: #222;
+			font-weight: bold;
+		}
+		.padding-2{
+			padding-bottom: 0;
+		}
+		
+		.copy-wx .finger-box{
+			width: 50px;
+			height: 50px;
+			margin-bottom: 10px;
+		}
+		.finger-box .finger{
+			width: 100%;
+			height: 100%;
+		}
+		
+		.copy-wx .wx-num{
+			display: inline-block;
+			height: 60px;
+			padding: 0 40px;
+			background-color: #FA0001;
+			margin: 0 auto 10px;
+			line-height: 60px;
+			color: #fff;
+			font-size: 26px;
+			letter-spacing: 1px;
+			cursor: pointer;
+		}
+		
+		/*动态盒子*/
+		.san {
+			-webkit-animation: change 0.6s linear 0s infinite;
+			-moz-animation: change 0.6s linear 0s infinite;
+			-ms-animation: change 0.6s linear 0s infinite;
+			-o-animation: change 0.6s linear 0s infinite;
+			animation: change 0.6s linear 0s infinite;
+		}
+		
+		
+		@-webkit-keyframes change {
+			0% {
+				-webkit-transform: scale(1)
+			}
+			50% {
+				-webkit-transform: scale(1.2)
+			}
+			100% {
+				-webkit-transform: scale(1)
+			}
+		}
+		
+		@keyframes change {
+			0% {
+				transform: scale(1)
+			}
+			50% {
+				transform: scale(1.2)
+			}
+			100% {
+				transform: scale(1)
+			}
+		}
+		
+		@-moz-keyframes change {
+			0% {
+				-moz-transform: scale(1)
+			}
+			50% {
+				-moz-transform: scale(1.2)
+			}
+			100% {
+				-moz-transform: scale(1)
+			}
+		}
+		
+		@-ms-keyframes change {
+			0% {
+				-ms-transform: scale(1)
+			}
+			50% {
+				-ms-transform: scale(1.2)
+			}
+			100% {
+				-ms-transform: scale(1)
+			}
+		}
+		
+		.bg-25{
+			width: 100%;
+			background-color: #10555A;
+		}
+		.bg-25 .text{
+			padding: 14px 14px 0;
+			box-sizing: border-box;
+			font-size: 20px;
+			color: #E1E09C;
+			line-height: 32px;
+			text-indent: 2em;
+		}
+		.bg-25 .copy-wx{
+			background-color: #10555A;
+			padding-bottom: 20px;
+		}
+		.bg-25 .add{
+			color: #fff;
+		}
+		
+		.footer-pop{
+			position: fixed;
+			bottom: 0;
+			width: 610px;
+			background-color: #800000;
+			padding: 10px 0 16px;
+		}
+		.footer-pop .wx-num{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 16px;
+		}
+		.footer-pop .text{
+			color: #fff;
+		}
+		.footer-pop .num{
+			color: #FAF824;
+			font-size: 26px;
+			margin: 0 10px 0 6px;
+		}
+		.footer-pop .button{
+			width: 70px;
+			height: 26px;
+			text-align: center;
+			line-height: 26px;
+			color: #9D2917;
+			background: linear-gradient(to right, #F0E5B9, #FFD31F);
+			background: -webkit-linear-gradient(to right, #F0E5B9, #FFD31F);
+			background: -moz-linear-gradient(to right, #F0E5B9, #FFD31F);
+			background: -o-linear-gradient(to right, #F0E5B9, #FFD31F);
+			border-radius: 2px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+		.gift,
+		.credit{
+			font-size: 18px;
+			color: #fff;
+			text-align: center;
+			margin-top: 6px;
+		}
+		
+		.copy-suc{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.3);
+			display: none;
+		}
+		.copy-suc .box{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 660px;
+			height: 260px;
+			background-color: #fff;
+			padding-top: 40px;
+			box-sizing: border-box;
+			border-radius: 2px;
+		}
+		.copy-suc .text{
+			font-size: 22px;
+			color: #333;
+			text-align: center;
+			line-height: 36px;
+		}
+		.copy-suc .blod{
+			color: #f00;
+			font-weight: bold;
+		}
+		.copy-suc .color{
+			color: #f00;
+		}
+		.copy-suc .line{
+			width: 100%;
+			height: 1px;
+			background-color: #ccc;
+			margin-top: 40px;
+		}
+		.copy-suc .btn2{
+			display: block;
+			width: 140px;
+			height: 46px;
+			background-color: #f00;
+			line-height: 46px;
+			text-align: center;
+			font-size: 20px;
+			color: #fff;
+			margin: 20px auto !important;
+			cursor: pointer;
+		}
+		
+		.copy-suc2{
+			position: fixed;
+			top: 45%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 610px;
+			height: 60px;
+			background-color: rgba(0, 0, 0, 0.7);
+			text-align: center;
+			line-height: 60px;
+			font-size: 20px;
+			color: #fff;
+			display: none;
+		}
+    </style>
+</head>
+<body >
+    <div class="container">
+        <section>
+            <div class="main">
+                <img src="./images/index/gem_01.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_02.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_03.jpg?v=2020-05-22" alt="">
+                <!-- <img src="./images/index/gem_04.jpg?v=2020-05-22" alt=""> -->
+				<div class="copy-wx">
+					<p class="add san">添加微信买一手货源宝石!</p>
+					<div class="finger-box">
+						<img class="finger" src="./images/index/shouzhi.gif" alt="">
+					</div>
+					<div class="wx-num" ata-clipboard-action="copy" data-clipboard-target="#copyText1" id="copyText1">D19925201004</div>
+					<p class="add">(点击复制添加)</p>
+				</div>
+                <img src="./images/index/gem_05.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_06.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_07.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_08.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_09.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_10.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_11.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_12.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_13.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_14.jpg?v=2020-05-22" alt="">
+                <!-- <img src="./images/index/gem_15.jpg?v=2020-05-22" alt=""> -->
+				<div class="copy-wx padding-2">
+					<p class="add san">添加微信买一手货源宝石!</p>
+					<div class="finger-box">
+						<img class="finger" src="./images/index/shouzhi.gif" alt="">
+					</div>
+					<div class="wx-num" ata-clipboard-action="copy" data-clipboard-target="#copyText1" id="copyText1">D19925201004</div>
+					<p class="add">(点击复制添加)</p>
+				</div>
+                <img src="./images/index/gem_16.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_17.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_18.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_19.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_20.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_21.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_22.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_23.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_24.jpg?v=2020-05-22" alt="">
+                <!-- <img src="./images/index/gem_25.jpg?v=2020-05-22" alt=""> -->
+				<div class="bg-25">
+					<div class="text">朋友圈会发一些宝石鉴别知识、设计图、加工图、私人定制的成功案例等等，让朋友们与宝石近距离解除，也会揭穿一些无良商贩的宝石造假、售假手段及伎俩，看后可避免上当！如果你想要交流鉴定、查看新货，了解更多宝石知识，加我微信：</div>
+					<div class="copy-wx padding-2">
+						<p class="add san">添加微信买一手货源宝石!</p>
+						<div class="finger-box">
+							<img class="finger" src="./images/index/shouzhi.gif" alt="">
+						</div>
+						<div class="wx-num" ata-clipboard-action="copy" data-clipboard-target="#copyText1" id="copyText1">D19925201004</div>
+						<p class="add">(点击复制添加)</p>
+					</div>
+				</div>
+                <img src="./images/index/gem_26.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_27.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_28.jpg?v=2020-05-22" alt="">
+                <!-- <img src="./images/index/gem_29.jpg?v=2020-05-22" alt=""> -->
+				<div class="copy-wx">
+					<p class="add san">添加微信买一手货源宝石!</p>
+					<div class="finger-box">
+						<img class="finger" src="./images/index/shouzhi.gif" alt="">
+					</div>
+					<div class="wx-num" ata-clipboard-action="copy" data-clipboard-target="#copyText1" id="copyText1">D19925201004</div>
+					<p class="add">(点击复制添加)</p>
+				</div>
+                <img src="./images/index/gem_30.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_31.jpg?v=2020-05-22" alt="">
+                <img src="./images/index/gem_32.jpg?v=2020-05-22" alt="">
+				
+				<div class="footer-pop">
+					<div class="wx-num">
+						<div class="text">添加老师微信：</div>
+						<div class="num" id="target">D19925201004</div>
+						<div class="button" ata-clipboard-action="copy" data-clipboard-target="#target" id="copyText2">点击复制</div>
+					</div>
+					<div class="gift">每天前30名，免费送红宝石小礼品</div>
+					<div class="credit">天然宝石【可全国质检 假一赔百】</div>
+				</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div id="goToTop"><a href="javascript:;"></a></div> 
+	
+	<!-- 复制成功 -->
+	<div class="copy-suc">
+		<div class="box">
+			<div class="text">已成功复制 <span class="blod">D19925201023</span>，去微信添加老师</div>
+			<div class="text">【 去微信 - <span class="color">粘贴微信号搜索添加</span> 】</div>
+			<div class="line"></div>
+			<a class="btn2" href="weixin://">去微信 &gt;&gt;</a>
+		</div>
+	</div>
+	
+	<!-- 复制成功2 -->
+	<div class="copy-suc2">
+		<div>已经成功复制微信号，去微信添加老师</div>
+	</div>
+	
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?6739142b77b25d6405edee6770e2b9c2";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	
+    <script type="text/javascript">
+        // 返回顶部
+        $(window).scroll(function(){
+            var top = $(window).scrollTop();
+            if($(window).scrollTop()>200){
+                // $("#header").css("position","fixed")
+                $("#header").css("top","0")
+                // $("#header").css("z-index","9999")
+                $("#goToTop").css("display","block")
+            }else{
+                // $("#title").css("position","static")
+                $("#goToTop").css("display","none")
+            }
+        });
+        $('#goToTop a').click(function(){
+            $('html ,body').animate({scrollTop: 0}, 300);
+            return false;
+        });
+		
+		// 复制微信号
+		$(document).ready(function(){
+		    var clipboard = new Clipboard('#copyText2');
+		    clipboard.on('success', function(e) {
+		        $('.copy-suc').show();
+		        e.clearSelection();
+		        console.log(e.clearSelection);
+		    });
+			 
+			$('.copy-suc .btn2').click(function(){
+				$('.copy-suc').hide();
+			})
+			
+			var clipboard = new Clipboard('#copyText1');
+			clipboard.on('success', function(e) {
+				console.log(123)
+				$('.copy-suc2').show();
+			    e.clearSelection();
+			    console.log(e.clearSelection);
+				var Timer = setTimeout(function() {
+					$('.copy-suc2').hide();
+					clearTimeout(Timer);
+				},1000)
+			});
+		});
+		
+    </script>
+</body>
+</html>
