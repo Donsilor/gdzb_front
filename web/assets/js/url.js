@@ -160,6 +160,8 @@ $(function(){
         if(texture == null && type == '猫眼石'){
             urlAll = '../assets/JsonData/all/all_cat.json';
         }
+		
+		var datar = [];
 
         // json数据请求
         $.ajax({
@@ -167,7 +169,9 @@ $(function(){
             url:urlAll,
             dataType: "json",
             success: function(res){
-                console.log("数据",res.data)
+				datar = res.data;
+				var a = -1,b = -1;
+                // console.log("数据",res.data)
                 if(res.data==''){
                     var div='<div class="no_pro">对不起，暂时没有宝贝</div>'
                     $(".product").css('height','300px');
@@ -205,8 +209,12 @@ $(function(){
                         
                         var row = $('<div class="pro_list">');
                             $.each(value.thumb_src,function(i,v){
+								a = index;
+								b = i;
                                 let htm = $(html);
                         htm.find('img').attr('src', v.pro_img);
+                        htm.find('.underline').attr('dataa', a);
+                        htm.find('.underline').attr('datab', b);
                         htm.find('.underline').append( v.pro_name);
                         htm.find('.underline').attr('title', v.pro_name);
                         row.append(htm);
@@ -239,6 +247,12 @@ $(function(){
                 // })
             }
         });
+		
+		// clickMe = function(e) {
+		// 	var lineA = e.target.getAttribute("dataa"),
+		// 		lineB = e.target.getAttribute("datab");
+		// 	console.log(datar[lineA].thumb_src[lineB])
+		// }
     }
     // 加载更多
     // $(".loadmore p").click(function(){
