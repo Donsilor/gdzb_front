@@ -5,15 +5,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"糯种阳绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/6.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/6.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/7.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/7.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -21,15 +23,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/8.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/8.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种晴绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/9.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/9.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -37,15 +41,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/10.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/10.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/11.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/11.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -53,15 +59,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/12.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/12.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种晴水圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/19.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/19.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -69,15 +77,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/24.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/24.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯阳绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/25.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/25.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -86,15 +96,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿平安扣吊坠",
-                    "pro_img": "../assets/images/feicui/guajian/4.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/4.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰‎种‎阳绿正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/5.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/5.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -102,15 +114,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃‎种正阳绿‎正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/14.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/14.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃‎种‎帝王绿正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/16.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/16.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -119,15 +133,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种飘花山水牌",
-                    "pro_img": "../assets/images/feicui/guajian/17.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/17.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种双彩卧佛",
-                    "pro_img": "../assets/images/feicui/guajian/18.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/18.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -135,15 +151,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰蓝水布袋佛",
-                    "pro_img": "../assets/images/feicui/guajian/20.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/20.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰绿水观音",
-                    "pro_img": "../assets/images/feicui/guajian/21.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/21.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -152,15 +170,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿金蝉",
-                    "pro_img": "../assets/images/feicui/guajian/22.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/22.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃种莲花观音",
-                    "pro_img": "../assets/images/feicui/guajian/23.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/23.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -168,15 +188,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种双彩普贤菩萨",
-                    "pro_img": "../assets/images/feicui/guajian/27.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/27.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿戒指",
-                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg"
+                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -185,15 +207,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰阳绿耳坠",
-                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg"
+                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/1.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/1.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -201,15 +225,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"帝王绿翡翠珠链",
-                    "pro_img": "../assets/images/feicui/xianglian/13.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/13.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种阳晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/26.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/26.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -218,15 +244,17 @@
                
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"山水意境牌",
-                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"和田玉籽料原石",
-                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -234,15 +262,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"渔樵耕读",
-                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"龙马精神",
-                    "pro_img": "../assets/images/hetianyu/guajian/28.jpg"
+                    "pro_img": "../assets/images/hetianyu/guajian/28.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -250,15 +280,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"花开富贵",
-                    "pro_img": "../assets/images/hetianyu/guajian/29.jpg"
+                    "pro_img": "../assets/images/hetianyu/guajian/29.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克4.06克拉无烧鸽血红红宝石裸石",
-                    "pro_img": "../assets/images/baoshi/red/1.jpg"
+                    "pro_img": "../assets/images/baoshi/red/1.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -266,15 +298,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克14.4克拉无烧鸽血红红宝石晚装项链",
-                    "pro_img": "../assets/images/baoshi/red/2.jpg"
+                    "pro_img": "../assets/images/baoshi/red/2.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克4.03克拉无烧鸽血红红宝石戒指",
-                    "pro_img": "../assets/images/baoshi/red/3.jpg"
+                    "pro_img": "../assets/images/baoshi/red/3.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -282,15 +316,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克3.01克拉无烧鸽血红红宝石戒指",
-                    "pro_img": "../assets/images/baoshi/red/4.jpg"
+                    "pro_img": "../assets/images/baoshi/red/4.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克4.12克拉无烧鸽血红红宝石戒指",
-                    "pro_img": "../assets/images/baoshi/red/5.jpg"
+                    "pro_img": "../assets/images/baoshi/red/5.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -298,15 +334,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"莫桑比克4.01克拉无烧鸽血红红宝石戒指",
-                    "pro_img": "../assets/images/baoshi/red/6.jpg"
+                    "pro_img": "../assets/images/baoshi/red/6.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡7.30克拉皇家蓝蓝宝石戒指吊坠双用款",
-                    "pro_img": "../assets/images/baoshi/blue/15.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/15.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -314,15 +352,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡7.51克拉皇家蓝蓝宝石戒指",
-                    "pro_img": "../assets/images/baoshi/blue/17.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/17.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡15.42克拉无烧皇家蓝蓝宝石戒指",
-                    "pro_img": "../assets/images/baoshi/blue/18.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/18.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -330,15 +370,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡3.06克拉皇家蓝蓝宝石胸针吊坠",
-                    "pro_img": "../assets/images/baoshi/blue/19.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/19.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡17.12克拉皇家蓝蓝宝石吊坠",
-                    "pro_img": "../assets/images/baoshi/blue/20.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/20.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -346,15 +388,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡14.48克拉皇家蓝蓝宝石戒指吊坠两用款",
-                    "pro_img": "../assets/images/baoshi/blue/21.jpg"
+                    "pro_img": "../assets/images/baoshi/blue/21.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"哥伦比亚9.14克拉green祖母绿戒指",
-                    "pro_img": "../assets/images/baoshi/green/7.jpg"
+                    "pro_img": "../assets/images/baoshi/green/7.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -362,15 +406,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"哥伦比亚6.7克拉vivid green祖母绿戒指",
-                    "pro_img": "../assets/images/baoshi/green/8.jpg"
+                    "pro_img": "../assets/images/baoshi/green/8.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"赞比亚28.06克拉vivid green祖母绿项链",
-                    "pro_img": "../assets/images/baoshi/green/9.jpg"
+                    "pro_img": "../assets/images/baoshi/green/9.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -378,15 +424,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"哥伦比亚12.98克拉green祖母绿项链",
-                    "pro_img": "../assets/images/baoshi/green/10.jpg"
+                    "pro_img": "../assets/images/baoshi/green/10.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"哥伦比亚祖9.51克拉green祖母绿戒指吊坠两用款",
-                    "pro_img": "../assets/images/baoshi/green/11.jpg"
+                    "pro_img": "../assets/images/baoshi/green/11.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -394,15 +442,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"赞比亚14.82克拉Intense green祖母绿耳环",
-                    "pro_img": "../assets/images/baoshi/green/12.jpg"
+                    "pro_img": "../assets/images/baoshi/green/12.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"赞比亚18.72克拉vivid green祖母绿手链",
-                    "pro_img": "../assets/images/baoshi/green/13.jpg"
+                    "pro_img": "../assets/images/baoshi/green/13.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -410,15 +460,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"赞比亚5.8克拉vivid green祖母绿戒指",
-                    "pro_img": "../assets/images/baoshi/green/14.jpg"
+                    "pro_img": "../assets/images/baoshi/green/14.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"3",
                     "pro_name":"斯里兰卡蜜糖色11.02克拉金绿猫眼裸石",
-                    "pro_img": "../assets/images/baoshi/cat/16.jpg"
+                    "pro_img": "../assets/images/baoshi/cat/16.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

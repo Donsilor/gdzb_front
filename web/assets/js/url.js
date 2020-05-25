@@ -2,6 +2,7 @@ $(function(){
     var _default = -1;
     var max_default = 4;
     var list = []
+    
     init()
     function init() {   
         
@@ -160,8 +161,7 @@ $(function(){
         if(texture == null && type == '猫眼石'){
             urlAll = '../assets/JsonData/all/all_cat.json';
         }
-		
-		var datar = [];
+        var datar = [];
 
         // json数据请求
         $.ajax({
@@ -169,9 +169,8 @@ $(function(){
             url:urlAll,
             dataType: "json",
             success: function(res){
-				datar = res.data;
-				var a = -1,b = -1;
-                // console.log("数据",res.data)
+                datar = res.data;
+                console.log("数据",res.data)
                 if(res.data==''){
                     var div='<div class="no_pro">对不起，暂时没有宝贝</div>'
                     $(".product").css('height','300px');
@@ -186,47 +185,76 @@ $(function(){
                                 <img src="" alt="">\
                             </div>\
                             <p class="underline" style="text-overflow: ellipsis;white-space: nowrap;overflow:hidden;" title=""></p>\
-                            <p style="cursor: pointer;" class="look">点击查看></p>\
+                            <p style="cursor: pointer;" onclick="clickMe(event)" class="look"></p>\
                         </div>\
                     </div>\
                 ';
                 // list = res.data
                 var data=res.data
                 
+                
                 // var count = 3;
                 // var end_index = page*count-1;
                 // var start_index = end_index-3;
-                
+                // let aa = -1
                 $.each(data,function(index,value){
                     // if(index<start_index && index>end_index) {
                     //     continue;
                     // }
+                    // aa = index
 
                     // $(".product").empty();
                     // console.log(index)
                     // if(index < maxNum && index > minNum){
                     // if(index < max_default && index > _default){
-                        
+                       
                         var row = $('<div class="pro_list">');
-                            $.each(value.thumb_src,function(i,v){
-								a = index;
-								b = i;
-                                let htm = $(html);
-                        htm.find('img').attr('src', v.pro_img);
-                        htm.find('.underline').attr('dataa', a);
-                        htm.find('.underline').attr('datab', b);
-                        htm.find('.underline').append( v.pro_name);
-                        htm.find('.underline').attr('title', v.pro_name);
-                        row.append(htm);
+                        $.each(value.thumb_src,function(i,v){
+                            a = index;
+							b = i;
+                            let htm = $(html);
+                            htm.find('img').attr('src', v.pro_img);
+                            htm.find('.underline').append( v.pro_name);
+                            htm.find('.underline').attr('title', v.pro_name);
+                            htm.find('.look').attr('dataa', a);
+                            htm.find('.look').attr('datab', b);
+                            htm.find('.look').append( v.btn);
+                            row.append(htm);
                         });
+                        $('.look').click(function(){
+                            // console.log(index)
+                            // var itemParent = $(this).parent().parent().parent().index()
+                            // var item = $(this).parent().parent().index()
+                            // console.log("ppp",data[itemParent].value.thumb_src[item].type)
+                            // console.log("yyyy",value.thumb_src[item].type)
+                            // if(value.thumb_src[item].type == 1){
+                            //     window.location.href="../pages/purchase_process.html"
+                            // }
+                            // if(value.thumb_src[item].type == 2){
+                            //     window.location.href="../pages/purchase_process_hetian.html"
+                            // }
+                            // if(value.thumb_src[item].type == 3){
+                            //     window.location.href="../pages/purchase_process_baoshi.html"
+                            // }
+                            // console.log("index",itemParent,item)
+                        })
+                        // console.log("yyyy",value.thumb_src[0].type)
                         $(".product").append(row);
                     // }
                     // }
-                
                 });
+               
                 // 点击列表查看更多跳转购买流程页面
                 $('.look').click(function(){
-                    window.location.href="../pages/purchase_process.html"
+                    // var baseUrl = window.location.href
+                    // console.log("dddd",type)
+                    // if(texture == '翡翠'){
+                    //     window.location.href="../pages/purchase_process.html"
+                    // } else if(texture == '和田玉'){
+                    //     window.location.href="../pages/purchase_process_hetian.html"
+                    // } else if(texture == '珍贵宝石'){
+                    //     window.location.href="../pages/purchase_process_baoshi.html"
+                    // } 
                 })
                 // $(".underline").each(function(){
                 //     var maxwidth = 10;
@@ -247,12 +275,19 @@ $(function(){
                 // })
             }
         });
-		
-		// clickMe = function(e) {
-		// 	var lineA = e.target.getAttribute("dataa"),
-		// 		lineB = e.target.getAttribute("datab");
-		// 	console.log(datar[lineA].thumb_src[lineB])
-		// }
+
+        clickMe = function(e) {
+			var lineA = e.target.getAttribute("dataa"),
+                lineB = e.target.getAttribute("datab");
+                if(datar[lineA].thumb_src[lineB].type == 1){
+                    window.location.href="../pages/purchase_process.html"
+                } else if(datar[lineA].thumb_src[lineB].type == 2){
+                    window.location.href="../pages/purchase_process_hetian.html"
+                } else if(datar[lineA].thumb_src[lineB].type == 3){
+                    window.location.href="../pages/purchase_process_baoshi.html"
+                }
+			// console.log(datar[lineA].thumb_src[lineB].type)
+		}
     }
     // 加载更多
     // $(".loadmore p").click(function(){
@@ -273,4 +308,6 @@ $(function(){
     //     }
     //     init()
     // })
+
+    
 })

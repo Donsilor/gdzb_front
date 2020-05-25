@@ -5,15 +5,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/1.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/1.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"帝王绿翡翠珠链",
-                    "pro_img": "../assets/images/feicui/xianglian/13.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/13.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -21,9 +23,10 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种阳晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/26.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/26.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

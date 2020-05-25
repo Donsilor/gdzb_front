@@ -5,9 +5,10 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰阳绿耳坠",
-                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg"
+                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

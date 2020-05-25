@@ -5,9 +5,10 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿戒指",
-                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg"
+                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

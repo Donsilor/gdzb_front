@@ -5,15 +5,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"糯种阳绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/6.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/6.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/7.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/7.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -22,13 +24,17 @@
                
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/8.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/8.jpg",
+                    "btn":"点击查看>"
                 },
                 {
+                    "texture":"",
+                    "type":"1",
                     "pro_name":"冰种晴绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/9.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/9.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -36,15 +42,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/10.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/10.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/11.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/11.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -53,15 +61,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/12.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/12.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种晴水圆条手镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/19.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/19.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -69,15 +79,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"满翠绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/24.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/24.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰糯阳绿平安镯",
-                    "pro_img": "../assets/images/feicui/shouzhuo/25.jpg"
+                    "pro_img": "../assets/images/feicui/shouzhuo/25.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -86,15 +98,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿平安扣吊坠",
-                    "pro_img": "../assets/images/feicui/guajian/4.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/4.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰‎种‎阳绿正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/5.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/5.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -102,15 +116,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃‎种正阳绿‎正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/14.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/14.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃‎种‎帝王绿正庄坐‎佛",
-                    "pro_img": "../assets/images/feicui/guajian/16.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/16.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -119,15 +135,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种飘花山水牌",
-                    "pro_img": "../assets/images/feicui/guajian/17.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/17.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种双彩卧佛",
-                    "pro_img": "../assets/images/feicui/guajian/18.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/18.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -135,15 +153,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰蓝水布袋佛",
-                    "pro_img": "../assets/images/feicui/guajian/20.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/20.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰绿水观音",
-                    "pro_img": "../assets/images/feicui/guajian/21.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/21.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -152,15 +172,17 @@
                
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"翠绿金蝉",
-                    "pro_img": "../assets/images/feicui/guajian/22.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/22.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"玻璃种莲花观音",
-                    "pro_img": "../assets/images/feicui/guajian/23.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/23.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -168,15 +190,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种双彩普贤菩萨",
-                    "pro_img": "../assets/images/feicui/guajian/27.jpg"
+                    "pro_img": "../assets/images/feicui/guajian/27.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿戒指",
-                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg"
+                    "pro_img": "../assets/images/feicui/jiezhi/2.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -185,15 +209,17 @@
                 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰阳绿耳坠",
-                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg"
+                    "pro_img": "../assets/images/feicui/ershi/1/1.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"高冰帝王绿晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/1.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/1.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -201,15 +227,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"帝王绿翡翠珠链",
-                    "pro_img": "../assets/images/feicui/xianglian/13.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/13.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"1",
                     "pro_name":"冰种阳晚装链",
-                    "pro_img": "../assets/images/feicui/xianglian/26.jpg"
+                    "pro_img": "../assets/images/feicui/xianglian/26.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }
