@@ -5,15 +5,17 @@
             "thumb_src":[ 
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"龙马精神",
-                    "pro_img": "../assets/images/hetianyu/guajian/28.jpg"
+                    "pro_img": "../assets/images/hetianyu/guajian/28.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"花开富贵",
-                    "pro_img": "../assets/images/hetianyu/guajian/29.jpg"
+                    "pro_img": "../assets/images/hetianyu/guajian/29.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

@@ -5,15 +5,17 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"山水意境牌",
-                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/15.jpg",
+                    "btn":"点击查看>"
                 },
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"和田玉籽料原石",
-                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/30.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         },
@@ -21,9 +23,10 @@
             "thumb_src":[
                 {
                     "texture":"",
-                    "type":"",
+                    "type":"2",
                     "pro_name":"渔樵耕读",
-                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg"
+                    "pro_img": "../assets/images/hetianyu/baijian/31.jpg",
+                    "btn":"点击查看>"
                 }
             ]
         }

@@ -163,12 +163,14 @@ $(function(){
             urlAll = '../assets/JsonData/all/all_cat.json';
         }
 
-    
+        var datar = [];
+
         $.ajax({
             type:"get",
             url:urlAll,
             dataType: "json",
             success: function(res){
+                datar = res.data;
                 console.log(res)
                 if(res.data ==''){
                     var div='<div class="no_pro">对不起，暂时没有宝贝</div>'
@@ -187,7 +189,7 @@ $(function(){
                                 <img src="" alt="">\
                             </div>\
                             <p class="underline" style="text-overflow: ellipsis;white-space: nowrap;overflow:hidden;" data-toggle="tooltip" title=""></p>\
-                            <p style="cursor: pointer;" class="more">点击查看 ></p>\
+                            <p style="cursor: pointer;" onclick="clickMe(event)" class="more"></p>\
                         </div>\
                     </div>\
                 ';
@@ -202,9 +204,14 @@ $(function(){
                     if(index < max_default && index > _default){
                         var row = $('<div class="pro_list">');
                         $.each(value.thumb_src,function(i,v){
+                            a = index;
+							b = i;
                             let htm = $(html);
                             htm.find('img').attr('src', v.pro_img);
                             htm.find('.underline').append( v.pro_name);
+                            htm.find('.more').append( v.btn);
+                            htm.find('.more').attr('dataa', a);
+                            htm.find('.more').attr('datab', b);
                             row.append(htm);
                         });
                         $(".product").append(row);
@@ -214,9 +221,21 @@ $(function(){
                 });
                 
                 // 二维码弹框
-                $('.more').click(function(){
-                    $('.msgBox').css('display','block')
-                })
+                // $('.more').click(function(){
+                //     var img_url = ''
+                //     if(texture == '翡翠'){
+                //         img_url = '../assets/images/common/list_ewm.jpg?v=2020-04-15'
+                //         $("#code").attr("src", img_url); 
+                //     } else if(texture == '和田玉'){
+                //         img_url = '../assets/images/common/list_ewm_hetianyu.jpg?v=2020-04-15'
+                //         $("#code").attr("src", img_url); 
+                //     } else if(texture == '珍贵宝石'){
+                //         img_url = '../assets/images/common/list_ewm_baoshi.jpg?v=2020-04-15'
+                //         $("#code").attr("src", img_url); 
+                //     } 
+                    
+                //     $('.msgBox').css('display','block')
+                // })
                 $('.enter').click(function(){
                     $('.msgBox').css('display','none')
                 })
@@ -225,12 +244,30 @@ $(function(){
                 })
             }
         });
+        // 点击商品出现对应二维码弹框
+        clickMe = function(e) {
+            var img_url = ''
+			var lineA = e.target.getAttribute("dataa"),
+                lineB = e.target.getAttribute("datab");
+                if(datar[lineA].thumb_src[lineB].type == 1){
+                    img_url = '../assets/images/common/list_ewm.jpg?v=2020-04-15'
+                    $("#code").attr("src", img_url); 
+                } else if(datar[lineA].thumb_src[lineB].type == 2){
+                    img_url = '../assets/images/common/list_ewm_hetianyu.jpg?v=2020-04-15'
+                    $("#code").attr("src", img_url); 
+                } else if(datar[lineA].thumb_src[lineB].type == 3){
+                    img_url = '../assets/images/common/list_ewm_baoshi.jpg?v=2020-04-15'
+                    $("#code").attr("src", img_url); 
+                }
+                $('.msgBox').css('display','block')
+			// console.log(datar[lineA].thumb_src[lineB].type)
+		}
     }
    
     
     $(".loadmore").click(function(){
-        console.log("max_default",max_default)
-        console.log("list.length",list.length)
+        // console.log("max_default",max_default)
+        // console.log("list.length",list.length)
         // $('.product').html("");
         if(_default<list.length){
             max_default = max_default + 3
