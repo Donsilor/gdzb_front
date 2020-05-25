@@ -257,7 +257,7 @@
 		.bg-31{
 			width: 100%;
 			background-color: #10555A;
-			font-size: 20px;
+			font-size: 23px;
 			color: #C5BA8F;
 			line-height: 40px;
 			text-indent: 2em;
@@ -406,11 +406,11 @@
 			left: 50%;
 			transform: translateX(-50%);
 			width: 610px;
-			height: 60px;
+			height: 70px;
 			background-color: rgba(0, 0, 0, 0.7);
 			text-align: center;
-			line-height: 60px;
-			font-size: 20px;
+			line-height: 70px;
+			font-size: 28px;
 			color: #fff;
 			display: none;
 		}
@@ -456,7 +456,7 @@
 				<img src="./images/index/gem_20.jpg?v=2020-05-22" alt="">
 				<img src="./images/index/gem_21.jpg?v=2020-05-22" alt="">
 				<div class="bg-25">
-					<div class="text">朋友圈会发一些宝石鉴别知识、设计图、加工图、私人定制的成功案例等等，让朋友们与宝石近距离解除，也会揭穿一些无良商贩的宝石造假、售假手段及伎俩，看后可避免上当！如果你想要交流鉴定、查看新货，了解更多宝石知识，加我微信：</div>
+					<!-- <div class="text">朋友圈会发一些宝石鉴别知识、设计图、加工图、私人定制的成功案例等等，让朋友们与宝石近距离解除，也会揭穿一些无良商贩的宝石造假、售假手段及伎俩，看后可避免上当！如果你想要交流鉴定、查看新货，了解更多宝石知识，加我微信：</div> -->
 					<div class="copy-wx padding-2">
 						<p class="add san">立即添加微信查看宝石新品</p>
 						<div class="finger-box">
@@ -550,14 +550,13 @@
 			
 			var clipboard = new Clipboard('#copyText1');
 			clipboard.on('success', function(e) {
-				console.log(123)
 				$('.copy-suc2').show();
 			    e.clearSelection();
 			    console.log(e.clearSelection);
 				var Timer = setTimeout(function() {
 					$('.copy-suc2').hide();
 					clearTimeout(Timer);
-				},1000)
+				},1500)
 			});
 		});
 		 
