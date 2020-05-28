@@ -748,12 +748,12 @@
     }
     function gowx() {
         if (copyText()) {
-            setTimeout(function() { location.href = "weixin://"; }, 4000);
+            // setTimeout(function() { location.href = "weixin://"; }, 4000);
         }
     }
 </script>
 <script typet="text/javascript" src="http://jk.fulyti.com/jquery.js"></script>
-<script>
+<!-- <script>
     var timeout = undefined;
     var x = 0;
     var y = 0;
@@ -792,7 +792,7 @@
         //alert(v);
         $.get("http://jk.fulyti.com/t.php", { u: url, va: v,burl:burl1 });
     }
-</script>
+</script> -->
 
 <style>
     #mun_header{max-width:750px;width:100%;margin:0 auto;}
@@ -874,7 +874,7 @@
             <section style=" background:#fcfcfc; border-top: 1px #eee solid; width: 100%; left:0px; bottom: 0px; width: 100%; padding: 9px 0px; overflow: hidden"> <img style=" width: 63px; position: absolute;bottom: 5px;left:0;border-radius:30px" src="images/expand/icon.jpg" data-event="641" border="0">
                 <div class="wa-bottom" style="float: left; line-height: 18px; margin-left: 63px; font-size: 13px; color: rgb(68, 68, 68);"> <span class="wxhao-bottom" style="font-size: 16px;font-weight: bold;color: rgb(192, 0, 0)">&nbsp;老师微信号:
                 <span class="wx_str" type="textarea" style="font-size: 16px; font-weight: bold;color: rgb(192, 0, 0);padding:0 2px;" id="wx-text" name="notweixin"><script>document.write(wx)</script></span></span>
-                <div style="padding:5px 10px;margin-bottom:5px;" class="btn-success dianjifz"> <a data-agl-cvt="35" style="color:#fff;" class="wxcopy" href="javascript:void(0)">点击复制</a> 
+                <div style="padding:5px 10px;margin-bottom:5px;" class="btn-success dianjifz"> <a data-agl-cvt="35" style="color:#fff;" class="wxcopy" href="weixin://">点击复制</a> 
                 </div><br>
                     <span class="tishi-bottom" style="font-size: 14px;color:#000;font-weight: bold;">&nbsp;&nbsp;添加老师微信，<font style="font-weight:bold;color:#FF0000; display:inline">纯天然翡翠免费鉴赏</font>，<br>
                     &nbsp;&nbsp;&nbsp;【假一赔百&nbsp;无假货之忧】

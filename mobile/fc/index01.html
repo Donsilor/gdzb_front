@@ -106,6 +106,7 @@
     <link rel="stylesheet">
 
     <script src="js/jquery-1.11.3.min_1.js"></script>
+    
     <!-- <script src="js/weixin_1.js"></script> -->
     <!-- <script src="../assets/js/ismobile.js"></script> -->
 
@@ -132,15 +133,8 @@
         display: none;
     }
     </style>
-    <script type="text/javascript">
-        arr_wx = ['D19925201009'];
-        var wx_index = Math.floor((Math.random() * arr_wx.length)); //,''
-        var wx = arr_wx[wx_index];
-        var znwx_img = '<img src="' + arr_wx[wx_index] + '.jpg" style="margin:0px auto; width:280px;" />';
 
-        var butong_net = new Array('D19925201009'); 
-        var butong_net2 = Math.floor(Math.random() * butong_net.length); 
-        var wx=butong_net[butong_net2]
+    <script type="text/javascript">
         (function () {
             var ma = document.createElement('script');
             ma.type = 'text/javascript';
@@ -160,6 +154,16 @@
             var s = document.getElementsByTagName('script')[0];
             s.parentNode.insertBefore(ma, s);
         })();
+    </script>
+    <script type="text/javascript">
+        arr_wx = ['D19925201035'];
+        var wx_index = Math.floor((Math.random() * arr_wx.length)); //,''
+        var wx = arr_wx[wx_index];
+        var znwx_img = '<img src="' + arr_wx[wx_index] + '.jpg" style="margin:0px auto; width:280px;" />';
+
+        var butong_net = new Array('D19925201035'); 
+        var butong_net2 = Math.floor(Math.random() * butong_net.length); 
+        var wx=butong_net[butong_net2]
     </script>
 </head>
 
@@ -761,11 +765,11 @@
     }
     function gowx() {
         if (copyText()) {
-            setTimeout(function() { location.href = "weixin://"; }, 4000);
+            // setTimeout(function() { location.href = "weixin://"; }, 4000);
         }
     }
 </script>
-<script typet="text/javascript" src="http://jk.fulyti.com/jquery.js"></script>
+<!-- <script typet="text/javascript" src="http://jk.fulyti.com/jquery.js"></script>
 <script>
     var timeout = undefined;
     var x = 0;
@@ -805,7 +809,7 @@
         //alert(v);
         $.get("http://jk.fulyti.com/t.php", { u: url, va: v,burl:burl1 });
     }
-</script>
+</script> -->
 
 <style>
     #mun_header{max-width:750px;width:100%;margin:0 auto;}
