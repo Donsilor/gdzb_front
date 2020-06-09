@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://hfzbfl.hahmkj.top/fc/c3x59/vxh.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0,minimum-scale=1.0,initial-scale=1.0,user-scalable=no">
+    
+    <title>已成功复制微信号点击跳转添加</title>
+	<script src="./getwx.js"></script>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0 auto;
+        }
+        body{
+            background: #efefef;
+            font-size: 16px;
+        }
+        .WX_StyleBox_copy{
+            max-width: 750px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .WX_StyleBox_copy h5{
+            font-size: 1.5rem;
+            margin-top: 24px;
+        }
+        .WX_StyleBox_copy h6{
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: red;
+        }
+        .WX_StyleBox_copy button{
+            display: block;
+            width: 60%;
+            height: 46px;
+            background: rgb(26,173,15);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 0 14px;
+            line-height: 46px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+
+        }
+        .WX_StyleBox_copy img{
+            width: 70%;
+        }
+    </style>
+    <script src="./jquery.min.js"></script>
+    <script src="./clipboard.min.js"></script>
+</head>
+<body style="">
+    <div class="WX_StyleBox_copy">
+        
+		<a style="width: 100%;background: #009f95;text-align: center;color: #fff;margin: 0 auto;box-sizing: border-box;font-size: 13px;line-height: 2.55555556;display: block;text-decoration: none;" class="copy-btns" data-clipboard-target="#fo1">该微信号经过安全认证，可放心添加</a>
+        <br>
+        <h5>复制成功</h5>
+        <h6 id=""></h6>
+		<input id="WXStyle" value="Luobo_Hack" style=" position: fixed;  width: 1px;    top: -30px;   height: 1px;" readonly="">
+        <button class="btn" data-clipboard-target="#WXStyle">点击打开微信粘贴</button>
+        <!-- <img src="static/picture/1.gif" alt="">-->
+    </div>
+    <script>
+        var clipboard = new ClipboardJS('.btn');
+        clipboard.on('success', function(e) {
+        window._agl && window._agl.push(['track', ['success', {t: 3}]])
+            console.log(e);
+		window.location.href="weixin://";
+       
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+                   
+        });
+    </script>
+	
+	<div style="display:none;">
+	</div>
+
+</body></html>

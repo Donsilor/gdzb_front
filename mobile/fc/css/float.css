@@ -1,0 +1,9 @@
+.footer-float {
+    position: fixed; left: 0; bottom: 0; width: 100%; border-top: 1px #eee solid; background: #fff;z-index:9999;
+}
+.slide-button {
+    position: fixed;color: #aaa;top: 40%;right: 0;z-index: 99999;width: 18%;
+}
+.slide-button img {
+    width: 100%
+}
