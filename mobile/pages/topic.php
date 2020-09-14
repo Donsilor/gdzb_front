@@ -22,10 +22,10 @@
     <div id="container"></div>
 
     <script type="text/javascript">
-      var url = location.href.split('?url=')[1];
+      
 
       $.ajax({
-        url: 'https://gdzb.bddco.cn/api/gdzb/v1/special/details?url='+url,
+        url: 'https://gdzb.bddco.cn/api/gdzb/v1/special/details?url=<?php echo $_GET['url']??''; ?>',
         type: 'get',
         data: {},
         dataType: 'json',
