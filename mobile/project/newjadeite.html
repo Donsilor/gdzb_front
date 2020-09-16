@@ -108,14 +108,7 @@
                             </p>
                             <div style="text-align: center;position: relative;">
                                 <div class="Carousel">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./images/newjadeite/B19925201005.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/D19925201009.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/hdl1566.jpg"></div>
-                                        </div>
-                                        <!-- <div class="swiper-pagination"></div> -->
-                                      </div>
+                                    <img id="obj" src ="./images/jadeiteore/B19925201005.jpg" /> 
                                 </div>
                                 <img class="rich_pages  __bg_gif" data-ratio="0.496875" src="./images/newjadeite/640_5.jpg" data-type="gif" data-w="640" style="width: 640px !important; height: auto !important; visibility: visible !important;" _width="640px" src="https://mmbiz.qpic.cn/mmbiz_gif/3jFicxIs7g2bbiblzJRZEDZ6g27QUjG2qLjicUgibjg3k4kXSM9Wew2kPzDicd6He6W3II9E468qibBVA52duCNfV6eA/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" data-order="0" data-fail="0">
                             </div>
@@ -129,14 +122,7 @@
                             </p>
                             <div style="text-align: center;position: relative;">
                                 <div class="Carousel">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./images/newjadeite/B19925201005.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/D19925201009.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/hdl1566.jpg"></div>
-                                        </div>
-                                        <!-- <div class="swiper-pagination"></div> -->
-                                      </div>
+                                    <img id="obj1" src ="./images/jadeiteore/B19925201005.jpg" /> 
                                 </div>
                                 <img class="rich_pages  __bg_gif" data-ratio="0.496875" src="./images/newjadeite/640_5.jpg" data-type="gif" data-w="640" style="width: 640px !important; height: auto !important; visibility: visible !important;" _width="640px" src="https://mmbiz.qpic.cn/mmbiz_gif/3jFicxIs7g2bbiblzJRZEDZ6g27QUjG2qLjicUgibjg3k4kXSM9Wew2kPzDicd6He6W3II9E468qibBVA52duCNfV6eA/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" data-order="1" data-fail="0">
                             </div>
@@ -150,14 +136,7 @@
                             </p>
                             <div style="text-align: center;position: relative;">
                                 <div class="Carousel">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><img src="./images/newjadeite/B19925201005.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/D19925201009.jpg"></div>
-                                            <div class="swiper-slide"><img src="./images/newjadeite/hdl1566.jpg"></div>
-                                        </div>
-                                        <!-- <div class="swiper-pagination"></div> -->
-                                      </div>
+                                    <img id="obj2" src ="./images/jadeiteore/B19925201005.jpg" /> 
                                 </div>
                                 <img class="rich_pages img_loading __bg_gif" data-ratio="0.496875" src="./images/newjadeite/640_5.jpg" data-type="gif" data-w="640" style="width: 640px !important; height: auto !important;" _width="640px"  data-order="2">
                             </div>
@@ -344,29 +323,30 @@
     });
 </script>
 <script>   
-    // 轮播    
-    var mySwiper = new Swiper ('.swiper-container', {
-        direction: 'horizontal', // 垂直切换选项
-        loop: true, // 循环模式选项
-        autoplay : true,
-        speed: 1000,
-        
-        // 如果需要分页器
-        pagination: {
-        el: '.swiper-pagination',
-        },
-        
-        // 如果需要前进后退按钮
-        navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-        },
-        
-        // 如果需要滚动条
-        scrollbar: {
-        el: '.swiper-scrollbar',
-        },
-    })         
+    var curIndex=0; 
+    //时间间隔 单位毫秒 
+    var timeInterval=2000; 
+    var arr=new Array(); 
+    arr[0]="./images/newjadeite/B19925201005.jpg"; 
+    arr[1]="./images/newjadeite/D19925201009.jpg"; 
+    arr[2]="./images/newjadeite/hdl1566.jpg";
+    setInterval(changeImg,timeInterval); 
+    function changeImg() { 
+        var obj=document.getElementById("obj"); 
+        var obj1=document.getElementById("obj1");
+        var obj2=document.getElementById("obj2");
+        if (curIndex==arr.length-1)  
+        { 
+            curIndex=0; 
+        } 
+        else 
+        { 
+            curIndex+=1; 
+        } 
+        obj.src=arr[curIndex]; 
+        obj1.src=arr[curIndex]; 
+        obj2.src=arr[curIndex]; 
+    }       
 
 </script>
 </html>
