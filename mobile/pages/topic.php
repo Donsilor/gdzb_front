@@ -71,6 +71,22 @@
             img.style['text-decoration'] = obj[i]['text-decoration'];
             img.style['z-index'] = obj[i]['z-index'];
           }
+
+          if(obj[i].type == 'video'){
+            var img = document.createElement('img');
+            img.setAttribute('src', obj[i].url)
+            box.appendChild(img)
+            img.style.width = obj[i].width;
+            img.style.height = obj[i].height;
+            img.style.top = obj[i].top;
+            img.style.left = obj[i].left;
+            img.style.color = obj[i].color;
+            img.style['font-size'] = obj[i]['font-size'];
+            img.style['font-weight'] = obj[i]['font-weight'];
+            img.style['font-style'] = obj[i]['font-style'];
+            img.style['text-decoration'] = obj[i]['text-decoration'];
+            img.style['z-index'] = obj[i]['z-index'];
+          }
         }
       }
 
