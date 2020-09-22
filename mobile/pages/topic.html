@@ -3,9 +3,13 @@
 	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-		<title></title>
     <script src="../assets/js/jquery-1.11.3.min.js"></script>  
     <style type="text/css">
+      body,div,img,video,a{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
       body{
         max-width: 640px;
         margin: 0 auto;
@@ -13,8 +17,18 @@
       #container{
         position: relative;
       }
-      div,img{
+      div,img,video,a{
         position: absolute;
+      }
+      a,img,video{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: inherit;
+      }
+      .div-text{
+        padding: 4px;
       }
     </style>
   </head>
@@ -39,9 +53,26 @@
         var box = document.getElementById('container');
         var obj = res.data.data;
 
+        if(res.data.title){
+          $(document).attr("title", res.data.title);
+        }
+
+        if(res.data.description){
+          $("meta[name='viewport']").after(
+            `<meta name="description" content=${res.data.description}>`
+          );
+        }
+
+        if(res.data.keywords){
+          $("meta[name='viewport']").after(
+            `<meta name="keywords" content=${res.data.keywords}>`
+          );
+        }
+
         for(var i=0; i< obj.length; i++){
           if(obj[i].type == 'text'){
             var div = document.createElement('div');
+            div.setAttribute('class', 'div-text div-text-'+i)
             div.innerText = obj[i].content;
             box.appendChild(div)
             div.style.width = obj[i].width;
@@ -53,30 +84,55 @@
             div.style['font-weight'] = obj[i]['font-weight'];
             div.style['font-style'] = obj[i]['font-style'];
             div.style['text-decoration'] = obj[i]['text-decoration'];
+            div.style['text-align'] = obj[i]['text-align'];
             div.style['z-index'] = obj[i]['z-index'];
+
+            if(obj[i].link){
+              $(div).html(`<a href='${obj[i].link}'>${obj[i].content}</a>`)
+            }
           }
 
           if(obj[i].type == 'img'){
-            var img = document.createElement('img');
-            img.setAttribute('src', obj[i].url)
-            box.appendChild(img)
-            img.style.width = obj[i].width;
-            img.style.height = obj[i].height;
-            img.style.top = obj[i].top;
-            img.style.left = obj[i].left;
-            img.style['z-index'] = obj[i]['z-index'];
+            var style = `
+              "width: ${obj[i].width};
+              height: ${obj[i].height};
+              top: ${obj[i].top};
+              left: ${obj[i].left};
+              z-index: ${obj[i]['z-index']}"`,
+
+            img = `
+                <div class=div-img div-img-${i} style=${style}>
+                    <img class=img-${i} src='${obj[i].url}'/>
+                </div>`;
+
+            $(box).append(img)
+
+            if(obj[i].link){
+              $('.div-img-'+i+ ' img').wrap(`<a href="${obj[i].link}"></a>`)
+            }
           }
 
-          // if(obj[i].type == 'video'){
-            // var video = document.createElement('video');
-          //   video.setAttribute('src', obj[i].url)
-          //   box.appendChild(video)
-          //   video.style.width = obj[i].width;
-          //   video.style.height = obj[i].height;
-          //   video.style.top = obj[i].top;
-          //   video.style.left = obj[i].left;
-          //   video.style['z-index'] = obj[i]['z-index'];
-          // }
+          if(obj[i].type == 'video'){
+            var style = `
+              "width: ${obj[i].width};
+              height: ${obj[i].height};
+              top: ${obj[i].top};
+              left: ${obj[i].left};
+              z-index: ${obj[i]['z-index']}"`,
+
+              video = `
+                <div class=div-video div-video-${i} style=${style}>
+                  <video class=video-${i} controls>
+                    <source src=${obj[i].url} type="video/mp4">
+                  </video>
+                </div>`;
+
+            $(box).append(video)
+
+            if(obj[i].link){
+              $('.div-video-'+i+ ' video').wrap(`<a href="${obj[i].link}"></a>`)
+            }
+          }
         }
       }
 
