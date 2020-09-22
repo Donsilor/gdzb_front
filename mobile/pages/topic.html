@@ -30,6 +30,18 @@
       .div-text{
         padding: 4px;
       }
+      a,.text{
+        width: 100%;
+        height: 100%;
+        font-size: inherit;
+        text-align: inherit;
+        font-style: inherit;
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: inherit;
+        font-family: inherit;
+        white-space: pre-wrap;
+      }
     </style>
   </head>
   <body>
@@ -88,7 +100,7 @@
             div.style['z-index'] = obj[i]['z-index'];
 
             if(obj[i].link){
-              $(div).html(`<a href='${obj[i].link}'>${obj[i].content}</a>`)
+              $(div).html(`<a href='${obj[i].link}'><div class='text'>${obj[i].content}</div></a>`)
             }
           }
 
