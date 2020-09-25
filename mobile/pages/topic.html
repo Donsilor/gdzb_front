@@ -27,8 +27,27 @@
         height: 100%;
         color: inherit;
       }
+      
       .div-text{
         padding: 4px;
+        overflow: hidden;
+      }
+      .div-img, .div-video{
+        font-size: 0;
+      }
+
+      a,.text{
+        width: 100%;
+        height: 100%;
+        font-size: inherit;
+        text-align: inherit;
+        font-style: inherit;
+        color: inherit;
+        font-weight: inherit;
+        text-decoration: inherit;
+        font-family: inherit;
+        white-space: pre-wrap;
+        overflow: hidden;
       }
     </style>
   </head>
@@ -36,105 +55,120 @@
     <div id="container"></div>
 
     <script type="text/javascript">
-      var url = location.href.split('?url=')[1];
+      function getData() {
+        var screenWidth = document.body.offsetWidth,
+            ratio =  (375/screenWidth).toFixed(4);
 
-      $.ajax({
-        url: 'https://gdzb.bddco.cn/api/gdzb/v1/special/details?url='+url,
-        type: 'get',
-        data: {},
-        dataType: 'json',
-        success: function (res) {
-          console.log(res)
-          successFn(res) 
-        }
-      })
-
-      function successFn(res) {
-        var box = document.getElementById('container');
-        var obj = res.data.data;
-
-        if(res.data.title){
-          $(document).attr("title", res.data.title);
+        function selfAdaption(size) {
+          return parseInt(parseInt(size)/ratio)+'px';
         }
 
-        if(res.data.description){
-          $("meta[name='viewport']").after(
-            `<meta name="description" content=${res.data.description}>`
-          );
-        }
+        var url = location.href.split('?url=')[1];
 
-        if(res.data.keywords){
-          $("meta[name='viewport']").after(
-            `<meta name="keywords" content=${res.data.keywords}>`
-          );
-        }
+        $.ajax({
+          url: 'https://gdzb.bddco.cn/api/gdzb/v1/special/details?url='+url,
+          type: 'get',
+          data: {},
+          dataType: 'json',
+          success: function (res) {
+            console.log(res)
+            successFn(res) 
+          }
+        })
 
-        for(var i=0; i< obj.length; i++){
-          if(obj[i].type == 'text'){
-            var div = document.createElement('div');
-            div.setAttribute('class', 'div-text div-text-'+i)
-            div.innerText = obj[i].content;
-            box.appendChild(div)
-            div.style.width = obj[i].width;
-            div.style.height = obj[i].height;
-            div.style.top = obj[i].top;
-            div.style.left = obj[i].left;
-            div.style.color = obj[i].color;
-            div.style['font-size'] = obj[i]['font-size'];
-            div.style['font-weight'] = obj[i]['font-weight'];
-            div.style['font-style'] = obj[i]['font-style'];
-            div.style['text-decoration'] = obj[i]['text-decoration'];
-            div.style['text-align'] = obj[i]['text-align'];
-            div.style['z-index'] = obj[i]['z-index'];
+        function successFn(res) {
+          var box = document.getElementById('container');
+              obj = res.data.data;
+              
+          $(box).text('');
 
-            if(obj[i].link){
-              $(div).html(`<a href='${obj[i].link}'>${obj[i].content}</a>`)
-            }
+          if(res.data.title){
+            $(document).attr("title", res.data.title);
           }
 
-          if(obj[i].type == 'img'){
-            var style = `
-              "width: ${obj[i].width};
-              height: ${obj[i].height};
-              top: ${obj[i].top};
-              left: ${obj[i].left};
-              z-index: ${obj[i]['z-index']}"`,
-
-            img = `
-                <div class=div-img div-img-${i} style=${style}>
-                    <img class=img-${i} src='${obj[i].url}'/>
-                </div>`;
-
-            $(box).append(img)
-
-            if(obj[i].link){
-              $('.div-img-'+i+ ' img').wrap(`<a href="${obj[i].link}"></a>`)
-            }
+          if(res.data.description){
+            $("meta[name='viewport']").after(
+              `<meta name="description" content=${res.data.description}>`
+            );
           }
 
-          if(obj[i].type == 'video'){
-            var style = `
-              "width: ${obj[i].width};
-              height: ${obj[i].height};
-              top: ${obj[i].top};
-              left: ${obj[i].left};
-              z-index: ${obj[i]['z-index']}"`,
+          if(res.data.keywords){
+            $("meta[name='viewport']").after(
+              `<meta name="keywords" content=${res.data.keywords}>`
+            );
+          }
 
-              video = `
-                <div class=div-video div-video-${i} style=${style}>
-                  <video class=video-${i} controls>
-                    <source src=${obj[i].url} type="video/mp4">
-                  </video>
-                </div>`;
+          for(var i=0; i< obj.length; i++){
+            if(obj[i].type == 'text'){
+              var div = document.createElement('div');
+              div.setAttribute('class', 'div-text div-text-'+i)
+              div.innerText = obj[i].content;
+              box.appendChild(div)
+              div.style.width = selfAdaption(obj[i].width);
+              div.style.height = selfAdaption(obj[i].height);
+              div.style.top = selfAdaption(obj[i].top);
+              div.style.left = obj[i].left;
+              div.style.color = obj[i].color;
+              div.style['font-size'] = obj[i]['font-size'];
+              div.style['font-weight'] = obj[i]['font-weight'];
+              div.style['font-style'] = obj[i]['font-style'];
+              div.style['text-decoration'] = obj[i]['text-decoration'];
+              div.style['text-align'] = obj[i]['text-align'];
+              div.style['z-index'] = obj[i]['z-index'];
 
-            $(box).append(video)
+              if(obj[i].link){
+                $(div).html(`<a href='${obj[i].link}'><div class='text'>${obj[i].content}</div></a>`)
+              }
+            }
 
-            if(obj[i].link){
-              $('.div-video-'+i+ ' video').wrap(`<a href="${obj[i].link}"></a>`)
+            if(obj[i].type == 'img'){
+              var style = `
+                "width: ${selfAdaption(obj[i].width)};
+                height: ${selfAdaption(obj[i].height)};
+                top: ${selfAdaption(obj[i].top)};
+                left: ${obj[i].left};
+                z-index: ${obj[i]['z-index']}"`,
+
+              img = `
+                  <div class="div-img div-img-${i}" style=${style}>
+                      <img class=img-${i} src='${obj[i].url}'/>
+                  </div>`;
+
+              $(box).append(img)
+
+              if(obj[i].link){
+                $('.div-img-'+i+ ' img').wrap(`<a href="${obj[i].link}"></a>`)
+              }
+            }
+
+            if(obj[i].type == 'video'){
+              var style = `
+                "width: ${selfAdaption(obj[i].width)};
+                height: ${selfAdaption(obj[i].height)};
+                top: ${selfAdaption(obj[i].top)};
+                left: ${obj[i].left};
+                z-index: ${obj[i]['z-index']}"`,
+
+                video = `
+                  <div class="div-video div-video-${i}" style=${style}>
+                    <video class=video-${i} controls>
+                      <source src=${obj[i].url} type="video/mp4">
+                    </video>
+                  </div>`;
+
+              $(box).append(video)
+
+              if(obj[i].link){
+                $('.div-video-'+i+ ' video').wrap(`<a href="${obj[i].link}"></a>`)
+              }
             }
           }
         }
       }
+
+      getData()
+
+      window.onresize = getData;
 
     </script>
   </body>
