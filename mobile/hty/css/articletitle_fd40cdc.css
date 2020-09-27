@@ -1,0 +1,61 @@
+.snapshoot-article-title {
+    padding: 18px 15px 0 15px;
+}
+.snapshoot-article-title .title {
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.4;
+    font-weight: bold;
+    letter-spacing: 1px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.snapshoot-article-title .content {
+    padding: 20px 0 14px 0;
+}
+.snapshoot-article-title .content:after {
+    content: "";
+    display: block;
+    clear: left;
+}
+.snapshoot-article-title .avatar,
+.snapshoot-article-title .comment-body {
+    float: left;
+}
+.snapshoot-article-title .avatar {
+    width: 36px;
+    height: 36px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    background-color: #ccc;
+}
+.snapshoot-article-title .avatar > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.snapshoot-article-title .comment-body {
+    margin-left: 9px;
+}
+.snapshoot-article-title .body-user {
+    margin: 0;
+    font-size: 16px;
+}
+.snapshoot-article-title .body-tag {
+    margin-top: 5px;
+    font-size: 12px;
+}
+.snapshoot-article-title .body-tag span {
+    margin-right: 4px;
+    padding: 1px 2px;
+    border: 1px solid #1892da;
+    color: #1892da;
+    font-style: normal;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    line-height: 14px;
+}
+.snapshoot-article-title .body-tag i {
+    color: #ccc;
+    font-style: 

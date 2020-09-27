@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body, button, input {
+    font-size: 17px;
+    line-height: 1.4em;
+    font-family: Arial, Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    outline: none;
+}
+body {
+    background-color: #fff;
+    line-height: 1.5;
+    margin: 0 auto;
+    color: #333;
+    overflow-y: scroll;
+}
+.indent{
+    text-indent: 2em;
+}
+body, html {
+    width: 100%;
+    /* height: 100%; */
+}
+h2 {
+    font-size: 100%;
+    word-wrap: break-word;
+}
+em, i {
+    font-weight: normal;
+    font-style: normal;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+table, td, th, li, img, input, select {
+    vertical-align: middle;
+    outline: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+input {
+    padding: 5px;
+    margin: 0;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+input[type="radio"] {
+    -webkit-appearance: radio;
+}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+}
+a:-webkit-any-link {
+    text-decoration: none;
+    cursor: auto;
+}
+a, a:focus, a:outline, a img {
+    border: none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: rgb(103, 157, 255);
+    // -webkit-tap-highlight-color: rgba(128, 128, 128, 0);
+}
+a:hover {
+    outline: none;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+    vertical-align: middle;
+}
+span {
+    display: inline-block;
+}
+
+.piece {
+    background-color: transparent;
+    position: relative;
+    box-sizing: border-box;
+}
+.piece.fbottom, .piece.ftop {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+@media screen and (max-width: 640px) {
+    .piece.fbottom, .piece.ftop {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:640px) {
+    .piece.fbottom, .piece.ftop {
+        width: 550px;
+    }
+}
+.create-left-content {
+    width:70px;
+    height:auto;
+    text-align: center;
+    z-index:9999;
+    position:fixed;
+    bottom:0;
+    left:0;
+}
+
+.create-right-content {
+    width:70px;
+    height: auto;
+    text-align: center;
+    z-index:9999;
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+
+.piece.fbottom {
+    top: auto !important;
+    bottom: 0 !important;
+}
+.piece.ftop {
+    top: 0 !important;
+    bottom: auto !important;
+}
+#content {
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#MEIQIA-PANEL-HOLDER{
+    right: 0 !important;
+}
+
+/*隐藏滚动条，若不隐藏则放置在layout组件中的多个图片会不等高(导致出现白线)*/
+html::-webkit-scrollbar {
+    display: none;
+}
