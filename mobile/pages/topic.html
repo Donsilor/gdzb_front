@@ -91,19 +91,21 @@
         // 处理http
         function dispose(url) {
           var disposeUrl;
-          // 没有http，也没有https的，包含www，恒得利官网加https，非恒得利官网加http；(PC端)
-          if((url.indexOf('http') == -1) && (url.indexOf('https') == -1) && (url.indexOf('www') != -1)){
-            disposeUrl = 'http://'+url;
+          // 没有http，也没有https的，恒得利官网加https，非恒得利官网加http
+          if((url.indexOf('http') == -1) && (url.indexOf('https') == -1)){
+            if((url.indexOf('bddco') == -1) && (url.indexOf('kadart.com') == -1) && (url.indexOf('hdlbdd.com') == -1) && (url.indexOf('gdzb.bddco') == -1)){
+              disposeUrl = 'http://'+url;
+            }else{
+              disposeUrl = 'https://'+url;
+            }
           }
 
-          // 没有http，也没有https的，包含wap，恒得利官网加https，非恒得利官网加http；(移动端)
-          if((url.indexOf('http') == -1) && (url.indexOf('https') == -1) && (url.indexOf('wap') != -1)){
-            disposeUrl = 'http://'+url;
-          }
-
-          // 有http，也没有https且为恒得利官网的，加https
+          // 有http，没有https且为恒得利官网的，加https
           if((url.indexOf('http') != -1) && (url.indexOf('https') == -1)){
-
+            if((url.indexOf('bddco') != -1) && (url.indexOf('kadart.com') != -1) && (url.indexOf('hdlbdd.com') != -1) && (url.indexOf('gdzb.bddco') != -1)){
+              url = url.split('http://')[1];
+              disposeUrl = 'https://'+url;
+            }
           }
 
           return disposeUrl
@@ -111,8 +113,9 @@
 
         // 请求成功渲染数据
         function successFn(res) {
-          var box = document.getElementById('container');
-              obj = res.data.data;
+          var box = document.getElementById('container'),
+              obj = res.data.data,
+              urlHttps;
               
           $(box).text('');
 
@@ -133,6 +136,7 @@
           }
 
           for(var i=0; i< obj.length; i++){
+            urlHttps = '';
             if(obj[i].type == 'text'){
               var div = document.createElement('div');
               div.setAttribute('class', 'div-text div-text-'+i)
@@ -153,7 +157,9 @@
               div.style['z-index'] = obj[i]['z-index'];
 
               if(obj[i].link){
-                $(div).html(`<a href='${obj[i].link}'><div class='text'>${obj[i].content}</div></a>`)
+                urlHttps = dispose(obj[i].link)
+                console.log(779,urlHttps)
+                $(div).html(`<a href='${obj[i].link}'><div class='text'>${urlHttps}</div></a>`)
               }
             }
 
@@ -173,7 +179,8 @@
               $(box).append(img)
 
               if(obj[i].link){
-                $('.div-img-'+i+ ' img').wrap(`<a href="${obj[i].link}"></a>`)
+                urlHttps = dispose(obj[i].link)
+                $('.div-img-'+i+ ' img').wrap(`<a href="${urlHttps}"></a>`)
               }
             }
 
@@ -195,7 +202,7 @@
               $(box).append(video)
 
               if(obj[i].link){
-                $('.div-video-'+i+ ' video').wrap(`<a href="${obj[i].link}"></a>`)
+                $('.div-video-'+i+ ' video').wrap(`<a href="${dispose(obj[i].link)}"></a>`)
               }
             }
           }
