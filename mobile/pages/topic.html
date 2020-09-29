@@ -71,8 +71,15 @@
             ratio =  (375/screenWidth).toFixed(4);
         
         // 兼容性
-        function selfAdaption(size) {
-          return parseInt(parseInt(size)/ratio)+'px';
+        function selfAdaption(size, type='') {
+          var result;
+          if(type){
+            result = Math.ceil(parseInt(size)/ratio)+'px';
+          }else{
+            result = parseInt(parseInt(size)/ratio)+'px';
+          }
+
+          return result
         }
 
         var url = location.href.split('?url=')[1];
@@ -166,7 +173,7 @@
             if(obj[i].type == 'img'){
               var style = `
                 "width: ${selfAdaption(obj[i].width)};
-                height: ${selfAdaption(obj[i].height)};
+                height: ${selfAdaption(obj[i].height, 'height')};
                 top: ${selfAdaption(obj[i].top)};
                 left: ${obj[i].left};
                 z-index: ${obj[i]['z-index']}"`,
@@ -187,7 +194,7 @@
             if(obj[i].type == 'video'){
               var style = `
                 "width: ${selfAdaption(obj[i].width)};
-                height: ${selfAdaption(obj[i].height)};
+                height: ${selfAdaption(obj[i].height, 'height')};
                 top: ${selfAdaption(obj[i].top)};
                 left: ${obj[i].left};
                 z-index: ${obj[i]['z-index']}"`,
