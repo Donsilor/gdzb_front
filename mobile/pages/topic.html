@@ -66,19 +66,12 @@
         left: 0;
         z-index: -1;
       }
-      video{
-        /* display: none; */
-      }
     </style>
   </head>
   <body>
-    <div id="tem">
-      <video class="video-t" controls>
-        <source src="" type="video/mp4">
-      </video>
+    <div id="container">
+      <video style="width: 200px;height: 200px;border:1px solid red" controls src=""></video>
     </div>
-
-    <div id="container"></div>
 
     <script type="text/javascript">
       function getData() {
@@ -136,10 +129,13 @@
         // 请求成功渲染数据
         function successFn(res) {
           var box = document.getElementById('container'),
-              obj = res.data.data,
-              urlHttps;
-              
-          $(box).text('');
+              obj = res.data.data,urlHttps;
+
+          // $(box).children().filter("video").each(function(){ 
+          //     this.pause(); 
+          //     $(this).remove(); 
+          // }); 
+          // $(box).empty();
 
           if(res.data.title){
             $(document).attr("title", res.data.title);
@@ -159,75 +155,69 @@
 
           for(var i=0; i< obj.length; i++){
             urlHttps = '';
-            if(obj[i].type == 'text'){
-              var div = document.createElement('div');
-              div.setAttribute('class', 'div-text div-text-'+i)
-              div.innerText = obj[i].content;
-              box.appendChild(div)
+            // if(obj[i].type == 'text'){
+            //   var div = document.createElement('div');
+            //   div.setAttribute('class', 'div-text div-text-'+i)
+            //   div.innerText = obj[i].content;
+            //   box.appendChild(div)
 
-              div.style.width = selfAdaption(obj[i].width);
-              div.style.height = selfAdaption(obj[i].height);
-              div.style.top = selfAdaption(obj[i].top);
-              div.style.left = obj[i].left;
-              div.style.color = obj[i].color;
-              div.style['font-family'] = obj[i]['font-family'];
-              div.style['font-size'] = obj[i]['font-size'];
-              div.style['font-weight'] = obj[i]['font-weight'];
-              div.style['font-style'] = obj[i]['font-style'];
-              div.style['text-decoration'] = obj[i]['text-decoration'];
-              div.style['text-align'] = obj[i]['text-align'];
-              div.style['z-index'] = obj[i]['z-index'];
+            //   div.style.width = selfAdaption(obj[i].width);
+            //   div.style.height = selfAdaption(obj[i].height);
+            //   div.style.top = selfAdaption(obj[i].top);
+            //   div.style.left = obj[i].left;
+            //   div.style.color = obj[i].color;
+            //   div.style['font-family'] = obj[i]['font-family'];
+            //   div.style['font-size'] = obj[i]['font-size'];
+            //   div.style['font-weight'] = obj[i]['font-weight'];
+            //   div.style['font-style'] = obj[i]['font-style'];
+            //   div.style['text-decoration'] = obj[i]['text-decoration'];
+            //   div.style['text-align'] = obj[i]['text-align'];
+            //   div.style['z-index'] = obj[i]['z-index'];
 
-              if(obj[i].link){
-                urlHttps = dispose(obj[i].link)
-                $(div).html(`<a href='${obj[i].link}'><div class='text'>${urlHttps}</div></a>`)
-              }
-            }
+            //   if(obj[i].link){
+            //     urlHttps = dispose(obj[i].link)
+            //     $(div).html(`<a href='${obj[i].link}'><div class='text'>${urlHttps}</div></a>`)
+            //   }
+            // }
 
-            if(obj[i].type == 'img'){
-              var style = `
-                "width: ${selfAdaption(obj[i].width)};
-                height: ${selfAdaption(obj[i].height, 'height')};
-                top: ${selfAdaption(obj[i].top)};
-                left: ${obj[i].left};
-                z-index: ${obj[i]['z-index']}"`,
+            // if(obj[i].type == 'img'){
+            //   var style = `
+            //     "width: ${selfAdaption(obj[i].width)};
+            //     height: ${selfAdaption(obj[i].height, 'height')};
+            //     top: ${selfAdaption(obj[i].top)};
+            //     left: ${obj[i].left};
+            //     z-index: ${obj[i]['z-index']}"`,
 
-              img = `
-                  <div class="div-img div-img-${i}" style=${style}>
-                      <img class=img-${i} src='${obj[i].url}'/>
-                  </div>`;
+            //   img = `
+            //       <div class="div-img div-img-${i}" style=${style}>
+            //           <img class=img-${i} src='${obj[i].url}'/>
+            //       </div>`;
 
-              $(box).append(img)
+            //   $(box).append(img)
 
-              if(obj[i].link){
-                urlHttps = dispose(obj[i].link)
-                $('.div-img-'+i+ ' img').wrap(`<a href="${urlHttps}"></a>`)
-              }
-            }
+            //   if(obj[i].link){
+            //     urlHttps = dispose(obj[i].link)
+            //     $('.div-img-'+i+ ' img').wrap(`<a href="${urlHttps}"></a>`)
+            //   }
+            // }
 
             if(obj[i].type == 'video'){
-              var style = `
-                "width: ${selfAdaption(obj[i].width)};
-                height: ${selfAdaption(obj[i].height, 'height')};
-                top: ${selfAdaption(obj[i].top)};
-                left: ${obj[i].left};
-                z-index: ${obj[i]['z-index']}"`,
+            //   var style = `
+            //     width: ${selfAdaption(obj[i].width)};
+            //     height: ${selfAdaption(obj[i].height, 'height')};
+            //     top: ${selfAdaption(obj[i].top)};
+            //     left: ${obj[i].left};
+            //     z-index: ${obj[i]['z-index']}`,
 
-                video = `
-                  <div class="div-video div-video-${i}" style=${style}>
-                    <video class=video-${i} controls>
-                      <source class="source-${i}" src=${obj[i].url} type="video/mp4">
-                    </video>
-                  </div>`;
+            //   video = $(`<div style="${style}">
+            //               <video controls>
+            //                 <source src=${obj[i].url} type="video/mp4">
+            //               </video>
+            //           </div>`);
 
-              $(box).append(video)
+            //   $('body').append(video)
 
-              $('.video-'+i).append(`<source src=${obj[i].url} type="video/mp4">`)
-              // $('.source-'+i).attr('src', obj[i].url)
-
-              if(obj[i].link){
-                $('.div-video-'+i+ ' video').wrap(`<a href="${dispose(obj[i].link)}"></a>`)
-              }
+            $('video').attr('src', obj[i].url)
             }
           }
         }
@@ -235,7 +225,11 @@
 
       getData()
 
-      window.onresize = getData;
+      // window.onresize = function(){
+        // if((navigator.platform).indexOf('Win') != -1){
+          // getData()
+        // }
+      // };
 
     </script>
   </body>
