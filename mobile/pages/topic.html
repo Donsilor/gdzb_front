@@ -2,7 +2,7 @@
 <html>
 	<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script src="../assets/js/jquery-1.11.3.min.js"></script>  
     <style type="text/css">
       body,div,img,video,a{
@@ -60,9 +60,24 @@
         white-space: pre-wrap;
         overflow: hidden;
       }
+      .tem{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      video{
+        /* display: none; */
+      }
     </style>
   </head>
   <body>
+    <div id="tem">
+      <video class="video-t" controls>
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+
     <div id="container"></div>
 
     <script type="text/javascript">
@@ -71,7 +86,7 @@
             ratio =  (375/screenWidth).toFixed(4);
         
         // 兼容性
-        function selfAdaption(size, type='') {
+        function selfAdaption(size, type) {
           var result;
           if(type){
             result = Math.ceil(parseInt(size)/ratio)+'px';
@@ -165,7 +180,6 @@
 
               if(obj[i].link){
                 urlHttps = dispose(obj[i].link)
-                console.log(779,urlHttps)
                 $(div).html(`<a href='${obj[i].link}'><div class='text'>${urlHttps}</div></a>`)
               }
             }
@@ -202,11 +216,14 @@
                 video = `
                   <div class="div-video div-video-${i}" style=${style}>
                     <video class=video-${i} controls>
-                      <source src=${obj[i].url} type="video/mp4">
+                      <source class="source-${i}" src=${obj[i].url} type="video/mp4">
                     </video>
                   </div>`;
 
               $(box).append(video)
+
+              $('.video-'+i).append(`<source src=${obj[i].url} type="video/mp4">`)
+              // $('.source-'+i).attr('src', obj[i].url)
 
               if(obj[i].link){
                 $('.div-video-'+i+ ' video').wrap(`<a href="${dispose(obj[i].link)}"></a>`)
