@@ -106,8 +106,9 @@
             }
           })
         }else{
+          return
           // 预览数据
-          var dddd = <?= $_POST['params'] ?? '{}'?>
+          var dddd = '';
           if(dddd){
             var re = {data:{title:'',description:'',keywords:'',data:[]}};
 
