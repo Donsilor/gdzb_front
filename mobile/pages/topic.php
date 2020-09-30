@@ -107,7 +107,7 @@
           })
         }else{
           // 预览数据
-          <?php echo sprintf("var dddd=%s;", $_POST['params']??'{}'); ?>
+          var dddd = <?= $_POST['params'] ?? '{}'?>
           if(dddd){
             var re = {data:{title:'',description:'',keywords:'',data:[]}};
 
