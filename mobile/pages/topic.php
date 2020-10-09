@@ -69,11 +69,10 @@
     </style>
   </head>
   <body>
-    <div id="container">
-      <!-- <video style="width: 200px;height: 200px;border:1px solid red" controls src=""></video> -->
-    </div>
+    <!-- 版本号：5.5 -->
+    <div id="container"></div>
 
-    <script type="text/javascript">
+    <script>
       function getData() {
         var screenWidth = document.body.offsetWidth,
             ratio =  (375/screenWidth).toFixed(4);
@@ -106,9 +105,11 @@
             }
           })
         }else{
-          return
+          // return
           // 预览数据
           var dddd = '';
+              dddd = <?= $_POST['params'] ?? '{}'?>;
+
           if(dddd){
             var re = {data:{title:'',description:'',keywords:'',data:[]}};
 
@@ -197,7 +198,8 @@
 
               if(obj[i].link){
                 urlHttps = dispose(obj[i].link)
-                $(div).html(`<a href='${obj[i].link}'><div class='text'>${urlHttps}</div></a>`)
+                div.style.padding = 0;
+                $(div).html(`<a href='${obj[i].link}'><div class='text' style='padding: 4px'>${obj[i].content}</div></a>`)
               }
             }
 
