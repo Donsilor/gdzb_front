@@ -3,7 +3,7 @@
 	<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="../assets/js/jquery-1.11.3.min.js"></script>  
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>  
     <style type="text/css">
       body,div,img,video,a{
         padding: 0;
@@ -69,7 +69,7 @@
     </style>
   </head>
   <body>
-    <!-- 版本号：5.5 -->
+    <!-- 版本号：5.78 -->
     <div id="container"></div>
 
     <script>
@@ -107,18 +107,20 @@
         }else{
           // return
           // 预览数据
-          var dddd = '';
-              dddd = <?php echo (isset($_POST['params']) ? $_POST['params'] : '{}'); ?>;
+          var postData = '';
+              postData = <?php echo (isset($_POST['params']) ? $_POST['params'] : '{}'); ?>;
 
-          if(dddd){
+              console.log('postData',postData)
+
+          if(postData){
             var re = {data:{title:'',description:'',keywords:'',data:[]}};
 
-            re.data.title = dddd.tdk.title;
-            re.data.description = dddd.tdk.description;
-            re.data.keywords = dddd.tdk.keywords;
+            re.data.title = postData.tdk.title;
+            re.data.description = postData.tdk.description;
+            re.data.keywords = postData.tdk.keywords;
 
-            for(var s in dddd.attrs){
-              (re.data.data).push(dddd.attrs[s])
+            for(var s in postData.attrs){
+              (re.data.data).push(postData.attrs[s])
             }
 
             successFn(re)
