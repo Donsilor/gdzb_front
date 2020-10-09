@@ -108,7 +108,7 @@
           // return
           // 预览数据
           var dddd = '';
-              dddd = <?= $_POST['params'] ?? '{}'?>;
+              dddd = <?php echo (isset($_POST['params']) ? $_POST['params'] : '{}'); ?>;
 
           if(dddd){
             var re = {data:{title:'',description:'',keywords:'',data:[]}};
