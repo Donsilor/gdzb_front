@@ -66,10 +66,17 @@
         left: 0;
         z-index: -1;
       }
+      .div-video img{
+        position: absolute;
+        border: 1px solid red;
+      }
+      canvas{
+        border: 1px solid red
+      }
     </style>
   </head>
   <body>
-    <!-- 版本号：6.0 -->
+    <!-- 版本号：6.3 -->
     <div id="container"></div>
 
     <script>
@@ -253,6 +260,35 @@
               $('.video-'+i).css({'width': w,"height": h})
             }
           }
+
+          // var videoBox = $('.div-video');
+          // for(var j=0; j<videoBox.length; j++){
+          //   (function() {
+          //     var arg = j;
+          //     var vi = videoBox[arg].children[0];
+              
+          //     vi.setAttribute('crossOrigin', 'anonymous');//处理跨域
+          //     vi.addEventListener('loadeddata', function () {
+          //       var canvas = document.createElement("canvas");
+          //       $('#container').append(canvas);
+          //       canvas.width = 200;
+          //       canvas.height = 200;
+          //       var dataURL = '';
+
+          //       canvas.getContext("2d").drawImage(vi, 0, 0, parseInt(w), parseInt(h)); //绘制canvas
+
+          //       var img = document.createElement("img");
+          //       img.src = canvas.toDataURL("image/png");//转换成base64图片，地址拿出来就可以直接使用
+
+          //       $(videoBox[arg]).append(img);
+
+          //       // $('.video-'+i).attr('poster', dataURL)
+
+          //     });
+
+          //   })()
+          // }
+
         }
       }
 
