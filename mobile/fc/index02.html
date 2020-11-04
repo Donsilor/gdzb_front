@@ -6,10 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="yes" name="apple-mobile-web-app-capable">
 <meta content="black" name="apple-mobile-web-app-status-bar-style">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="viewport" id="viewport" content="width=640px, user-scalable=no"> -->
 <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
-<title>精品翡翠，源头直供</title>
+<title>缅甸天然翡翠，一手货源</title>
 <meta name="keywords" content="翡翠鉴定,福玉天下翡翠,福玉天下翡翠怎么样,福玉天下,福玉天下价格">
 <meta name="description" content="福玉天下,专注传承中国翡翠文化">
 <script src="js/jquery-1.11.3.min.js"></script>
@@ -387,7 +385,7 @@ a:active { star:expression(this.onFocus=this.blur());}
             <!-- 一手货源，假一赔十！ (点击复制)  -->
             </td>
         </dl>
-        <a id="zhuanhua" onclick="copyArticle()" style="float: right;margin-top:14px;width:30px;height:35px;line-height: 35px;text-align: center;box-shadow: 0 1px 3px 0 #000;width:70px;
+        <a id="zhuanhua" onclick="copyUrl2()" style="float: right;margin-top:14px;width:30px;height:35px;line-height: 35px;text-align: center;box-shadow: 0 1px 3px 0 #000;width:70px;
         float:right;background: #3FB837;color: #FFF;border-radius: 6px;text-decoration:none;font-size: 15px;">点击复制</a>
     </div>
     <div style="font-size: 18px;text-align: center;line-height: 30px;"><span style="color: rgb(255, 0, 0); cursor: pointer;">每天前30名免费送翡翠平安扣</span></div>
@@ -402,26 +400,46 @@ a:active { star:expression(this.onFocus=this.blur());}
             </div>
         </div>
     </div>
+
+    <!--弹窗部分 -->
+	<div id="popup" style="display:none;width: 280px;border: 3px solid #339933;position: fixed; background-color:white;left: 50%;top: 50%;margin-left:-140px;margin-top: -90px;z-index: 9999;border-radius:8px;text-align: center;">
+    <img data-s="300,640" data-type="jpeg" data-ratio="1.0510416666666667" data-w="960" class=" img_loading" src="images/ddtt.gif" style="width: 100%;" />
+    
+  
+    <span id="offpopup" style="width:40px;height:38px;border-radius:50%;text-align:center;position:absolute;top:-17px;right:-17px;background-color:black;color:white;line-height:38px;font-size:17px;">X</span>
+</div>
+
 <script type="text/javascript">
-        function copyArticle() {
-            const range = document.createRange();
-            range.selectNode(document.getElementById('wxhao'));
-            const selection = window.getSelection();
-            if (selection.rangeCount > 0) selection.removeAllRanges();
-            selection.addRange(range);
-            document.execCommand('copy');
-            $(".qaik").fadeIn(); 
-            $(".koka .a_queren").click(function(){
-                window._agl && window._agl.push(['track', ['success', {t: 3}]]);
-                $(".qaik").fadeOut();
-                location.href="mxwx://"
-              })
-              $(".koka .a_quxiao").click(function(){
-                $(".qaik").fadeOut();
-              })
-        }
+    function copyArticle() {
+        const range = document.createRange();
+        range.selectNode(document.getElementById('wxhao'));
+        const selection = window.getSelection();
+        if (selection.rangeCount > 0) selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        $(".qaik").fadeIn(); 
+        $(".koka .a_queren").click(function(){
+            window._agl && window._agl.push(['track', ['success', {t: 3}]]);
+            $(".qaik").fadeOut();
+            location.href="mxwx://"
+          })
+          $(".koka .a_quxiao").click(function(){
+            $(".qaik").fadeOut();
+          })
+    }
+
+    function copyUrl2() {
+        // var Url2 = document.getElementById("biao1");
+        // Url2.select(); 
+				$("#popup").show();
+                document.execCommand("Copy");
+				setTimeout(function(){
+					window.location.href="weixin://";
+				},3000);
+    }
 </script>
 <!-- <script src="js/qq.js"></script> -->
+
 
 
 </body>
