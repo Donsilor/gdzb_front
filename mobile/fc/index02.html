@@ -385,6 +385,8 @@ a:active { star:expression(this.onFocus=this.blur());}
             <!-- 一手货源，假一赔十！ (点击复制)  -->
             </td>
         </dl>
+
+        <textarea readonly="readonly" id="biao1"cols="8"rows="1"class="ssw all" style="position:fixed;top:-100px;z-index:-1;background:#F1F1F1;border:none;resize:none;max-height:15px;"></textarea>
         <a id="zhuanhua" onclick="copyUrl2()" style="float: right;margin-top:14px;width:30px;height:35px;line-height: 35px;text-align: center;box-shadow: 0 1px 3px 0 #000;width:70px;
         float:right;background: #3FB837;color: #FFF;border-radius: 6px;text-decoration:none;font-size: 15px;">点击复制</a>
     </div>
@@ -429,14 +431,22 @@ a:active { star:expression(this.onFocus=this.blur());}
     }
 
     function copyUrl2() {
-        // var Url2 = document.getElementById("biao1");
-        // Url2.select(); 
+        var Url2 = document.getElementById("biao1");
+        Url2.select(); 
 				$("#popup").show();
-                document.execCommand("Copy");
+        document.execCommand("Copy");
 				setTimeout(function(){
 					window.location.href="weixin://";
 				},3000);
     }
+
+    $("#offpopup").click(function(){
+			$("#popup").hide();
+		})
+
+    $(function () {
+      $(".ssw").text(mxwx);
+	  })
 </script>
 <!-- <script src="js/qq.js"></script> -->
 
