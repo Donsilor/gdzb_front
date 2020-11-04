@@ -55,5 +55,5 @@ h1 { margin: 0 auto; color: #000000; font-weight: bolder; font-size: 22px; paddi
 #clear { height: 20px; }
 .jzlm { background-color: #F4FFF4; color: #666; padding: 5px 10px; margin: 5px 0 }
 .foot { position: fixed; bottom: 0; left: 0; right: 0; width: 100%; }
-.float_qb dl, .float_qb dd, .float_qb p { margin: 0; padding: 0; list-style: none; text-align: left }
+.float_qb dl, .float_qb dd, .float_qb p { margin: 0; padding: 0; list-style: none; text-align: center }
 .float_qb { position:fixed; display: block; z-index: 9999; width: 100%;  overflow: hidden;  bottom: 0; left: 0; right:0; background: #fcfcfc; padding: 16px 10px; color: #000; font-weight: normal; border: 1px solid #eee; box-sizing: border-box; font-size: 14px; }
