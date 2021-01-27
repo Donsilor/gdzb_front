@@ -12,10 +12,4 @@ $(function(){
     //      $(".content p").text(str);
     // })
 
-
-    // 获取页面底部公共年份
-    var data = new Date(),
-        year = data.getFullYear();
-    
-    $('.year').text(year)
 })

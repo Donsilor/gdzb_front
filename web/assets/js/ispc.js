@@ -17,7 +17,14 @@ $(function(){
     if(mobile_flag){
         window.location.href = host + path + params;  
     }
-});
+
+    // 获取页面底部公共年份
+    var data = new Date(),
+        year = data.getFullYear();
+    
+    $('.year').text(year)
+})
+
 function isMobile() {
     var userAgentInfo = navigator.userAgent;
     // console.log("userAgentInfo",userAgentInfo)
@@ -35,15 +42,15 @@ function isMobile() {
         }
     }
 
-     var screen_width = window.screen.width;
-     var screen_height = window.screen.height;    
+    var screen_width = window.screen.width;
+    var screen_height = window.screen.height;    
 
-     //根据屏幕分辨率判断是否是手机
-     if(screen_width < 500 && screen_height < 800){
-         mobile_flag = true;
-     }
+    //根据屏幕分辨率判断是否是手机
+    if(screen_width < 500 && screen_height < 800){
+        mobile_flag = true;
+    }
 
-     return mobile_flag;
+    return mobile_flag;
 }
 
 
