@@ -107,7 +107,7 @@
             data: {},
             dataType: 'json',
             success: function (res) {
-              console.log(res)
+              console.log('data', res)
               successFn(res) 
             }
           })
@@ -167,7 +167,13 @@
         // 请求成功渲染数据
         function successFn(res) {
           var box = document.getElementById('container'),
-              obj = res.data.data,urlHttps;
+              obj = res.data.data, urlHttps, pageType,
+              pageType = obj[0].pageType;
+          
+          if(pageType == 'mobile'){
+            // alert('此网页是移动端版本')
+            return
+          }
 
           $(box).children().filter("video").each(function(){ 
               this.pause(); 
@@ -207,7 +213,7 @@
               div.style.left = obj[i].left;
               div.style.color = obj[i].color;
               div.style['font-family'] = obj[i]['font-family'];
-              div.style['font-size'] = obj[i]['font-size'];
+              div.style['font-size'] = selfAdaption(obj[i]['font-size']);
               div.style['font-weight'] = obj[i]['font-weight'];
               div.style['font-style'] = obj[i]['font-style'];
               div.style['text-decoration'] = obj[i]['text-decoration'];

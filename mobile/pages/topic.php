@@ -167,7 +167,13 @@
         // 请求成功渲染数据
         function successFn(res) {
           var box = document.getElementById('container'),
-              obj = res.data.data,urlHttps;
+          obj = res.data.data, urlHttps, pageType,
+          pageType = obj[0].pageType;
+          
+          if(pageType == 'web'){
+            // alert('此网页是PC版本')
+            return
+          }
 
           $(box).children().filter("video").each(function(){ 
               this.pause(); 
